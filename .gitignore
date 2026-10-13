@@ -1,1 +1,44 @@
-IyBCdWlsdCBhcHBsaWNhdGlvbiBmaWxlcwoqLmFwawoqLmFhcgoqLmFwXwoqLmFhYgoKIyBGaWxlcyBmb3IgdGhlIEFSVC9EYWx2aWsgVk0KKi5kZXgKCiMgSmF2YSBjbGFzcyBmaWxlcwoqLmNsYXNzCgojIEdlbmVyYXRlZCBmaWxlcwpiaW4vCmdlbi8Kb3V0LwpyZWxlYXNlLwoKIyBHcmFkbGUgZmlsZXMKLmdyYWRsZS8KYnVpbGQvCgojIExvY2FsIGNvbmZpZ3VyYXRpb24gZmlsZSAoc2RrIHBhdGgsIGV0Yy4pCmxvY2FsLnByb3BlcnRpZXMKCiMgTG9nL09TIEZpbGVzCioubG9nCgojIEFuZHJvaWQgU3R1ZGlvIC8gSW50ZWxsaUoKKi5pbWwKLmlkZWEvCi5EU19TdG9yZQpjYXB0dXJlcy8KCiMgS2V5c3RvcmUgZmlsZXMKKi5qa3MKKi5rZXlzdG9yZQoKIyBFeHRlcm5hbCBuYXRpdmUgYnVpbGQgZm9sZGVycwouZXh0ZXJuYWxOYXRpdmVCdWlsZC8KLmN4eC8KCiMgTm90ZTogZ3JhZGxlL3dyYXBwZXIvZ3JhZGxlLXdyYXBwZXIuamFyIGlzIGludGVudGlvbmFsbHkgY29tbWl0dGVkCiMgKGtlcHQgb3V0IG9mIGlnbm9yZSkgc28gQ0kgY2FuIHJ1biAuL2dyYWRsZXcgd2l0aG91dCBhIGxvY2FsIEdyYWRsZSBpbnN0YWxsLgo=
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+release/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc.)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.DS_Store
+captures/
+
+# Keystore files
+*.jks
+*.keystore
+
+# External native build folders
+.externalNativeBuild/
+.cxx/
+
+# Note: gradle/wrapper/gradle-wrapper.jar is intentionally committed
+# (kept out of ignore) so CI can run ./gradlew without a local Gradle install.
