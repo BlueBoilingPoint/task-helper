@@ -1,1 +1,50 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuYXBwLkFwcGxpY2F0aW9uCmltcG9ydCBhbmRyb2lkLm9zLlByb2Nlc3MKaW1wb3J0IGFuZHJvaWR4LmxpZmVjeWNsZS5EZWZhdWx0TGlmZWN5Y2xlT2JzZXJ2ZXIKaW1wb3J0IGFuZHJvaWR4LmxpZmVjeWNsZS5MaWZlY3ljbGVPd25lcgppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLlByb2Nlc3NMaWZlY3ljbGVPd25lcgppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLkRpc3BhdGNoZXJzCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMucnVuQmxvY2tpbmcKCi8qKgogKiDlupTnlKjlhaXlj6PjgILmoLjlv4PogYzotKPvvJrlrp7njrDjgIzkuKXmoLzkvJHnnKDjgI3jgIIKICoKICog5b2TIEFQUCDpgIDliLDlkI7lj7DjgIHkuJTmsqHmnInku7vliqHmraPlnKjmiafooYzml7bvvJoKICogICAxLiDlhYjnoa7kv53miYDmnInlkK/nlKjku7vliqHnmoTjgIzns7vnu5/lsYLnsr7noa7pl7npkp/jgI3lt7LnmbvorrDvvIjpl7npkp/nlLHns7vnu5/mjIHmnInvvIzov5vnqIvmrbvkuqHkvp3nhLbmnInmlYjvvInvvJsKICogICAyLiDnm7TmjqXnlKggUHJvY2Vzcy5raWxsUHJvY2VzcyDnu4jnu5Poh6rouqvov5vnqIvjgIIKICoKICog5q2k5ZCOIEFQUCDlrozlhajkuI3ljaDlkI7lj7DjgIHkuI3ogJfnlLXvvIzku4XlnKggQWxhcm1NYW5hZ2VyIOWIsOeCueaXtueUseezu+e7n+WGt+WQr+WKqOWUpOmGkuaJp+ihjO+8jAogKiDmiafooYzlrozmr5XvvIhNb25pdG9yU2VydmljZe+8ieWQjuWGjeasoemAgOWHuui/m+eoi++8jOW9ouaIkOOAjOW5s+aXtuWFqOatu+OAgeWIsOeCueaJjea0u+OAjeeahOmXreeOr+OAggogKi8KY2xhc3MgQXBwIDogQXBwbGljYXRpb24oKSB7CgogICAgY29tcGFuaW9uIG9iamVjdCB7CiAgICAgICAgY29uc3QgdmFsIFBSRUZTID0gInRhc2toZWxwZXJfcHJlZnMiCiAgICAgICAgY29uc3QgdmFsIEtFWV9ET1JNQU5UID0gImRvcm1hbnRfZW5hYmxlZCIKICAgICAgICAvKiog5Zyo5q2k5pe26Ze05oiz5LmL5YmN5LiN5p2A6L+b56iL77yI6Lez6L2s57O757uf5o6I5p2D6aG1562J5aSW6YOo55WM6Z2i5pe277yM6YG/5YWN5omT5pat5L+d5a2Y5rWB56iL77yJ44CCICovCiAgICAgICAgQFZvbGF0aWxlIHZhciBzdXNwZW5kRG9ybWFudFVudGlsID0gMEwKICAgIH0KCiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGUoKSB7CiAgICAgICAgc3VwZXIub25DcmVhdGUoKQogICAgICAgIFByb2Nlc3NMaWZlY3ljbGVPd25lci5nZXQoKS5saWZlY3ljbGUuYWRkT2JzZXJ2ZXIob2JqZWN0IDogRGVmYXVsdExpZmVjeWNsZU9ic2VydmVyIHsKICAgICAgICAgICAgb3ZlcnJpZGUgZnVuIG9uU3RvcChvd25lcjogTGlmZWN5Y2xlT3duZXIpIHsKICAgICAgICAgICAgICAgIC8vIOS7u+WKoeato+WcqOaJp+ihjCDihpIg5LiN5p2A6L+b56iL77yM562JIE1vbml0b3JTZXJ2aWNlIOiHquihjOmAgOWHugogICAgICAgICAgICAgICAgaWYgKE1vbml0b3JTZXJ2aWNlLmlzRXhlY3V0aW5nKSByZXR1cm4KICAgICAgICAgICAgICAgIC8vIOato+i3s+i9rOWklumDqOiuvue9rumhte+8iOWmgueyvuehrumXuemSn+aOiOadg++8ieeahOWuvemZkOacn+WGhSDihpIg5LiN5p2A77yM6YG/5YWN5omT5pat5L+d5a2YCiAgICAgICAgICAgICAgICBpZiAoU3lzdGVtLmN1cnJlbnRUaW1lTWlsbGlzKCkgPCBzdXNwZW5kRG9ybWFudFVudGlsKSByZXR1cm4KICAgICAgICAgICAgICAgIC8vIOS4peagvOS8keecoOW8gOWFs+iiq+eUqOaIt+WFs+mXre+8iOiwg+ivleeUqO+8ieKGkiDkv53mjIHluLjpqbsKICAgICAgICAgICAgICAgIHZhbCBwcmVmcyA9IGdldFNoYXJlZFByZWZlcmVuY2VzKFBSRUZTLCBNT0RFX1BSSVZBVEUpCiAgICAgICAgICAgICAgICBpZiAoIXByZWZzLmdldEJvb2xlYW4oS0VZX0RPUk1BTlQsIHRydWUpKSByZXR1cm4KCiAgICAgICAgICAgICAgICAvLyDpgIDliLDlkI7lj7DvvJrlhYjkv53or4Hns7vnu5/pl7npkp/lt7LnmbvorrDvvIzlho3lvbvlupXpgIDlh7rov5vnqIsKICAgICAgICAgICAgICAgIHJ1bkJsb2NraW5nKERpc3BhdGNoZXJzLklPKSB7CiAgICAgICAgICAgICAgICAgICAgQWxhcm1TY2hlZHVsZXIucmVzY2hlZHVsZUFsbCh0aGlzQEFwcCkKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIFByb2Nlc3Mua2lsbFByb2Nlc3MoUHJvY2Vzcy5teVBpZCgpKQogICAgICAgICAgICB9CiAgICAgICAgfSkKICAgIH0KfQo=
+package com.taskhelper
+
+import android.app.Application
+import android.os.Process
+import androidx.lifecycle.DefaultLifecycleObserver
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.ProcessLifecycleOwner
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.runBlocking
+
+/**
+ * 应用入口。核心职责：实现「严格休眠」。
+ *
+ * 当 APP 退到后台、且没有任务正在执行时：
+ *   1. 先确保所有启用任务的「系统层精确闹钟」已登记（闹钟由系统持有，进程死亡依然有效）；
+ *   2. 直接用 Process.killProcess 终结自身进程。
+ *
+ * 此后 APP 完全不占后台、不耗电，仅在 AlarmManager 到点时由系统冷启动唤醒执行，
+ * 执行完毕（MonitorService）后再次退出进程，形成「平时全死、到点才活」的闭环。
+ */
+class App : Application() {
+
+    companion object {
+        const val PREFS = "taskhelper_prefs"
+        const val KEY_DORMANT = "dormant_enabled"
+        /** 在此时间戳之前不杀进程（跳转系统授权页等外部界面时，避免打断保存流程）。 */
+        @Volatile var suspendDormantUntil = 0L
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        ProcessLifecycleOwner.get().lifecycle.addObserver(object : DefaultLifecycleObserver {
+            override fun onStop(owner: LifecycleOwner) {
+                // 任务正在执行 → 不杀进程，等 MonitorService 自行退出
+                if (MonitorService.isExecuting) return
+                // 正跳转外部设置页（如精确闹钟授权）的宽限期内 → 不杀，避免打断保存
+                if (System.currentTimeMillis() < suspendDormantUntil) return
+                // 严格休眠开关被用户关闭（调试用）→ 保持常驻
+                val prefs = getSharedPreferences(PREFS, MODE_PRIVATE)
+                if (!prefs.getBoolean(KEY_DORMANT, true)) return
+
+                // 退到后台：先保证系统闹钟已登记，再彻底退出进程
+                runBlocking(Dispatchers.IO) {
+                    AlarmScheduler.rescheduleAll(this@App)
+                }
+                Process.killProcess(Process.myPid())
+            }
+        })
+    }
+}
