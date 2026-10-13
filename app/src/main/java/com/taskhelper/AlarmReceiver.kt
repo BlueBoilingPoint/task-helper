@@ -1,1 +1,30 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Ccm9hZGNhc3RSZWNlaXZlcgppbXBvcnQgYW5kcm9pZC5jb250ZW50LkNvbnRleHQKaW1wb3J0IGFuZHJvaWQuY29udGVudC5JbnRlbnQKaW1wb3J0IGFuZHJvaWQub3MuQnVpbGQKCmNsYXNzIEFsYXJtUmVjZWl2ZXIgOiBCcm9hZGNhc3RSZWNlaXZlcigpIHsKICAgIG92ZXJyaWRlIGZ1biBvblJlY2VpdmUoY29udGV4dDogQ29udGV4dCwgaW50ZW50OiBJbnRlbnQpIHsKICAgICAgICB2YWwgdGFza0lkID0gaW50ZW50LmdldExvbmdFeHRyYSgidGFza19pZCIsIC0xTCkKICAgICAgICB2YWwgcGtnID0gaW50ZW50LmdldFN0cmluZ0V4dHJhKCJwa2ciKSA/OiByZXR1cm4KICAgICAgICB2YWwgZHVyYXRpb24gPSBpbnRlbnQuZ2V0SW50RXh0cmEoImR1cmF0aW9uIiwgMSkKICAgICAgICB2YWwgYXBwID0gaW50ZW50LmdldFN0cmluZ0V4dHJhKCJhcHAiKSA/OiAiIgogICAgICAgIHZhbCByZXBlYXQgPSBpbnRlbnQuZ2V0U3RyaW5nRXh0cmEoInJlcGVhdCIpID86ICIiCgogICAgICAgIC8vIOmAj+S8oOWFqOmDqOWtl+autee7meaJp+ihjOacjeWKoe+8iOWQqyB0YXNrX2lkIC8gcmVwZWF077yM55So5LqO6YeN5o6S5LiO4oCc5LuF5LiA5qyh4oCd6Ziy6YeN6Kem77yJCiAgICAgICAgdmFsIHN2YyA9IEludGVudChjb250ZXh0LCBNb25pdG9yU2VydmljZTo6Y2xhc3MuamF2YSkuYXBwbHkgewogICAgICAgICAgICBwdXRFeHRyYSgidGFza19pZCIsIHRhc2tJZCkKICAgICAgICAgICAgcHV0RXh0cmEoInBrZyIsIHBrZykKICAgICAgICAgICAgcHV0RXh0cmEoImR1cmF0aW9uIiwgZHVyYXRpb24pCiAgICAgICAgICAgIHB1dEV4dHJhKCJhcHAiLCBhcHApCiAgICAgICAgICAgIHB1dEV4dHJhKCJyZXBlYXQiLCByZXBlYXQpCiAgICAgICAgfQogICAgICAgIGlmIChCdWlsZC5WRVJTSU9OLlNES19JTlQgPj0gQnVpbGQuVkVSU0lPTl9DT0RFUy5PKSB7CiAgICAgICAgICAgIGNvbnRleHQuc3RhcnRGb3JlZ3JvdW5kU2VydmljZShzdmMpCiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgY29udGV4dC5zdGFydFNlcnZpY2Uoc3ZjKQogICAgICAgIH0KICAgIH0KfQo=
+package com.taskhelper
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.os.Build
+
+class AlarmReceiver : BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        val taskId = intent.getLongExtra("task_id", -1L)
+        val pkg = intent.getStringExtra("pkg") ?: return
+        val duration = intent.getIntExtra("duration", 1)
+        val app = intent.getStringExtra("app") ?: ""
+        val repeat = intent.getStringExtra("repeat") ?: ""
+
+        // 透传全部字段给执行服务（含 task_id / repeat，用于重排与“仅一次”防重触）
+        val svc = Intent(context, MonitorService::class.java).apply {
+            putExtra("task_id", taskId)
+            putExtra("pkg", pkg)
+            putExtra("duration", duration)
+            putExtra("app", app)
+            putExtra("repeat", repeat)
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            context.startForegroundService(svc)
+        } else {
+            context.startService(svc)
+        }
+    }
+}
