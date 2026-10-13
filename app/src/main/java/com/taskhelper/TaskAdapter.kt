@@ -1,1 +1,57 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuZ3JhcGhpY3MuQ29sb3IKaW1wb3J0IGFuZHJvaWQudmlldy5MYXlvdXRJbmZsYXRlcgppbXBvcnQgYW5kcm9pZC52aWV3LlZpZXcKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3R3JvdXAKaW1wb3J0IGFuZHJvaWQud2lkZ2V0LkltYWdlQnV0dG9uCmltcG9ydCBhbmRyb2lkLndpZGdldC5UZXh0VmlldwppbXBvcnQgYW5kcm9pZHgucmVjeWNsZXJ2aWV3LndpZGdldC5SZWN5Y2xlclZpZXcKCmNsYXNzIFRhc2tBZGFwdGVyKAogICAgcHJpdmF0ZSB2YWwgb25FZGl0OiAoVGFza0VudGl0eSkgLT4gVW5pdCwKICAgIHByaXZhdGUgdmFsIG9uRGVsZXRlOiAoVGFza0VudGl0eSkgLT4gVW5pdAopIDogUmVjeWNsZXJWaWV3LkFkYXB0ZXI8VGFza0FkYXB0ZXIuVkg+KCkgewoKICAgIHByaXZhdGUgdmFsIGxpc3QgPSBtdXRhYmxlTGlzdE9mPFRhc2tFbnRpdHk+KCkKCiAgICBmdW4gc3VibWl0KGl0ZW1zOiBMaXN0PFRhc2tFbnRpdHk+KSB7CiAgICAgICAgbGlzdC5jbGVhcigpCiAgICAgICAgbGlzdC5hZGRBbGwoaXRlbXMpCiAgICAgICAgbm90aWZ5RGF0YVNldENoYW5nZWQoKQogICAgfQoKICAgIGNsYXNzIFZIKHY6IFZpZXcpIDogUmVjeWNsZXJWaWV3LlZpZXdIb2xkZXIodikgewogICAgICAgIHZhbCBpY29uOiBWaWV3ID0gdi5maW5kVmlld0J5SWQoUi5pZC5hcHBfaWNvbikKICAgICAgICB2YWwgbmFtZTogVGV4dFZpZXcgPSB2LmZpbmRWaWV3QnlJZChSLmlkLnRhc2tfbmFtZSkKICAgICAgICB2YWwgbWV0YTogVGV4dFZpZXcgPSB2LmZpbmRWaWV3QnlJZChSLmlkLnRhc2tfbWV0YSkKICAgICAgICB2YWwgZWRpdDogSW1hZ2VCdXR0b24gPSB2LmZpbmRWaWV3QnlJZChSLmlkLmJ0bl9lZGl0KQogICAgICAgIHZhbCBkZWxldGU6IEltYWdlQnV0dG9uID0gdi5maW5kVmlld0J5SWQoUi5pZC5idG5fZGVsZXRlKQogICAgfQoKICAgIG92ZXJyaWRlIGZ1biBvbkNyZWF0ZVZpZXdIb2xkZXIocGFyZW50OiBWaWV3R3JvdXAsIHZpZXdUeXBlOiBJbnQpOiBWSCB7CiAgICAgICAgdmFsIHYgPSBMYXlvdXRJbmZsYXRlci5mcm9tKHBhcmVudC5jb250ZXh0KQogICAgICAgICAgICAuaW5mbGF0ZShSLmxheW91dC5pdGVtX3Rhc2ssIHBhcmVudCwgZmFsc2UpCiAgICAgICAgcmV0dXJuIFZIKHYpCiAgICB9CgogICAgb3ZlcnJpZGUgZnVuIG9uQmluZFZpZXdIb2xkZXIoaDogVkgsIGk6IEludCkgewogICAgICAgIHZhbCB0ID0gbGlzdFtpXQogICAgICAgIGgubmFtZS50ZXh0ID0gdC5hcHBOYW1lCiAgICAgICAgdmFsIGJhc2UgPSBTdHJpbmcuZm9ybWF0KAogICAgICAgICAgICAiJTAyZDolMDJkIMK3IOWBnOeVmSAlZCDliIbpkp8gwrcgJXMiLAogICAgICAgICAgICB0LmhvdXIsIHQubWludXRlLCB0LmR1cmF0aW9uTWluLCB0LnJlcGVhdAogICAgICAgICkKICAgICAgICAvLyDnvLrlsJHnsr7noa7pl7npkp/mnYPpmZDml7bvvIzlnKjku7vliqHpobnkuIrnu5nlh7rnuqLmoIfmj5DnpLoKICAgICAgICBoLm1ldGEudGV4dCA9IGlmIChQZW5kaW5nQXV0aFN0b3JlLmNvbnRhaW5zKGguaXRlbVZpZXcuY29udGV4dCwgdC5pZCkpIHsKICAgICAgICAgICAgIiRiYXNlICDCtyAg4pqgIOmcgOaOiOadg+eyvuehrumXuemSnyIKICAgICAgICB9IGVsc2UgewogICAgICAgICAgICBiYXNlCiAgICAgICAgfQogICAgICAgIGguaWNvbi5zZXRCYWNrZ3JvdW5kQ29sb3IoQ29sb3IucGFyc2VDb2xvcigiIzRDNkZGRiIpKQogICAgICAgIGguZWRpdC5zZXRPbkNsaWNrTGlzdGVuZXIgeyBvbkVkaXQodCkgfQogICAgICAgIGguZGVsZXRlLnNldE9uQ2xpY2tMaXN0ZW5lciB7IG9uRGVsZXRlKHQpIH0KICAgIH0KCiAgICBvdmVycmlkZSBmdW4gZ2V0SXRlbUNvdW50KCkgPSBsaXN0LnNpemUKfQo=
+package com.taskhelper
+
+import android.graphics.Color
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+
+class TaskAdapter(
+    private val onEdit: (TaskEntity) -> Unit,
+    private val onDelete: (TaskEntity) -> Unit
+) : RecyclerView.Adapter<TaskAdapter.VH>() {
+
+    private val list = mutableListOf<TaskEntity>()
+
+    fun submit(items: List<TaskEntity>) {
+        list.clear()
+        list.addAll(items)
+        notifyDataSetChanged()
+    }
+
+    class VH(v: View) : RecyclerView.ViewHolder(v) {
+        val icon: View = v.findViewById(R.id.app_icon)
+        val name: TextView = v.findViewById(R.id.task_name)
+        val meta: TextView = v.findViewById(R.id.task_meta)
+        val edit: ImageButton = v.findViewById(R.id.btn_edit)
+        val delete: ImageButton = v.findViewById(R.id.btn_delete)
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
+        val v = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_task, parent, false)
+        return VH(v)
+    }
+
+    override fun onBindViewHolder(h: VH, i: Int) {
+        val t = list[i]
+        h.name.text = t.appName
+        val base = String.format(
+            "%02d:%02d · 停留 %d 分钟 · %s",
+            t.hour, t.minute, t.durationMin, t.repeat
+        )
+        // 缺少精确闹钟权限时，在任务项上给出红标提示
+        h.meta.text = if (PendingAuthStore.contains(h.itemView.context, t.id)) {
+            "$base  ·  ⚠ 需授权精确闹钟"
+        } else {
+            base
+        }
+        h.icon.setBackgroundColor(Color.parseColor("#4C6FFF"))
+        h.edit.setOnClickListener { onEdit(t) }
+        h.delete.setOnClickListener { onDelete(t) }
+    }
+
+    override fun getItemCount() = list.size
+}
