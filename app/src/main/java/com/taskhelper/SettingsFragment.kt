@@ -1,1 +1,59 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuZ3JhcGhpY3MuQ29sb3IKaW1wb3J0IGFuZHJvaWQub3MuQnVuZGxlCmltcG9ydCBhbmRyb2lkLnZpZXcuTGF5b3V0SW5mbGF0ZXIKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3CmltcG9ydCBhbmRyb2lkLnZpZXcuVmlld0dyb3VwCmltcG9ydCBhbmRyb2lkLndpZGdldC5MaW5lYXJMYXlvdXQKaW1wb3J0IGFuZHJvaWQud2lkZ2V0LlN3aXRjaAppbXBvcnQgYW5kcm9pZC53aWRnZXQuVGV4dFZpZXcKaW1wb3J0IGFuZHJvaWR4LmZyYWdtZW50LmFwcC5GcmFnbWVudAoKY2xhc3MgU2V0dGluZ3NGcmFnbWVudCA6IEZyYWdtZW50KFIubGF5b3V0LmZyYWdtZW50X3NldHRpbmdzKSB7CgogICAgb3ZlcnJpZGUgZnVuIG9uVmlld0NyZWF0ZWQodmlldzogVmlldywgc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25WaWV3Q3JlYXRlZCh2aWV3LCBzYXZlZEluc3RhbmNlU3RhdGUpCgogICAgICAgIHZhbCBwZXJtcyA9IGxpc3RPZigKICAgICAgICAgICAgIueyvuehrumXuemSnyIgdG8gIuWumuaXtuWIsOeCueWUpOmGkuW6lOeUqO+8iEFuZHJvaWQgMTIr77yJIiwKICAgICAgICAgICAgIueUteaxoOS8mOWMlueZveWQjeWNlSIgdG8gIumYsuatouezu+e7n+WbnuaUtuWQjuWPsOS7u+WKoSIsCiAgICAgICAgICAgICLoh6rlkK/liqggLyDlkI7lj7DlvLnlh7oiIHRvICLljoLllYYgUk9NIOmZkOWItu+8jOmcgOaJi+WKqOaOiOadgyIsCiAgICAgICAgICAgICLml6Dpmpznoo3mnI3liqEiIHRvICLnlKjkuo7oh6rliqjlhbPpl63nm67moIflupTnlKjvvIjpg6jliIbmnLrlnovpnIDphY3lkIjnlLXmsaDnmb3lkI3ljZXvvIzlhbPpl63mlYjmnpzlm6AgUk9NIOiAjOW8gu+8iSIsCiAgICAgICAgICAgICLpgJrnn6XmnYPpmZAiIHRvICLmiafooYzmj5DphpLkuI7nirbmgIHpgJrnn6UiCiAgICAgICAgKQoKICAgICAgICB2YWwgYm94ID0gdmlldy5maW5kVmlld0J5SWQ8TGluZWFyTGF5b3V0PihSLmlkLnBlcm1fbGlzdCkKICAgICAgICBwZXJtcy5mb3JFYWNoSW5kZXhlZCB7IGksIChuYW1lLCBkZXNjKSAtPgogICAgICAgICAgICB2YWwgcm93ID0gTGluZWFyTGF5b3V0KHJlcXVpcmVDb250ZXh0KCkpLmFwcGx5IHsKICAgICAgICAgICAgICAgIG9yaWVudGF0aW9uID0gTGluZWFyTGF5b3V0LkhPUklaT05UQUwKICAgICAgICAgICAgICAgIHNldFBhZGRpbmcoMTIsIDE0LCAxMiwgMTQpCiAgICAgICAgICAgIH0KICAgICAgICAgICAgdmFsIHRleHQgPSBMaW5lYXJMYXlvdXQocmVxdWlyZUNvbnRleHQoKSkuYXBwbHkgewogICAgICAgICAgICAgICAgb3JpZW50YXRpb24gPSBMaW5lYXJMYXlvdXQuVkVSVElDQUwKICAgICAgICAgICAgICAgIGxheW91dFBhcmFtcyA9IExpbmVhckxheW91dC5MYXlvdXRQYXJhbXMoMCwgVmlld0dyb3VwLkxheW91dFBhcmFtcy5XUkFQX0NPTlRFTlQsIDFmKQogICAgICAgICAgICB9CiAgICAgICAgICAgIHRleHQuYWRkVmlldyhUZXh0VmlldyhyZXF1aXJlQ29udGV4dCgpKS5hcHBseSB7CiAgICAgICAgICAgICAgICB0ZXh0ID0gbmFtZTsgdGV4dFNpemUgPSAxNWY7IHNldFRleHRDb2xvcihDb2xvci5wYXJzZUNvbG9yKCIjMUExRDI2IikpCiAgICAgICAgICAgIH0pCiAgICAgICAgICAgIHRleHQuYWRkVmlldyhUZXh0VmlldyhyZXF1aXJlQ29udGV4dCgpKS5hcHBseSB7CiAgICAgICAgICAgICAgICB0ZXh0ID0gZGVzYzsgdGV4dFNpemUgPSAxMWY7IHNldFRleHRDb2xvcihDb2xvci5wYXJzZUNvbG9yKCIjOUFBMUIyIikpCiAgICAgICAgICAgIH0pCiAgICAgICAgICAgIHJvdy5hZGRWaWV3KHRleHQpCiAgICAgICAgICAgIHJvdy5hZGRWaWV3KFRleHRWaWV3KHJlcXVpcmVDb250ZXh0KCkpLmFwcGx5IHsKICAgICAgICAgICAgICAgIHRleHQgPSBpZiAoaSAlIDIgPT0gMCkgIuW3suW8gOWQryIgZWxzZSAi5pyq5byA5ZCvIgogICAgICAgICAgICAgICAgdGV4dFNpemUgPSAxMWYKICAgICAgICAgICAgICAgIHNldFRleHRDb2xvcihDb2xvci5wYXJzZUNvbG9yKGlmIChpICUgMiA9PSAwKSAiIzE2OTI0QSIgZWxzZSAiI0M5NkExMiIpKQogICAgICAgICAgICB9KQogICAgICAgICAgICBib3guYWRkVmlldyhyb3cpCiAgICAgICAgfQoKICAgICAgICAvLyDmnoHoh7TnnIHnlLUgLyDkvJHnnKDmqKHlvI/vvJrmjqfliLbigJzpgIDliLDlkI7lj7DljbPpgIDlh7rov5vnqIvigJ3nmoTkuKXmoLzkvJHnnKDooYzkuLrvvIjpu5jorqTlvIDlkK/vvIkKICAgICAgICB2YWwgcHJlZnMgPSByZXF1aXJlQ29udGV4dCgpLmdldFNoYXJlZFByZWZlcmVuY2VzKCJ0YXNraGVscGVyX3ByZWZzIiwgMCkKICAgICAgICB2YWwgc3dEb3JtYW50ID0gdmlldy5maW5kVmlld0J5SWQ8U3dpdGNoPihSLmlkLnN3X2Rvcm1hbnQpCiAgICAgICAgc3dEb3JtYW50LmlzQ2hlY2tlZCA9IHByZWZzLmdldEJvb2xlYW4oImRvcm1hbnRfZW5hYmxlZCIsIHRydWUpCiAgICAgICAgc3dEb3JtYW50LnNldE9uQ2hlY2tlZENoYW5nZUxpc3RlbmVyIHsgXywgaXNDaGVja2VkIC0+CiAgICAgICAgICAgIHByZWZzLmVkaXQoKS5wdXRCb29sZWFuKCJkb3JtYW50X2VuYWJsZWQiLCBpc0NoZWNrZWQpLmFwcGx5KCkKICAgICAgICB9CiAgICB9Cn0K
+package com.taskhelper
+
+import android.graphics.Color
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.Switch
+import android.widget.TextView
+import androidx.fragment.app.Fragment
+
+class SettingsFragment : Fragment(R.layout.fragment_settings) {
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val perms = listOf(
+            "精确闹钟" to "定时到点唤醒应用（Android 12+）",
+            "电池优化白名单" to "防止系统回收后台任务",
+            "自启动 / 后台弹出" to "厂商 ROM 限制，需手动授权",
+            "无障碍服务" to "用于自动关闭目标应用（部分机型需配合电池白名单，关闭效果因 ROM 而异）",
+            "通知权限" to "执行提醒与状态通知"
+        )
+
+        val box = view.findViewById<LinearLayout>(R.id.perm_list)
+        perms.forEachIndexed { i, (name, desc) ->
+            val row = LinearLayout(requireContext()).apply {
+                orientation = LinearLayout.HORIZONTAL
+                setPadding(12, 14, 12, 14)
+            }
+            val text = LinearLayout(requireContext()).apply {
+                orientation = LinearLayout.VERTICAL
+                layoutParams = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f)
+            }
+            text.addView(TextView(requireContext()).apply {
+                text = name; textSize = 15f; setTextColor(Color.parseColor("#1A1D26"))
+            })
+            text.addView(TextView(requireContext()).apply {
+                text = desc; textSize = 11f; setTextColor(Color.parseColor("#9AA1B2"))
+            })
+            row.addView(text)
+            row.addView(TextView(requireContext()).apply {
+                text = if (i % 2 == 0) "已开启" else "未开启"
+                textSize = 11f
+                setTextColor(Color.parseColor(if (i % 2 == 0) "#16924A" else "#C96A12"))
+            })
+            box.addView(row)
+        }
+
+        // 极致省电 / 休眠模式：控制“退到后台即退出进程”的严格休眠行为（默认开启）
+        val prefs = requireContext().getSharedPreferences("taskhelper_prefs", 0)
+        val swDormant = view.findViewById<Switch>(R.id.sw_dormant)
+        swDormant.isChecked = prefs.getBoolean("dormant_enabled", true)
+        swDormant.setOnCheckedChangeListener { _, isChecked ->
+            prefs.edit().putBoolean("dormant_enabled", isChecked).apply()
+        }
+    }
+}
