@@ -1,1 +1,34 @@
-IyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyDlrprml7bku7vliqHliqnmiYsgUHJvR3VhcmQgLyBSOCDop4TliJkKIyByZWxlYXNlIOaehOW7uuS8muWQr+eUqCBSOCDmt7fmt4bvvIhtaW5pZnlFbmFibGVkIHRydWXvvInvvIzku6XkuIvop4TliJnkv53or4EKIyBSb29t44CB57O757uf57uE5Lu25LiO5Y+N5bCE6Lev5b6E5Zyo5re35reG5ZCO5LuN6IO95q2j5bi45bel5L2c44CCCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgojIC0tLS0gUm9vbe+8muS/neeVmeWunuS9k+OAgURBT+OAgeaVsOaNruW6k+WPiueUn+aIkOexu++8iOWQqyBfSW1wbCDnmoTliJflkI3mmKDlsITvvIktLS0tCi1rZWVwIGNsYXNzICogZXh0ZW5kcyBhbmRyb2lkeC5yb29tLlJvb21EYXRhYmFzZQota2VlcCBjbGFzcyAqIGV4dGVuZHMgYW5kcm9pZHgucm9vbS5FbnRpdHkgeyAqOyB9Ci1rZWVwIGludGVyZmFjZSAqIGV4dGVuZHMgYW5kcm9pZHgucm9vbS5EYW8KLWtlZXBjbGFzc21lbWJlcnMgY2xhc3MgKiBleHRlbmRzIGFuZHJvaWR4LnJvb20uRGFvIHsgKjsgfQotZG9udHdhcm4gYW5kcm9pZHgucm9vbS5wYWdpbmcuKioKCiMgLS0tLSBBbmRyb2lkTWFuaWZlc3Qg5byV55So55qE57uE5Lu277ya6KKrIGFhcHQg6Ieq5YqoIGtlZXDvvIzov5nph4zlho3mmL7lvI/lhZzlupUgLS0tLQota2VlcCBwdWJsaWMgY2xhc3MgY29tLnRhc2toZWxwZXIuQXBwCi1rZWVwIHB1YmxpYyBjbGFzcyAqIGV4dGVuZHMgYW5kcm9pZC5hcHAuQWN0aXZpdHkKLWtlZXAgcHVibGljIGNsYXNzICogZXh0ZW5kcyBhbmRyb2lkLmFwcC5TZXJ2aWNlCi1rZWVwIHB1YmxpYyBjbGFzcyAqIGV4dGVuZHMgYW5kcm9pZC5jb250ZW50LkJyb2FkY2FzdFJlY2VpdmVyCi1rZWVwIHB1YmxpYyBjbGFzcyAqIGV4dGVuZHMgYW5kcm9pZC5hY2Nlc3NpYmlsaXR5c2VydmljZS5BY2Nlc3NpYmlsaXR5U2VydmljZQoKIyAtLS0tIOiiqyBAS2VlcCDmoIfms6jnmoTnsbsgLyDmiJDlkZggLS0tLQota2VlcCBAYW5kcm9pZHguYW5ub3RhdGlvbi5LZWVwIGNsYXNzICogeyAqOyB9Ci1rZWVwY2xhc3Nlc3dpdGhtZW1iZXJzIGNsYXNzICogeyBAYW5kcm9pZHguYW5ub3RhdGlvbi5LZWVwIDxtZXRob2RzPjsgfQota2VlcGNsYXNzZXN3aXRobWVtYmVycyBjbGFzcyAqIHsgQGFuZHJvaWR4LmFubm90YXRpb24uS2VlcCA8ZmllbGRzPjsgfQoKIyAtLS0tIOWNj+eoiyAvIEtvdGxpbiDln7rnoYDvvIjpmLLmraLmnoHnq68gc2hyaW5rIOivr+WIoO+8iS0tLS0KLWtlZXBjbGFzc21lbWJlcnMgY2xhc3Mga290bGluLk1ldGFkYXRhIHsgKjsgfQotZG9udHdhcm4ga290bGlueC5jb3JvdXRpbmVzLioqCi1kb250d2FybiBrb3RsaW54LmNvcm91dGluZXMuaW50ZXJuYWwuKioKCiMgLS0tLSDluo/liJfljJYv5Y+N5bCE55u45YWz55qE5a6J5YWo5YWc5bqVIC0tLS0KLWtlZXBhdHRyaWJ1dGVzIFNpZ25hdHVyZQota2VlcGF0dHJpYnV0ZXMgKkFubm90YXRpb24qCi1rZWVwYXR0cmlidXRlcyBTb3VyY2VGaWxlLExpbmVOdW1iZXJUYWJsZQo=
+# ============================================================
+# 定时任务助手 ProGuard / R8 规则
+# release 构建会启用 R8 混淆（minifyEnabled true），以下规则保证
+# Room、系统组件与反射路径在混淆后仍能正常工作。
+# ============================================================
+
+# ---- Room：保留实体、DAO、数据库及生成类（含 _Impl 的列名映射）----
+-keep class * extends androidx.room.RoomDatabase
+-keep class * extends androidx.room.Entity { *; }
+-keep interface * extends androidx.room.Dao
+-keepclassmembers class * extends androidx.room.Dao { *; }
+-dontwarn androidx.room.paging.**
+
+# ---- AndroidManifest 引用的组件：被 aapt 自动 keep，这里再显式兜底 ----
+-keep public class com.taskhelper.App
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.accessibilityservice.AccessibilityService
+
+# ---- 被 @Keep 标注的类 / 成员 ----
+-keep @androidx.annotation.Keep class * { *; }
+-keepclasseswithmembers class * { @androidx.annotation.Keep <methods>; }
+-keepclasseswithmembers class * { @androidx.annotation.Keep <fields>; }
+
+# ---- 协程 / Kotlin 基础（防止极端 shrink 误删）----
+-keepclassmembers class kotlin.Metadata { *; }
+-dontwarn kotlinx.coroutines.**
+-dontwarn kotlinx.coroutines.internal.**
+
+# ---- 序列化/反射相关的安全兜底 ----
+-keepattributes Signature
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
