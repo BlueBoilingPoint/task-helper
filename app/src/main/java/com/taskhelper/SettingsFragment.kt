@@ -29,17 +29,17 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
                 orientation = LinearLayout.HORIZONTAL
                 setPadding(12, 14, 12, 14)
             }
-            val text = LinearLayout(requireContext()).apply {
+            val textCol = LinearLayout(requireContext()).apply {
                 orientation = LinearLayout.VERTICAL
                 layoutParams = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f)
             }
-            text.addView(TextView(requireContext()).apply {
+            textCol.addView(TextView(requireContext()).apply {
                 text = name; textSize = 15f; setTextColor(Color.parseColor("#1A1D26"))
             })
-            text.addView(TextView(requireContext()).apply {
+            textCol.addView(TextView(requireContext()).apply {
                 text = desc; textSize = 11f; setTextColor(Color.parseColor("#9AA1B2"))
             })
-            row.addView(text)
+            row.addView(textCol)
             row.addView(TextView(requireContext()).apply {
                 text = if (i % 2 == 0) "已开启" else "未开启"
                 textSize = 11f
