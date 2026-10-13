@@ -47,7 +47,17 @@ class MonitorService : Service() {
         val repeat = intent?.getStringExtra("repeat") ?: ""
 
         isExecuting = true
-        startForeground(1, buildNotification("正在打开 $app"))
+
+        // 先尝试打开目标应用（核心诉求），再启动前台服务；即使通知权限缺失导致
+        // startForeground 失败，也至少完成「打开应用」，不会整段崩溃。
+        val (openOk, openReason) = openApp(pkg)
+
+        var fgsFailed = false
+        try {
+            startForeground(1, buildNotification("正在打开 $app"))
+        } catch (e: Throwable) {
+            fgsFailed = true
+        }
 
         // 仅一次任务：立即标记已触发，跨重启/被杀保证只真正响一次
         if (repeat == "仅一次") FiredStore.markFired(this, taskId)
@@ -58,8 +68,6 @@ class MonitorService : Service() {
             acquire(duration * 60_000L + 10_000L)
         }
 
-        openApp(pkg)
-
         job = CoroutineScope(Dispatchers.Main).launch {
             delay(duration * 60_000L)
             goHomeAndClose(pkg)
@@ -68,7 +76,14 @@ class MonitorService : Service() {
 
             runBlocking(Dispatchers.IO) {
                 val db = AppDatabase.get(this@MonitorService)
-                db.logDao().insert(buildLog(app, duration))
+                // 成败判定：以「目标应用是否成功启动」为准；前台服务异常记到原因里
+                val success = openOk
+                val reason = when {
+                    !openOk -> openReason
+                    fgsFailed -> "提醒：前台服务未启动（通知权限未授予），停留计时可能不准确"
+                    else -> ""
+                }
+                db.logDao().insert(buildLog(app, duration, success, reason))
                 db.logDao().trim() // 仅保留最近 100 条
                 rescheduleNext(this@MonitorService, taskId)
             }
@@ -86,10 +101,23 @@ class MonitorService : Service() {
         return START_NOT_STICKY
     }
 
-    private fun openApp(pkg: String) {
+    /**
+     * 打开目标应用。返回是否成功及失败原因（包名无效/已卸载/系统拦截均记为失败）。
+     */
+    private fun openApp(pkg: String): Pair<Boolean, String> {
+        if (pkg.isBlank()) return false to "未选择应用（包名为空）"
         val launch = packageManager.getLaunchIntentForPackage(pkg)
-        launch?.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        launch?.let { startActivity(it) }
+        return if (launch != null) {
+            launch.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            try {
+                startActivity(launch)
+                true to ""
+            } catch (e: Throwable) {
+                false to "启动 $pkg 失败：${e.message ?: e.javaClass.simpleName}"
+            }
+        } else {
+            false to "找不到启动入口（可能已卸载：$pkg）"
+        }
     }
 
     private fun goHomeAndClose(pkg: String) {
@@ -125,9 +153,15 @@ class MonitorService : Service() {
         }
     }
 
-    private fun buildLog(app: String, duration: Int): LogEntity {
+    private fun buildLog(app: String, duration: Int, success: Boolean, reason: String): LogEntity {
         val fmt = SimpleDateFormat("MM-dd HH:mm", Locale.CHINA)
-        return LogEntity(time = fmt.format(Date()), appName = app, durationMin = duration, success = true)
+        return LogEntity(
+            time = fmt.format(Date()),
+            appName = app,
+            durationMin = duration,
+            success = success,
+            reason = reason
+        )
     }
 
     private fun createChannel() {
