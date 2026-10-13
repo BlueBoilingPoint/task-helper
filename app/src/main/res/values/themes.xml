@@ -1,1 +1,8 @@
-PHJlc291cmNlcyB4bWxuczp0b29scz0iaHR0cDovL3NjaGVtYXMuYW5kcm9pZC5jb20vdG9vbHMiPgogICAgPHN0eWxlIG5hbWU9IlRoZW1lLlRhc2tIZWxwZXIiIHBhcmVudD0iVGhlbWUuTWF0ZXJpYWwzLkRheU5pZ2h0Lk5vQWN0aW9uQmFyIj4KICAgICAgICA8aXRlbSBuYW1lPSJjb2xvclByaW1hcnkiPkBjb2xvci9wcmltYXJ5PC9pdGVtPgogICAgICAgIDxpdGVtIG5hbWU9ImFuZHJvaWQ6Y29sb3JCYWNrZ3JvdW5kIj5AY29sb3IvYmc8L2l0ZW0+CiAgICAgICAgPGl0ZW0gbmFtZT0iYW5kcm9pZDpzdGF0dXNCYXJDb2xvciI+QGNvbG9yL2JnPC9pdGVtPgogICAgICAgIDxpdGVtIG5hbWU9ImFuZHJvaWQ6d2luZG93TGlnaHRTdGF0dXNCYXIiPnRydWU8L2l0ZW0+CiAgICA8L3N0eWxlPgo8L3Jlc291cmNlcz4K
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.TaskHelper" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
