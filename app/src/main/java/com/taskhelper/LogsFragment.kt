@@ -24,23 +24,37 @@ class LogsFragment : Fragment(R.layout.fragment_logs) {
 
             view.findViewById<TextView>(R.id.stat_week).text = logs.size.toString()
             view.findViewById<TextView>(R.id.stat_ok).text = "$okPct%"
+            // 第三格原误标为「已休眠」，实为失败次数
             view.findViewById<TextView>(R.id.stat_dormant).text =
                 logs.count { !it.success }.toString()
 
             val box = view.findViewById<LinearLayout>(R.id.log_list)
             logs.forEach { l ->
+                val summary = if (l.success) {
+                    "${l.time}  ${l.appName}  ·  成功"
+                } else {
+                    "${l.time}  ${l.appName}  ·  失败" +
+                        if (l.reason.isNotBlank()) "（${l.reason}）" else ""
+                }
                 val row = TextView(requireContext()).apply {
-                    text = "${l.time}  ${l.appName}  ·  ${if (l.success) "成功" else "失败"}"
+                    text = summary
                     setPadding(12, 10, 12, 10)
                     textSize = 14f
                     setTextColor(Color.parseColor(if (l.success) "#1A1D26" else "#EF4444"))
                     isClickable = true
                     setOnClickListener {
+                        val detail = buildString {
+                            append("时间：${l.time}\n")
+                            append("应用：${l.appName}\n")
+                            append("停留：${l.durationMin} 分钟\n")
+                            append("结果：${if (l.success) "成功" else "失败"}")
+                            if (!l.success && l.reason.isNotBlank()) {
+                                append("\n原因：${l.reason}")
+                            }
+                        }
                         AlertDialog.Builder(requireContext())
                             .setTitle("执行详情")
-                            .setMessage(
-                                "时间：${l.time}\n应用：${l.appName}\n停留：${l.durationMin} 分钟\n结果：${if (l.success) "成功" else "失败"}"
-                            )
+                            .setMessage(detail)
                             .setPositiveButton(android.R.string.ok, null)
                             .show()
                     }
