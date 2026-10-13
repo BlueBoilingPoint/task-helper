@@ -18,7 +18,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/card"
-        android:fitsSystemWindows="true"
         app:menu="@menu/bottom_nav"
         app:labelVisibilityMode="labeled"
         app:itemIconSize="22dp"
