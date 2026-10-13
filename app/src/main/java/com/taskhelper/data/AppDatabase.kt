@@ -1,1 +1,103 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWR4LnJvb20uKgppbXBvcnQgYW5kcm9pZHgucm9vbS5taWdyYXRpb24uTWlncmF0aW9uCmltcG9ydCBhbmRyb2lkeC5zcWxpdGUuZGIuU3VwcG9ydFNRTGl0ZURhdGFiYXNlCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuZmxvdy5GbG93CgpARW50aXR5KHRhYmxlTmFtZSA9ICJ0YXNrcyIpCmRhdGEgY2xhc3MgVGFza0VudGl0eSgKICAgIEBQcmltYXJ5S2V5KGF1dG9HZW5lcmF0ZSA9IHRydWUpIHZhbCBpZDogTG9uZyA9IDAsCiAgICB2YWwgYXBwTmFtZTogU3RyaW5nLAogICAgdmFsIHBrZzogU3RyaW5nLAogICAgdmFsIGhvdXI6IEludCwKICAgIHZhbCBtaW51dGU6IEludCwKICAgIHZhbCBkdXJhdGlvbk1pbjogSW50LAogICAgdmFsIHJlcGVhdDogU3RyaW5nLCAgIC8vIOavj+WkqSAvIOW3peS9nOaXpSAvIOWRqOacqyAvIOS7heS4gOasoQogICAgdmFsIHJlbWluZDogQm9vbGVhbiwKICAgIHZhbCBlbmFibGVkOiBCb29sZWFuCikKCkBFbnRpdHkodGFibGVOYW1lID0gImxvZ3MiKQpkYXRhIGNsYXNzIExvZ0VudGl0eSgKICAgIEBQcmltYXJ5S2V5KGF1dG9HZW5lcmF0ZSA9IHRydWUpIHZhbCBpZDogTG9uZyA9IDAsCiAgICB2YWwgdGltZTogU3RyaW5nLAogICAgdmFsIGFwcE5hbWU6IFN0cmluZywKICAgIHZhbCBkdXJhdGlvbk1pbjogSW50LAogICAgdmFsIHN1Y2Nlc3M6IEJvb2xlYW4KKQoKQERhbwppbnRlcmZhY2UgVGFza0RhbyB7CiAgICBAUXVlcnkoIlNFTEVDVCAqIEZST00gdGFza3MgT1JERVIgQlkgaG91ciwgbWludXRlIikKICAgIGZ1biBhbGwoKTogRmxvdzxMaXN0PFRhc2tFbnRpdHk+PgoKICAgIEBRdWVyeSgiU0VMRUNUICogRlJPTSB0YXNrcyIpCiAgICBzdXNwZW5kIGZ1biBhbGxMaXN0KCk6IExpc3Q8VGFza0VudGl0eT4KCiAgICBAUXVlcnkoIlNFTEVDVCAqIEZST00gdGFza3MgV0hFUkUgaWQgPSA6aWQiKQogICAgc3VzcGVuZCBmdW4gZ2V0QnlJZChpZDogTG9uZyk6IFRhc2tFbnRpdHk/CgogICAgQFF1ZXJ5KCJTRUxFQ1QgKiBGUk9NIHRhc2tzIFdIRVJFIGVuYWJsZWQgPSAxIikKICAgIHN1c3BlbmQgZnVuIGVuYWJsZWRMaXN0KCk6IExpc3Q8VGFza0VudGl0eT4KCiAgICBASW5zZXJ0CiAgICBzdXNwZW5kIGZ1biBpbnNlcnQodDogVGFza0VudGl0eSk6IExvbmcKCiAgICBAVXBkYXRlCiAgICBzdXNwZW5kIGZ1biB1cGRhdGUodDogVGFza0VudGl0eSkKCiAgICBARGVsZXRlCiAgICBzdXNwZW5kIGZ1biBkZWxldGUodDogVGFza0VudGl0eSkKfQoKQERhbwppbnRlcmZhY2UgTG9nRGFvIHsKICAgIEBRdWVyeSgiU0VMRUNUICogRlJPTSBsb2dzIE9SREVSIEJZIGlkIERFU0MgTElNSVQgNTAiKQogICAgZnVuIHJlY2VudCgpOiBGbG93PExpc3Q8TG9nRW50aXR5Pj4KCiAgICBASW5zZXJ0CiAgICBzdXNwZW5kIGZ1biBpbnNlcnQobDogTG9nRW50aXR5KQoKICAgIC8qKiDku4Xkv53nlZnmnIDov5EgMTAwIOadoe+8jOmYsuatouaXpeW/l+ihqOaXoOmZkOWinumVv+OAgiAqLwogICAgQFF1ZXJ5KCJERUxFVEUgRlJPTSBsb2dzIFdIRVJFIGlkIE5PVCBJTiAoU0VMRUNUIGlkIEZST00gbG9ncyBPUkRFUiBCWSBpZCBERVNDIExJTUlUIDEwMCkiKQogICAgc3VzcGVuZCBmdW4gdHJpbSgpCn0KCkBEYXRhYmFzZShlbnRpdGllcyA9IFtUYXNrRW50aXR5OjpjbGFzcywgTG9nRW50aXR5OjpjbGFzc10sIHZlcnNpb24gPSAyLCBleHBvcnRTY2hlbWEgPSBmYWxzZSkKYWJzdHJhY3QgY2xhc3MgQXBwRGF0YWJhc2UgOiBSb29tRGF0YWJhc2UoKSB7CiAgICBhYnN0cmFjdCBmdW4gdGFza0RhbygpOiBUYXNrRGFvCiAgICBhYnN0cmFjdCBmdW4gbG9nRGFvKCk6IExvZ0RhbwoKICAgIGNvbXBhbmlvbiBvYmplY3QgewogICAgICAgIEBWb2xhdGlsZQogICAgICAgIHByaXZhdGUgdmFyIElOU1RBTkNFOiBBcHBEYXRhYmFzZT8gPSBudWxsCgogICAgICAgIC8qKgogICAgICAgICAqIOaVsOaNruW6k+i/geenu+etlueVpe+8mgogICAgICAgICAqIC0g5rOo5YaM5pi+5byP6L+B56e777yITUlHUkFUSU9OXzFfMiDnrYnvvInvvIzkv53or4HniYjmnKzljYfnuqfml7booajnu5PmnoTlubPmu5HmvJTov5vvvJsKICAgICAgICAgKiAtIGZhbGxiYWNrVG9EZXN0cnVjdGl2ZU1pZ3JhdGlvbigpIOS9nOS4uuWFnOW6le+8muW9k+afkOS4quaWsOeJiOacrOe8uuWwkeWvueW6lOi/geenu+aXtu+8jAogICAgICAgICAqICAg55u05o6l6YeN5bu65pWw5o2u5bqT6ICM6Z2e5oqb5byC5bi45bSp5rqD77yI5Luj5Lu35piv5pen5pWw5o2u5riF56m677yM5a+55bel5YW357G7IEFwcCDlj6/mjqXlj5fvvInjgIIKICAgICAgICAgKiDms6jmhI/vvJrmr4/mrKHkv67mlLkgQEVudGl0eSDlrZfmrrXlkI7vvIzlv4XpobvmlrDlop7lr7nlupTnmoQgTUlHUkFUSU9OX25fKG4rMSnvvIwKICAgICAgICAgKiDlkKbliJnkvJrotbDlhZzlupXph43lu7rjgIIKICAgICAgICAgKi8KICAgICAgICBwcml2YXRlIHZhbCBNSUdSQVRJT05fMV8yID0gb2JqZWN0IDogTWlncmF0aW9uKDEsIDIpIHsKICAgICAgICAgICAgb3ZlcnJpZGUgZnVuIG1pZ3JhdGUoZGI6IFN1cHBvcnRTUUxpdGVEYXRhYmFzZSkgewogICAgICAgICAgICAgICAgLy8g5b2T5YmNIDHihpIyIOaXoOe7k+aehOWPmOabtO+8jOatpOWkhOS4uuWuieWFqOWNoOS9jeOAggogICAgICAgICAgICAgICAgLy8g5pyq5p2l6Iul57uZIHRhc2tzL2xvZ3Mg5Yqg5YiX77yM6K+35Zyo5q2k5omn6KGMIEFMVEVSIFRBQkxF44CCCiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIGZ1biBnZXQoY29udGV4dDogYW5kcm9pZC5jb250ZW50LkNvbnRleHQpOiBBcHBEYXRhYmFzZSA9CiAgICAgICAgICAgIElOU1RBTkNFID86IHN5bmNocm9uaXplZCh0aGlzKSB7CiAgICAgICAgICAgICAgICBJTlNUQU5DRSA/OiBSb29tLmRhdGFiYXNlQnVpbGRlcigKICAgICAgICAgICAgICAgICAgICBjb250ZXh0LmFwcGxpY2F0aW9uQ29udGV4dCwKICAgICAgICAgICAgICAgICAgICBBcHBEYXRhYmFzZTo6Y2xhc3MuamF2YSwKICAgICAgICAgICAgICAgICAgICAidGFza2hlbHBlci5kYiIKICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICAuYWRkTWlncmF0aW9ucyhNSUdSQVRJT05fMV8yKQogICAgICAgICAgICAgICAgICAgIC5mYWxsYmFja1RvRGVzdHJ1Y3RpdmVNaWdyYXRpb24oKQogICAgICAgICAgICAgICAgICAgIC5idWlsZCgpLmFsc28geyBJTlNUQU5DRSA9IGl0IH0KICAgICAgICAgICAgfQogICAgfQp9Cg==
+package com.taskhelper
+
+import androidx.room.*
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
+import kotlinx.coroutines.flow.Flow
+
+@Entity(tableName = "tasks")
+data class TaskEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val appName: String,
+    val pkg: String,
+    val hour: Int,
+    val minute: Int,
+    val durationMin: Int,
+    val repeat: String,   // 每天 / 工作日 / 周末 / 仅一次
+    val remind: Boolean,
+    val enabled: Boolean
+)
+
+@Entity(tableName = "logs")
+data class LogEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val time: String,
+    val appName: String,
+    val durationMin: Int,
+    val success: Boolean
+)
+
+@Dao
+interface TaskDao {
+    @Query("SELECT * FROM tasks ORDER BY hour, minute")
+    fun all(): Flow<List<TaskEntity>>
+
+    @Query("SELECT * FROM tasks")
+    suspend fun allList(): List<TaskEntity>
+
+    @Query("SELECT * FROM tasks WHERE id = :id")
+    suspend fun getById(id: Long): TaskEntity?
+
+    @Query("SELECT * FROM tasks WHERE enabled = 1")
+    suspend fun enabledList(): List<TaskEntity>
+
+    @Insert
+    suspend fun insert(t: TaskEntity): Long
+
+    @Update
+    suspend fun update(t: TaskEntity)
+
+    @Delete
+    suspend fun delete(t: TaskEntity)
+}
+
+@Dao
+interface LogDao {
+    @Query("SELECT * FROM logs ORDER BY id DESC LIMIT 50")
+    fun recent(): Flow<List<LogEntity>>
+
+    @Insert
+    suspend fun insert(l: LogEntity)
+
+    /** 仅保留最近 100 条，防止日志表无限增长。 */
+    @Query("DELETE FROM logs WHERE id NOT IN (SELECT id FROM logs ORDER BY id DESC LIMIT 100)")
+    suspend fun trim()
+}
+
+@Database(entities = [TaskEntity::class, LogEntity::class], version = 2, exportSchema = false)
+abstract class AppDatabase : RoomDatabase() {
+    abstract fun taskDao(): TaskDao
+    abstract fun logDao(): LogDao
+
+    companion object {
+        @Volatile
+        private var INSTANCE: AppDatabase? = null
+
+        /**
+         * 数据库迁移策略：
+         * - 注册显式迁移（MIGRATION_1_2 等），保证版本升级时表结构平滑演进；
+         * - fallbackToDestructiveMigration() 作为兜底：当某个新版本缺少对应迁移时，
+         *   直接重建数据库而非抛异常崩溃（代价是旧数据清空，对工具类 App 可接受）。
+         * 注意：每次修改 @Entity 字段后，必须新增对应的 MIGRATION_n_(n+1)，
+         * 否则会走兜底重建。
+         */
+        private val MIGRATION_1_2 = object : Migration(1, 2) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                // 当前 1→2 无结构变更，此处为安全占位。
+                // 未来若给 tasks/logs 加列，请在此执行 ALTER TABLE。
+            }
+        }
+
+        fun get(context: android.content.Context): AppDatabase =
+            INSTANCE ?: synchronized(this) {
+                INSTANCE ?: Room.databaseBuilder(
+                    context.applicationContext,
+                    AppDatabase::class.java,
+                    "taskhelper.db"
+                )
+                    .addMigrations(MIGRATION_1_2)
+                    .fallbackToDestructiveMigration()
+                    .build().also { INSTANCE = it }
+            }
+    }
+}
