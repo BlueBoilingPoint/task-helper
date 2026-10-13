@@ -1,1 +1,12 @@
-IyBHcmFkbGUgd3JhcHBlcgpncmFkbGV3IHRleHQgZW9sPWxmCiouYmF0IHRleHQgZW9sPWNybGYKZ3JhZGxlL3dyYXBwZXIvZ3JhZGxlLXdyYXBwZXIuamFyIGJpbmFyeQoKIyBTb3VyY2UgZmlsZXMKKi5rdCB0ZXh0IGVvbD1sZgoqLnhtbCB0ZXh0IGVvbD1sZgoqLmdyYWRsZSB0ZXh0IGVvbD1sZgoqLnByb3BlcnRpZXMgdGV4dCBlb2w9bGYKKi55bWwgdGV4dCBlb2w9bGYKKi5tZCB0ZXh0IGVvbD1sZgo=
+# Gradle wrapper
+gradlew text eol=lf
+*.bat text eol=crlf
+gradle/wrapper/gradle-wrapper.jar binary
+
+# Source files
+*.kt text eol=lf
+*.xml text eol=lf
+*.gradle text eol=lf
+*.properties text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
