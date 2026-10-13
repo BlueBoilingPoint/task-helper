@@ -1,1 +1,8 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGFjY2Vzc2liaWxpdHktc2VydmljZSB4bWxuczphbmRyb2lkPSJodHRwOi8vc2NoZW1hcy5hbmRyb2lkLmNvbS9hcGsvcmVzL2FuZHJvaWQiCiAgICBhbmRyb2lkOmFjY2Vzc2liaWxpdHlFdmVudFR5cGVzPSJ0eXBlQWxsTWFzayIKICAgIGFuZHJvaWQ6YWNjZXNzaWJpbGl0eUZlZWRiYWNrVHlwZT0iZmVlZGJhY2tHZW5lcmljIgogICAgYW5kcm9pZDpub3RpZmljYXRpb25UaW1lb3V0PSIxMDAiCiAgICBhbmRyb2lkOmNhblBlcmZvcm1HZXN0dXJlcz0idHJ1ZSIKICAgIGFuZHJvaWQ6Y2FuUmV0cmlldmVXaW5kb3dDb250ZW50PSJ0cnVlIgogICAgYW5kcm9pZDpkZXNjcmlwdGlvbj0iQHN0cmluZy9hY2Nlc3NpYmlsaXR5X2Rlc2MiIC8+Cg==
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:notificationTimeout="100"
+    android:canPerformGestures="true"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/accessibility_desc" />
