@@ -1,1 +1,23 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Ccm9hZGNhc3RSZWNlaXZlcgppbXBvcnQgYW5kcm9pZC5jb250ZW50LkNvbnRleHQKaW1wb3J0IGFuZHJvaWQuY29udGVudC5JbnRlbnQKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5EaXNwYXRjaGVycwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLnJ1bkJsb2NraW5nCgpjbGFzcyBCb290UmVjZWl2ZXIgOiBCcm9hZGNhc3RSZWNlaXZlcigpIHsKICAgIG92ZXJyaWRlIGZ1biBvblJlY2VpdmUoY29udGV4dDogQ29udGV4dCwgaW50ZW50OiBJbnRlbnQpIHsKICAgICAgICB2YWwgYWN0aW9uID0gaW50ZW50LmFjdGlvbgogICAgICAgIC8vIOW8gOacuuOAgeaXtumXtC/ml7bljLov5pel5pyf5Y+Y5pu044CB5bqU55So5pu05paw5ZCO77yM57uf5LiA6YeN5o6S57O757uf6Ze56ZKfCiAgICAgICAgaWYgKGFjdGlvbiAhPSBJbnRlbnQuQUNUSU9OX0JPT1RfQ09NUExFVEVEICYmCiAgICAgICAgICAgIGFjdGlvbiAhPSBJbnRlbnQuQUNUSU9OX1RJTUVfQ0hBTkdFRCAmJgogICAgICAgICAgICBhY3Rpb24gIT0gSW50ZW50LkFDVElPTl9USU1FWk9ORV9DSEFOR0VEICYmCiAgICAgICAgICAgIGFjdGlvbiAhPSBJbnRlbnQuQUNUSU9OX0RBVEVfQ0hBTkdFRCAmJgogICAgICAgICAgICBhY3Rpb24gIT0gSW50ZW50LkFDVElPTl9NWV9QQUNLQUdFX1JFUExBQ0VECiAgICAgICAgKSByZXR1cm4KICAgICAgICBydW5CbG9ja2luZyhEaXNwYXRjaGVycy5JTykgewogICAgICAgICAgICBBbGFybVNjaGVkdWxlci5yZXNjaGVkdWxlQWxsKGNvbnRleHQpCiAgICAgICAgfQogICAgfQp9Cg==
+package com.taskhelper
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.runBlocking
+
+class BootReceiver : BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        val action = intent.action
+        // 开机、时间/时区/日期变更、应用更新后，统一重排系统闹钟
+        if (action != Intent.ACTION_BOOT_COMPLETED &&
+            action != Intent.ACTION_TIME_CHANGED &&
+            action != Intent.ACTION_TIMEZONE_CHANGED &&
+            action != Intent.ACTION_DATE_CHANGED &&
+            action != Intent.ACTION_MY_PACKAGE_REPLACED
+        ) return
+        runBlocking(Dispatchers.IO) {
+            AlarmScheduler.rescheduleAll(context)
+        }
+    }
+}
