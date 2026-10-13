@@ -1,1 +1,93 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5JbnRlbnQKaW1wb3J0IGFuZHJvaWQuY29udGVudC5wbS5QYWNrYWdlTWFuYWdlcgppbXBvcnQgYW5kcm9pZC5ncmFwaGljcy5Db2xvcgppbXBvcnQgYW5kcm9pZC5vcy5CdW5kbGUKaW1wb3J0IGFuZHJvaWQud2lkZ2V0LkVkaXRUZXh0CmltcG9ydCBhbmRyb2lkLndpZGdldC5UZXh0VmlldwppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BcHBDb21wYXRBY3Rpdml0eQppbXBvcnQgYW5kcm9pZHgucmVjeWNsZXJ2aWV3LndpZGdldC5MaW5lYXJMYXlvdXRNYW5hZ2VyCmltcG9ydCBhbmRyb2lkeC5yZWN5Y2xlcnZpZXcud2lkZ2V0LlJlY3ljbGVyVmlldwoKY2xhc3MgQXBwUGlja2VyQWN0aXZpdHkgOiBBcHBDb21wYXRBY3Rpdml0eSgpIHsKCiAgICBkYXRhIGNsYXNzIEFwcEluZm8odmFsIG5hbWU6IFN0cmluZywgdmFsIHBrZzogU3RyaW5nKQoKICAgIHByaXZhdGUgdmFsIGFsbCA9IG11dGFibGVMaXN0T2Y8QXBwSW5mbz4oKQogICAgcHJpdmF0ZSB2YWwgc2hvd24gPSBtdXRhYmxlTGlzdE9mPEFwcEluZm8+KCkKICAgIHByaXZhdGUgbGF0ZWluaXQgdmFyIGFkYXB0ZXI6IEFwcEFkYXB0ZXIKCiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlKQogICAgICAgIHNldENvbnRlbnRWaWV3KFIubGF5b3V0LmFjdGl2aXR5X2FwcF9waWNrZXIpCgogICAgICAgIHZhbCBwbSA9IHBhY2thZ2VNYW5hZ2VyCiAgICAgICAgdmFsIHJlc29sdmUgPSBwbS5xdWVyeUludGVudEFjdGl2aXRpZXMoCiAgICAgICAgICAgIEludGVudChJbnRlbnQuQUNUSU9OX01BSU4sIG51bGwpLmFwcGx5IHsgYWRkQ2F0ZWdvcnkoSW50ZW50LkNBVEVHT1JZX0xBVU5DSEVSKSB9LCAwCiAgICAgICAgKQogICAgICAgIGFsbC5hZGRBbGwoCiAgICAgICAgICAgIHJlc29sdmUubWFwIHsgQXBwSW5mbyhpdC5sb2FkTGFiZWwocG0pLnRvU3RyaW5nKCksIGl0LmFjdGl2aXR5SW5mby5wYWNrYWdlTmFtZSkgfQogICAgICAgICAgICAgICAgLmRpc3RpbmN0QnkgeyBpdC5wa2cgfQogICAgICAgICAgICAgICAgLnNvcnRlZEJ5IHsgaXQubmFtZSB9CiAgICAgICAgKQogICAgICAgIHNob3duLmFkZEFsbChhbGwpCgogICAgICAgIGFkYXB0ZXIgPSBBcHBBZGFwdGVyKHNob3duKSB7IGluZm8gLT4KICAgICAgICAgICAgc2V0UmVzdWx0KFJFU1VMVF9PSywgSW50ZW50KCkuYXBwbHkgewogICAgICAgICAgICAgICAgcHV0RXh0cmEoImFwcCIsIGluZm8ubmFtZSkKICAgICAgICAgICAgICAgIHB1dEV4dHJhKCJwa2ciLCBpbmZvLnBrZykKICAgICAgICAgICAgfSkKICAgICAgICAgICAgZmluaXNoKCkKICAgICAgICB9CgogICAgICAgIHZhbCBydiA9IGZpbmRWaWV3QnlJZDxSZWN5Y2xlclZpZXc+KFIuaWQuYXBwX2xpc3QpCiAgICAgICAgcnYubGF5b3V0TWFuYWdlciA9IExpbmVhckxheW91dE1hbmFnZXIodGhpcykKICAgICAgICBydi5hZGFwdGVyID0gYWRhcHRlcgoKICAgICAgICBmaW5kVmlld0J5SWQ8RWRpdFRleHQ+KFIuaWQuc2VhcmNoKS5hZGRUZXh0Q2hhbmdlZExpc3RlbmVyKG9iamVjdCA6IGFuZHJvaWQudGV4dC5UZXh0V2F0Y2hlciB7CiAgICAgICAgICAgIG92ZXJyaWRlIGZ1biBiZWZvcmVUZXh0Q2hhbmdlZChzOiBDaGFyU2VxdWVuY2U/LCBzdDogSW50LCBjOiBJbnQsIGE6IEludCkge30KICAgICAgICAgICAgb3ZlcnJpZGUgZnVuIG9uVGV4dENoYW5nZWQoczogQ2hhclNlcXVlbmNlPywgc3Q6IEludCwgYjogSW50LCBjOiBJbnQpIHsKICAgICAgICAgICAgICAgIHZhbCBxID0gcy50b1N0cmluZygpLmxvd2VyY2FzZSgpCiAgICAgICAgICAgICAgICBzaG93bi5jbGVhcigpCiAgICAgICAgICAgICAgICBzaG93bi5hZGRBbGwoYWxsLmZpbHRlciB7IGl0Lm5hbWUubG93ZXJjYXNlKCkuY29udGFpbnMocSkgfSkKICAgICAgICAgICAgICAgIGFkYXB0ZXIubm90aWZ5RGF0YVNldENoYW5nZWQoKQogICAgICAgICAgICB9CiAgICAgICAgICAgIG92ZXJyaWRlIGZ1biBhZnRlclRleHRDaGFuZ2VkKHM6IGFuZHJvaWQudGV4dC5FZGl0YWJsZT8pIHt9CiAgICAgICAgfSkKCiAgICAgICAgZmluZFZpZXdCeUlkPGFuZHJvaWQud2lkZ2V0LkltYWdlQnV0dG9uPihSLmlkLmJ0bl9iYWNrKS5zZXRPbkNsaWNrTGlzdGVuZXIgeyBmaW5pc2goKSB9CiAgICB9CgogICAgY2xhc3MgQXBwQWRhcHRlcigKICAgICAgICBwcml2YXRlIHZhbCBpdGVtczogTGlzdDxBcHBJbmZvPiwKICAgICAgICBwcml2YXRlIHZhbCBvbkNsaWNrOiAoQXBwSW5mbykgLT4gVW5pdAogICAgKSA6IFJlY3ljbGVyVmlldy5BZGFwdGVyPEFwcEFkYXB0ZXIuVkg+KCkgewoKICAgICAgICBjbGFzcyBWSCh2OiBhbmRyb2lkLnZpZXcuVmlldykgOiBSZWN5Y2xlclZpZXcuVmlld0hvbGRlcih2KSB7CiAgICAgICAgICAgIHZhbCBpY29uOiBhbmRyb2lkLnZpZXcuVmlldyA9IHYuZmluZFZpZXdCeUlkKFIuaWQuYXBwX2ljb24pCiAgICAgICAgICAgIHZhbCBuYW1lOiBUZXh0VmlldyA9IHYuZmluZFZpZXdCeUlkKFIuaWQudGFza19uYW1lKQogICAgICAgICAgICB2YWwgbWV0YTogVGV4dFZpZXcgPSB2LmZpbmRWaWV3QnlJZChSLmlkLnRhc2tfbWV0YSkKICAgICAgICAgICAgdmFsIGVkaXQ6IGFuZHJvaWQud2lkZ2V0LkltYWdlQnV0dG9uID0gdi5maW5kVmlld0J5SWQoUi5pZC5idG5fZWRpdCkKICAgICAgICAgICAgdmFsIGRlbGV0ZTogYW5kcm9pZC53aWRnZXQuSW1hZ2VCdXR0b24gPSB2LmZpbmRWaWV3QnlJZChSLmlkLmJ0bl9kZWxldGUpCiAgICAgICAgfQoKICAgICAgICBvdmVycmlkZSBmdW4gb25DcmVhdGVWaWV3SG9sZGVyKHA6IGFuZHJvaWQudmlldy5WaWV3R3JvdXAsIHQ6IEludCk6IFZIIHsKICAgICAgICAgICAgdmFsIHYgPSBhbmRyb2lkLnZpZXcuTGF5b3V0SW5mbGF0ZXIuZnJvbShwLmNvbnRleHQpCiAgICAgICAgICAgICAgICAuaW5mbGF0ZShSLmxheW91dC5pdGVtX3Rhc2ssIHAsIGZhbHNlKQogICAgICAgICAgICByZXR1cm4gVkgodikKICAgICAgICB9CgogICAgICAgIG92ZXJyaWRlIGZ1biBvbkJpbmRWaWV3SG9sZGVyKGg6IFZILCBpOiBJbnQpIHsKICAgICAgICAgICAgdmFsIGl0ID0gaXRlbXNbaV0KICAgICAgICAgICAgaC5uYW1lLnRleHQgPSBpdC5uYW1lCiAgICAgICAgICAgIGgubWV0YS50ZXh0ID0gaXQucGtnCiAgICAgICAgICAgIGguaWNvbi5zZXRCYWNrZ3JvdW5kQ29sb3IoQ29sb3IucGFyc2VDb2xvcigiIzRDNkZGRiIpKQogICAgICAgICAgICBoLmVkaXQudmlzaWJpbGl0eSA9IGFuZHJvaWQudmlldy5WaWV3LkdPTkUKICAgICAgICAgICAgaC5kZWxldGUudmlzaWJpbGl0eSA9IGFuZHJvaWQudmlldy5WaWV3LkdPTkUKICAgICAgICAgICAgaC5pdGVtVmlldy5zZXRPbkNsaWNrTGlzdGVuZXIgeyBvbkNsaWNrKGl0KSB9CiAgICAgICAgfQoKICAgICAgICBvdmVycmlkZSBmdW4gZ2V0SXRlbUNvdW50KCkgPSBpdGVtcy5zaXplCiAgICB9Cn0K
+package com.taskhelper
+
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.graphics.Color
+import android.os.Bundle
+import android.widget.EditText
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
+class AppPickerActivity : AppCompatActivity() {
+
+    data class AppInfo(val name: String, val pkg: String)
+
+    private val all = mutableListOf<AppInfo>()
+    private val shown = mutableListOf<AppInfo>()
+    private lateinit var adapter: AppAdapter
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_app_picker)
+
+        val pm = packageManager
+        val resolve = pm.queryIntentActivities(
+            Intent(Intent.ACTION_MAIN, null).apply { addCategory(Intent.CATEGORY_LAUNCHER) }, 0
+        )
+        all.addAll(
+            resolve.map { AppInfo(it.loadLabel(pm).toString(), it.activityInfo.packageName) }
+                .distinctBy { it.pkg }
+                .sortedBy { it.name }
+        )
+        shown.addAll(all)
+
+        adapter = AppAdapter(shown) { info ->
+            setResult(RESULT_OK, Intent().apply {
+                putExtra("app", info.name)
+                putExtra("pkg", info.pkg)
+            })
+            finish()
+        }
+
+        val rv = findViewById<RecyclerView>(R.id.app_list)
+        rv.layoutManager = LinearLayoutManager(this)
+        rv.adapter = adapter
+
+        findViewById<EditText>(R.id.search).addTextChangedListener(object : android.text.TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, st: Int, c: Int, a: Int) {}
+            override fun onTextChanged(s: CharSequence?, st: Int, b: Int, c: Int) {
+                val q = s.toString().lowercase()
+                shown.clear()
+                shown.addAll(all.filter { it.name.lowercase().contains(q) })
+                adapter.notifyDataSetChanged()
+            }
+            override fun afterTextChanged(s: android.text.Editable?) {}
+        })
+
+        findViewById<android.widget.ImageButton>(R.id.btn_back).setOnClickListener { finish() }
+    }
+
+    class AppAdapter(
+        private val items: List<AppInfo>,
+        private val onClick: (AppInfo) -> Unit
+    ) : RecyclerView.Adapter<AppAdapter.VH>() {
+
+        class VH(v: android.view.View) : RecyclerView.ViewHolder(v) {
+            val icon: android.view.View = v.findViewById(R.id.app_icon)
+            val name: TextView = v.findViewById(R.id.task_name)
+            val meta: TextView = v.findViewById(R.id.task_meta)
+            val edit: android.widget.ImageButton = v.findViewById(R.id.btn_edit)
+            val delete: android.widget.ImageButton = v.findViewById(R.id.btn_delete)
+        }
+
+        override fun onCreateViewHolder(p: android.view.ViewGroup, t: Int): VH {
+            val v = android.view.LayoutInflater.from(p.context)
+                .inflate(R.layout.item_task, p, false)
+            return VH(v)
+        }
+
+        override fun onBindViewHolder(h: VH, i: Int) {
+            val it = items[i]
+            h.name.text = it.name
+            h.meta.text = it.pkg
+            h.icon.setBackgroundColor(Color.parseColor("#4C6FFF"))
+            h.edit.visibility = android.view.View.GONE
+            h.delete.visibility = android.view.View.GONE
+            h.itemView.setOnClickListener { onClick(it) }
+        }
+
+        override fun getItemCount() = items.size
+    }
+}
