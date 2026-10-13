@@ -1,1 +1,153 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuYXBwLioKaW1wb3J0IGFuZHJvaWQuY29udGVudC5Db250ZXh0CmltcG9ydCBhbmRyb2lkLmNvbnRlbnQuSW50ZW50CmltcG9ydCBhbmRyb2lkLm9zLkJ1aWxkCmltcG9ydCBhbmRyb2lkLm9zLklCaW5kZXIKaW1wb3J0IGFuZHJvaWQub3MuUG93ZXJNYW5hZ2VyCmltcG9ydCBhbmRyb2lkLm9zLlByb2Nlc3MKaW1wb3J0IGFuZHJvaWR4LmNvcmUuYXBwLk5vdGlmaWNhdGlvbkNvbXBhdAppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLkxpZmVjeWNsZQppbXBvcnQgYW5kcm9pZHgubGlmZWN5Y2xlLlByb2Nlc3NMaWZlY3ljbGVPd25lcgppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLioKaW1wb3J0IGphdmEudGV4dC5TaW1wbGVEYXRlRm9ybWF0CmltcG9ydCBqYXZhLnV0aWwuKgoKLyoqCiAqIOmXuemSn+inpuWPkeWQjueUsSBBbGFybVJlY2VpdmVyIOWQr+WKqOeahOWJjeWPsOacjeWKoe+8iOS7heWcqOKAnOaJp+ihjOS7u+WKoeKAneeql+WPo+WGheWtmOWcqO+8ie+8mgogKiAgIDEuIOaJk+W8gOebruagh+W6lOeUqAogKiAgIDIuIOaMgeaciSBXYWtlbG9jayDkv53mtLvvvIzlgZznlZkgZHVyYXRpb25NaW4g5YiG6ZKfCiAqICAgMy4g6L+U5Zue5qGM6Z2i5bm25bCd6K+V5YWz6Zet55uu5qCH5bqU55So77yIa2lsbCDlhZzlupUgKyDml6Dpmpznoo3vvIkKICogICA0LiDlhpnml6Xlv5fjgIHmuIXnkIbotoXph4/ml6Xlv5fjgIHmjpLkuIvkuIDova7vvIjph43lpI3nsbvvvInmiJblhbPpl63kuIDmrKHmgKfku7vliqEKICogICA1LiDlgZzmraLoh6rouqvvvJvoi6XmraTliLvmsqHmnInnlYzpnaLlnKjliY3lj7DvvIznm7TmjqXnu4jnu5Pov5vnqIvvvIjkuKXmoLzkvJHnnKDvvIkKICovCmNsYXNzIE1vbml0b3JTZXJ2aWNlIDogU2VydmljZSgpIHsKCiAgICBwcml2YXRlIHZhbCBDSEFOTkVMID0gIm1vbml0b3JfY2hhbm5lbCIKICAgIHByaXZhdGUgdmFyIGpvYjogSm9iPyA9IG51bGwKICAgIHByaXZhdGUgdmFyIHdha2VMb2NrOiBQb3dlck1hbmFnZXIuV2FrZUxvY2s/ID0gbnVsbAoKICAgIGNvbXBhbmlvbiBvYmplY3QgewogICAgICAgIEBWb2xhdGlsZSB2YXIgaXNFeGVjdXRpbmcgPSBmYWxzZQogICAgfQoKICAgIG92ZXJyaWRlIGZ1biBvbkJpbmQoaW50ZW50OiBJbnRlbnQ/KTogSUJpbmRlcj8gPSBudWxsCgogICAgb3ZlcnJpZGUgZnVuIG9uQ3JlYXRlKCkgewogICAgICAgIHN1cGVyLm9uQ3JlYXRlKCkKICAgICAgICBjcmVhdGVDaGFubmVsKCkKICAgIH0KCiAgICBvdmVycmlkZSBmdW4gb25TdGFydENvbW1hbmQoaW50ZW50OiBJbnRlbnQ/LCBmbGFnczogSW50LCBzdGFydElkOiBJbnQpOiBJbnQgewogICAgICAgIHZhbCB0YXNrSWQgPSBpbnRlbnQ/LmdldExvbmdFeHRyYSgidGFza19pZCIsIC0xTCkgPzogLTFMCiAgICAgICAgdmFsIHBrZyA9IGludGVudD8uZ2V0U3RyaW5nRXh0cmEoInBrZyIpID86IHJldHVybiBTVEFSVF9OT1RfU1RJQ0tZCiAgICAgICAgdmFsIGR1cmF0aW9uID0gaW50ZW50LmdldEludEV4dHJhKCJkdXJhdGlvbiIsIDEpCiAgICAgICAgdmFsIGFwcCA9IGludGVudC5nZXRTdHJpbmdFeHRyYSgiYXBwIikgPzogIiIKICAgICAgICB2YWwgcmVwZWF0ID0gaW50ZW50Py5nZXRTdHJpbmdFeHRyYSgicmVwZWF0IikgPzogIiIKCiAgICAgICAgaXNFeGVjdXRpbmcgPSB0cnVlCiAgICAgICAgc3RhcnRGb3JlZ3JvdW5kKDEsIGJ1aWxkTm90aWZpY2F0aW9uKCLmraPlnKjmiZPlvIAgJGFwcCIpKQoKICAgICAgICAvLyDku4XkuIDmrKHku7vliqHvvJrnq4vljbPmoIforrDlt7Lop6blj5HvvIzot6jph43lkK8v6KKr5p2A5L+d6K+B5Y+q55yf5q2j5ZON5LiA5qyhCiAgICAgICAgaWYgKHJlcGVhdCA9PSAi5LuF5LiA5qyhIikgRmlyZWRTdG9yZS5tYXJrRmlyZWQodGhpcywgdGFza0lkKQoKICAgICAgICAvLyDmiafooYzmnJ/pl7TmjIEgUEFSVElBTF9XQUtFX0xPQ0vvvIzpmLLmraLnga3lsY8gRG96ZSDmiZPmlq3miZPlvIAv5YWz6ZetCiAgICAgICAgdmFsIHBtID0gZ2V0U3lzdGVtU2VydmljZShQT1dFUl9TRVJWSUNFKSBhcyBQb3dlck1hbmFnZXIKICAgICAgICB3YWtlTG9jayA9IHBtLm5ld1dha2VMb2NrKFBvd2VyTWFuYWdlci5QQVJUSUFMX1dBS0VfTE9DSywgIlRhc2tIZWxwZXI6Ok1vbml0b3IiKS5hcHBseSB7CiAgICAgICAgICAgIGFjcXVpcmUoZHVyYXRpb24gKiA2MF8wMDBMICsgMTBfMDAwTCkKICAgICAgICB9CgogICAgICAgIG9wZW5BcHAocGtnKQoKICAgICAgICBqb2IgPSBDb3JvdXRpbmVTY29wZShEaXNwYXRjaGVycy5NYWluKS5sYXVuY2ggewogICAgICAgICAgICBkZWxheShkdXJhdGlvbiAqIDYwXzAwMEwpCiAgICAgICAgICAgIGdvSG9tZUFuZENsb3NlKHBrZykKICAgICAgICAgICAgdHJ5IHsgd2FrZUxvY2s/LnJlbGVhc2UoKSB9IGNhdGNoIChfOiBUaHJvd2FibGUpIHt9CiAgICAgICAgICAgIHdha2VMb2NrID0gbnVsbAoKICAgICAgICAgICAgcnVuQmxvY2tpbmcoRGlzcGF0Y2hlcnMuSU8pIHsKICAgICAgICAgICAgICAgIHZhbCBkYiA9IEFwcERhdGFiYXNlLmdldCh0aGlzQE1vbml0b3JTZXJ2aWNlKQogICAgICAgICAgICAgICAgZGIubG9nRGFvKCkuaW5zZXJ0KGJ1aWxkTG9nKGFwcCwgZHVyYXRpb24pKQogICAgICAgICAgICAgICAgZGIubG9nRGFvKCkudHJpbSgpIC8vIOS7heS/neeVmeacgOi/kSAxMDAg5p2hCiAgICAgICAgICAgICAgICByZXNjaGVkdWxlTmV4dCh0aGlzQE1vbml0b3JTZXJ2aWNlLCB0YXNrSWQpCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGlzRXhlY3V0aW5nID0gZmFsc2UKICAgICAgICAgICAgc3RvcFNlbGYoKQoKICAgICAgICAgICAgLy8g5Lil5qC85LyR55yg77ya6Iul5q2k5Yi75rKh5pyJ5Lu75L2V55WM6Z2i5Zyo5YmN5Y+w77yM55u05o6l57uI57uT6L+b56iL77yM5Y+q55WZ57O757uf6Ze56ZKf5ZSk6YaSCiAgICAgICAgICAgIHZhbCBmb3JlZ3JvdW5kID0gUHJvY2Vzc0xpZmVjeWNsZU93bmVyLmdldCgpLmxpZmVjeWNsZS5jdXJyZW50U3RhdGUKICAgICAgICAgICAgICAgIC5pc0F0TGVhc3QoTGlmZWN5Y2xlLlN0YXRlLlNUQVJURUQpCiAgICAgICAgICAgIGlmICghZm9yZWdyb3VuZCkgewogICAgICAgICAgICAgICAgUHJvY2Vzcy5raWxsUHJvY2VzcyhQcm9jZXNzLm15UGlkKCkpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgcmV0dXJuIFNUQVJUX05PVF9TVElDS1kKICAgIH0KCiAgICBwcml2YXRlIGZ1biBvcGVuQXBwKHBrZzogU3RyaW5nKSB7CiAgICAgICAgdmFsIGxhdW5jaCA9IHBhY2thZ2VNYW5hZ2VyLmdldExhdW5jaEludGVudEZvclBhY2thZ2UocGtnKQogICAgICAgIGxhdW5jaD8uYWRkRmxhZ3MoSW50ZW50LkZMQUdfQUNUSVZJVFlfTkVXX1RBU0spCiAgICAgICAgbGF1bmNoPy5sZXQgeyBzdGFydEFjdGl2aXR5KGl0KSB9CiAgICB9CgogICAgcHJpdmF0ZSBmdW4gZ29Ib21lQW5kQ2xvc2UocGtnOiBTdHJpbmcpIHsKICAgICAgICB2YWwgaG9tZSA9IEludGVudChJbnRlbnQuQUNUSU9OX01BSU4pLmFwcGx5IHsKICAgICAgICAgICAgYWRkQ2F0ZWdvcnkoSW50ZW50LkNBVEVHT1JZX0hPTUUpCiAgICAgICAgICAgIGFkZEZsYWdzKEludGVudC5GTEFHX0FDVElWSVRZX05FV19UQVNLKQogICAgICAgIH0KICAgICAgICBzdGFydEFjdGl2aXR5KGhvbWUpCiAgICAgICAgLy8g5YWc5bqV77ya5YWI5bCd6K+V57uT5p2f5ZCO5Y+w55uu5qCH6L+b56iL77yI5aSa5pWw5py65Z6L5pyJ5pWI77yJCiAgICAgICAgdmFsIGFtID0gZ2V0U3lzdGVtU2VydmljZShDb250ZXh0LkFDVElWSVRZX1NFUlZJQ0UpIGFzIEFjdGl2aXR5TWFuYWdlcgogICAgICAgIEBTdXBwcmVzcygiTWlzc2luZ1Blcm1pc3Npb24iKQogICAgICAgIGFtLmtpbGxCYWNrZ3JvdW5kUHJvY2Vzc2VzKHBrZykKICAgICAgICAvLyDlho3lsJ3or5Xml6Dpmpznoo3lhbPpl63igJzmnIDov5Hku7vliqHigJ3kuK3nmoTnm67moIfvvIjpg6jliIbmnLrlnovpnIDphY3lkIjnlLXmsaDnmb3lkI3ljZXvvIkKICAgICAgICBpZiAoQ2xvc2VBcHBBY2Nlc3NpYmlsaXR5U2VydmljZS5pc0VuYWJsZWQoKSkgewogICAgICAgICAgICB0cnkgeyBDbG9zZUFwcEFjY2Vzc2liaWxpdHlTZXJ2aWNlLnJlcXVlc3RDbG9zZSgpIH0gY2F0Y2ggKF86IFRocm93YWJsZSkge30KICAgICAgICB9CiAgICB9CgogICAgLyoqIOaJp+ihjOWujOWQjumHjeaOku+8mumHjeWkjeexu+aOkuS4i+S4gOasoe+8m+S7heS4gOasoeWImeemgeeUqOW5tuWPlua2iO+8jOS4jeWGjeinpuWPkeOAgiAqLwogICAgcHJpdmF0ZSBmdW4gcmVzY2hlZHVsZU5leHQoY29udGV4dDogQ29udGV4dCwgdGFza0lkOiBMb25nKSB7CiAgICAgICAgdmFsIGRiID0gQXBwRGF0YWJhc2UuZ2V0KGNvbnRleHQpCiAgICAgICAgdmFsIHRhc2sgPSBkYi50YXNrRGFvKCkuZ2V0QnlJZCh0YXNrSWQpID86IHJldHVybgogICAgICAgIGlmICghdGFzay5lbmFibGVkKSB7CiAgICAgICAgICAgIEFsYXJtU2NoZWR1bGVyLmNhbmNlbChjb250ZXh0LCB0YXNrSWQpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICBpZiAodGFzay5yZXBlYXQgPT0gIuS7heS4gOasoSIpIHsKICAgICAgICAgICAgdGFzay5lbmFibGVkID0gZmFsc2UKICAgICAgICAgICAgZGIudGFza0RhbygpLnVwZGF0ZSh0YXNrKQogICAgICAgICAgICBBbGFybVNjaGVkdWxlci5jYW5jZWwoY29udGV4dCwgdGFza0lkKQogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgIEFsYXJtU2NoZWR1bGVyLnNjaGVkdWxlKGNvbnRleHQsIHRhc2spCiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgZnVuIGJ1aWxkTG9nKGFwcDogU3RyaW5nLCBkdXJhdGlvbjogSW50KTogTG9nRW50aXR5IHsKICAgICAgICB2YWwgZm10ID0gU2ltcGxlRGF0ZUZvcm1hdCgiTU0tZGQgSEg6bW0iLCBMb2NhbGUuQ0hJTkEpCiAgICAgICAgcmV0dXJuIExvZ0VudGl0eSh0aW1lID0gZm10LmZvcm1hdChEYXRlKCkpLCBhcHBOYW1lID0gYXBwLCBkdXJhdGlvbk1pbiA9IGR1cmF0aW9uLCBzdWNjZXNzID0gdHJ1ZSkKICAgIH0KCiAgICBwcml2YXRlIGZ1biBjcmVhdGVDaGFubmVsKCkgewogICAgICAgIGlmIChCdWlsZC5WRVJTSU9OLlNES19JTlQgPj0gQnVpbGQuVkVSU0lPTl9DT0RFUy5PKSB7CiAgICAgICAgICAgIHZhbCBjID0gTm90aWZpY2F0aW9uQ2hhbm5lbChDSEFOTkVMLCAi5Lu75Yqh55uR5o6nIiwgTm90aWZpY2F0aW9uTWFuYWdlci5JTVBPUlRBTkNFX0xPVykKICAgICAgICAgICAgZ2V0U3lzdGVtU2VydmljZShOb3RpZmljYXRpb25NYW5hZ2VyOjpjbGFzcy5qYXZhKS5jcmVhdGVOb3RpZmljYXRpb25DaGFubmVsKGMpCiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgZnVuIGJ1aWxkTm90aWZpY2F0aW9uKHRleHQ6IFN0cmluZyk6IE5vdGlmaWNhdGlvbiA9CiAgICAgICAgTm90aWZpY2F0aW9uQ29tcGF0LkJ1aWxkZXIodGhpcywgQ0hBTk5FTCkKICAgICAgICAgICAgLnNldENvbnRlbnRUaXRsZSgi5a6a5pe25Lu75Yqh5Yqp5omLIikKICAgICAgICAgICAgLnNldENvbnRlbnRUZXh0KHRleHQpCiAgICAgICAgICAgIC5zZXRTbWFsbEljb24oYW5kcm9pZC5SLmRyYXdhYmxlLmljX2RpYWxvZ19pbmZvKQogICAgICAgICAgICAuYnVpbGQoKQoKICAgIG92ZXJyaWRlIGZ1biBvbkRlc3Ryb3koKSB7CiAgICAgICAgam9iPy5jYW5jZWwoKQogICAgICAgIGlzRXhlY3V0aW5nID0gZmFsc2UKICAgICAgICB0cnkgeyB3YWtlTG9jaz8ucmVsZWFzZSgpIH0gY2F0Y2ggKF86IFRocm93YWJsZSkge30KICAgICAgICBzdXBlci5vbkRlc3Ryb3koKQogICAgfQp9Cg==
+package com.taskhelper
+
+import android.app.*
+import android.content.Context
+import android.content.Intent
+import android.os.Build
+import android.os.IBinder
+import android.os.PowerManager
+import android.os.Process
+import androidx.core.app.NotificationCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.ProcessLifecycleOwner
+import kotlinx.coroutines.*
+import java.text.SimpleDateFormat
+import java.util.*
+
+/**
+ * 闹钟触发后由 AlarmReceiver 启动的前台服务（仅在“执行任务”窗口内存在）：
+ *   1. 打开目标应用
+ *   2. 持有 Wakelock 保活，停留 durationMin 分钟
+ *   3. 返回桌面并尝试关闭目标应用（kill 兜底 + 无障碍）
+ *   4. 写日志、清理超量日志、排下一轮（重复类）或关闭一次性任务
+ *   5. 停止自身；若此刻没有界面在前台，直接终结进程（严格休眠）
+ */
+class MonitorService : Service() {
+
+    private val CHANNEL = "monitor_channel"
+    private var job: Job? = null
+    private var wakeLock: PowerManager.WakeLock? = null
+
+    companion object {
+        @Volatile var isExecuting = false
+    }
+
+    override fun onBind(intent: Intent?): IBinder? = null
+
+    override fun onCreate() {
+        super.onCreate()
+        createChannel()
+    }
+
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        val taskId = intent?.getLongExtra("task_id", -1L) ?: -1L
+        val pkg = intent?.getStringExtra("pkg") ?: return START_NOT_STICKY
+        val duration = intent.getIntExtra("duration", 1)
+        val app = intent.getStringExtra("app") ?: ""
+        val repeat = intent?.getStringExtra("repeat") ?: ""
+
+        isExecuting = true
+        startForeground(1, buildNotification("正在打开 $app"))
+
+        // 仅一次任务：立即标记已触发，跨重启/被杀保证只真正响一次
+        if (repeat == "仅一次") FiredStore.markFired(this, taskId)
+
+        // 执行期间持 PARTIAL_WAKE_LOCK，防止灭屏 Doze 打断打开/关闭
+        val pm = getSystemService(POWER_SERVICE) as PowerManager
+        wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "TaskHelper::Monitor").apply {
+            acquire(duration * 60_000L + 10_000L)
+        }
+
+        openApp(pkg)
+
+        job = CoroutineScope(Dispatchers.Main).launch {
+            delay(duration * 60_000L)
+            goHomeAndClose(pkg)
+            try { wakeLock?.release() } catch (_: Throwable) {}
+            wakeLock = null
+
+            runBlocking(Dispatchers.IO) {
+                val db = AppDatabase.get(this@MonitorService)
+                db.logDao().insert(buildLog(app, duration))
+                db.logDao().trim() // 仅保留最近 100 条
+                rescheduleNext(this@MonitorService, taskId)
+            }
+
+            isExecuting = false
+            stopSelf()
+
+            // 严格休眠：若此刻没有任何界面在前台，直接终结进程，只留系统闹钟唤醒
+            val foreground = ProcessLifecycleOwner.get().lifecycle.currentState
+                .isAtLeast(Lifecycle.State.STARTED)
+            if (!foreground) {
+                Process.killProcess(Process.myPid())
+            }
+        }
+        return START_NOT_STICKY
+    }
+
+    private fun openApp(pkg: String) {
+        val launch = packageManager.getLaunchIntentForPackage(pkg)
+        launch?.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        launch?.let { startActivity(it) }
+    }
+
+    private fun goHomeAndClose(pkg: String) {
+        val home = Intent(Intent.ACTION_MAIN).apply {
+            addCategory(Intent.CATEGORY_HOME)
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        }
+        startActivity(home)
+        // 兜底：先尝试结束后台目标进程（多数机型有效）
+        val am = getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+        @Suppress("MissingPermission")
+        am.killBackgroundProcesses(pkg)
+        // 再尝试无障碍关闭“最近任务”中的目标（部分机型需配合电池白名单）
+        if (CloseAppAccessibilityService.isEnabled()) {
+            try { CloseAppAccessibilityService.requestClose() } catch (_: Throwable) {}
+        }
+    }
+
+    /** 执行完后重排：重复类排下一次；仅一次则禁用并取消，不再触发。 */
+    private fun rescheduleNext(context: Context, taskId: Long) {
+        val db = AppDatabase.get(context)
+        val task = db.taskDao().getById(taskId) ?: return
+        if (!task.enabled) {
+            AlarmScheduler.cancel(context, taskId)
+            return
+        }
+        if (task.repeat == "仅一次") {
+            task.enabled = false
+            db.taskDao().update(task)
+            AlarmScheduler.cancel(context, taskId)
+        } else {
+            AlarmScheduler.schedule(context, task)
+        }
+    }
+
+    private fun buildLog(app: String, duration: Int): LogEntity {
+        val fmt = SimpleDateFormat("MM-dd HH:mm", Locale.CHINA)
+        return LogEntity(time = fmt.format(Date()), appName = app, durationMin = duration, success = true)
+    }
+
+    private fun createChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val c = NotificationChannel(CHANNEL, "任务监控", NotificationManager.IMPORTANCE_LOW)
+            getSystemService(NotificationManager::class.java).createNotificationChannel(c)
+        }
+    }
+
+    private fun buildNotification(text: String): Notification =
+        NotificationCompat.Builder(this, CHANNEL)
+            .setContentTitle("定时任务助手")
+            .setContentText(text)
+            .setSmallIcon(android.R.drawable.ic_dialog_info)
+            .build()
+
+    override fun onDestroy() {
+        job?.cancel()
+        isExecuting = false
+        try { wakeLock?.release() } catch (_: Throwable) {}
+        super.onDestroy()
+    }
+}
