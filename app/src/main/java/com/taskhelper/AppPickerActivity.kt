@@ -85,7 +85,7 @@ class AppPickerActivity : AppCompatActivity() {
             h.icon.setBackgroundColor(Color.parseColor("#4C6FFF"))
             h.edit.visibility = android.view.View.GONE
             h.delete.visibility = android.view.View.GONE
-            h.itemView.setOnClickListener { onClick(it) }
+            h.itemView.setOnClickListener { onClick(items[i]) }
         }
 
         override fun getItemCount() = items.size
