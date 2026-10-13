@@ -1,1 +1,175 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuTWFuaWZlc3QKaW1wb3J0IGFuZHJvaWQuYXBwLkFsYXJtTWFuYWdlcgppbXBvcnQgYW5kcm9pZC5jb250ZW50LkludGVudAppbXBvcnQgYW5kcm9pZC5jb250ZW50LnBtLlBhY2thZ2VNYW5hZ2VyCmltcG9ydCBhbmRyb2lkLm9zLkJ1aWxkCmltcG9ydCBhbmRyb2lkLm9zLkJ1bmRsZQppbXBvcnQgYW5kcm9pZC5wcm92aWRlci5TZXR0aW5ncwppbXBvcnQgYW5kcm9pZC53aWRnZXQuKgppbXBvcnQgYW5kcm9pZHguYWN0aXZpdHkucmVzdWx0LmNvbnRyYWN0LkFjdGl2aXR5UmVzdWx0Q29udHJhY3RzCmltcG9ydCBhbmRyb2lkeC5hcHBjb21wYXQuYXBwLkFwcENvbXBhdEFjdGl2aXR5CmltcG9ydCBhbmRyb2lkeC5jb3JlLmNvbnRlbnQuQ29udGV4dENvbXBhdAppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLkNvcm91dGluZVNjb3BlCmltcG9ydCBrb3RsaW54LmNvcm91dGluZXMuRGlzcGF0Y2hlcnMKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5sYXVuY2gKCmNsYXNzIEFkZEVkaXRBY3Rpdml0eSA6IEFwcENvbXBhdEFjdGl2aXR5KCkgewoKICAgIHByaXZhdGUgdmFyIGVkaXRpbmdJZDogTG9uZyA9IC0xTAogICAgcHJpdmF0ZSB2YXIgc2VsUGtnID0gIiIKICAgIHByaXZhdGUgdmFyIHNlbEFwcCA9ICIiCiAgICBwcml2YXRlIHZhciBob3VyID0gMTQKICAgIHByaXZhdGUgdmFyIG1pbnV0ZSA9IDMwCiAgICBwcml2YXRlIHZhciBkdXJhdGlvbiA9IDEKICAgIHByaXZhdGUgdmFyIHJlcGVhdCA9ICLmr4/lpKkiCiAgICBwcml2YXRlIHZhbCByZXBWaWV3cyA9IG11dGFibGVMaXN0T2Y8VGV4dFZpZXc+KCkKCiAgICBwcml2YXRlIHZhbCBwaWNrQXBwID0KICAgICAgICByZWdpc3RlckZvckFjdGl2aXR5UmVzdWx0KEFjdGl2aXR5UmVzdWx0Q29udHJhY3RzLlN0YXJ0QWN0aXZpdHlGb3JSZXN1bHQoKSkgeyByZXMgLT4KICAgICAgICAgICAgaWYgKHJlcy5yZXN1bHRDb2RlID09IFJFU1VMVF9PSykgewogICAgICAgICAgICAgICAgc2VsQXBwID0gcmVzLmRhdGE/LmdldFN0cmluZ0V4dHJhKCJhcHAiKSA/OiAiIgogICAgICAgICAgICAgICAgc2VsUGtnID0gcmVzLmRhdGE/LmdldFN0cmluZ0V4dHJhKCJwa2ciKSA/OiAiIgogICAgICAgICAgICAgICAgdmFsIHR2ID0gZmluZFZpZXdCeUlkPFRleHRWaWV3PihSLmlkLnNlbF9hcHBfbmFtZSkKICAgICAgICAgICAgICAgIHR2LnRleHQgPSBzZWxBcHAKICAgICAgICAgICAgICAgIHR2LnNldFRleHRDb2xvcihDb250ZXh0Q29tcGF0LmdldENvbG9yKHRoaXMsIGFuZHJvaWQuUi5jb2xvci5ibGFjaykpCiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgb3ZlcnJpZGUgZnVuIG9uQ3JlYXRlKHNhdmVkSW5zdGFuY2VTdGF0ZTogQnVuZGxlPykgewogICAgICAgIHN1cGVyLm9uQ3JlYXRlKHNhdmVkSW5zdGFuY2VTdGF0ZSkKICAgICAgICBzZXRDb250ZW50VmlldyhSLmxheW91dC5hY3Rpdml0eV9hZGRfZWRpdCkKCiAgICAgICAgZWRpdGluZ0lkID0gaW50ZW50LmdldExvbmdFeHRyYSgidGFza19pZCIsIC0xTCkKICAgICAgICBmaW5kVmlld0J5SWQ8VGV4dFZpZXc+KFIuaWQudGl0bGUpLnRleHQgPSBpZiAoZWRpdGluZ0lkID09IC0xTCkgIuaWsOW7uuS7u+WKoSIgZWxzZSAi57yW6L6R5Lu75YqhIgoKICAgICAgICB2YWwgdHAgPSBmaW5kVmlld0J5SWQ8VGltZVBpY2tlcj4oUi5pZC50aW1lX3BpY2tlcikKICAgICAgICB0cC5zZXRJczI0SG91clZpZXcodHJ1ZSkKICAgICAgICB0cC5zZXRPblRpbWVDaGFuZ2VkTGlzdGVuZXIgeyBfLCBoLCBtIC0+IGhvdXIgPSBoOyBtaW51dGUgPSBtIH0KCiAgICAgICAgdmFsIHNlZWsgPSBmaW5kVmlld0J5SWQ8U2Vla0Jhcj4oUi5pZC5kdXJfc2VlaykKICAgICAgICB2YWwgZHVyVmFsID0gZmluZFZpZXdCeUlkPFRleHRWaWV3PihSLmlkLmR1cl92YWwpCiAgICAgICAgc2Vlay5zZXRPblNlZWtCYXJDaGFuZ2VMaXN0ZW5lcihvYmplY3QgOiBTZWVrQmFyLk9uU2Vla0JhckNoYW5nZUxpc3RlbmVyIHsKICAgICAgICAgICAgb3ZlcnJpZGUgZnVuIG9uUHJvZ3Jlc3NDaGFuZ2VkKHM6IFNlZWtCYXI/LCBwOiBJbnQsIGY6IEJvb2xlYW4pIHsKICAgICAgICAgICAgICAgIGR1cmF0aW9uID0gcCArIDEKICAgICAgICAgICAgICAgIGR1clZhbC50ZXh0ID0gIiRkdXJhdGlvbiDliIbpkp8iCiAgICAgICAgICAgIH0KICAgICAgICAgICAgb3ZlcnJpZGUgZnVuIG9uU3RhcnRUcmFja2luZ1RvdWNoKHM6IFNlZWtCYXI/KSB7fQogICAgICAgICAgICBvdmVycmlkZSBmdW4gb25TdG9wVHJhY2tpbmdUb3VjaChzOiBTZWVrQmFyPykge30KICAgICAgICB9KQogICAgICAgIGxpc3RPZihSLmlkLnByZXNldDEgdG8gMSwgUi5pZC5wcmVzZXQ1IHRvIDUsIFIuaWQucHJlc2V0MTAgdG8gMTAsIFIuaWQucHJlc2V0MzAgdG8gMzApCiAgICAgICAgICAgIC5mb3JFYWNoIHsgKGlkLCB2KSAtPgogICAgICAgICAgICAgICAgZmluZFZpZXdCeUlkPEJ1dHRvbj4oaWQpLnNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgICAgICAgICAgZHVyYXRpb24gPSB2CiAgICAgICAgICAgICAgICAgICAgc2Vlay5wcm9ncmVzcyA9IHYgLSAxCiAgICAgICAgICAgICAgICAgICAgZHVyVmFsLnRleHQgPSAiJGR1cmF0aW9uIOWIhumSnyIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQoKICAgICAgICByZXBWaWV3cy5hZGRBbGwoCiAgICAgICAgICAgIGxpc3RPZihSLmlkLnJlcDAsIFIuaWQucmVwMSwgUi5pZC5yZXAyLCBSLmlkLnJlcDMpLm1hcCB7IGZpbmRWaWV3QnlJZDxUZXh0Vmlldz4oaXQpIH0KICAgICAgICApCiAgICAgICAgcmVwVmlld3MuZm9yRWFjaEluZGV4ZWQgeyBpLCB2IC0+IHYuc2V0T25DbGlja0xpc3RlbmVyIHsgc2VsZWN0UmVwKGkpIH0gfQoKICAgICAgICBmaW5kVmlld0J5SWQ8TGluZWFyTGF5b3V0PihSLmlkLnBpY2tfYXBwKS5zZXRPbkNsaWNrTGlzdGVuZXIgewogICAgICAgICAgICBwaWNrQXBwLmxhdW5jaChJbnRlbnQodGhpcywgQXBwUGlja2VyQWN0aXZpdHk6OmNsYXNzLmphdmEpKQogICAgICAgIH0KCiAgICAgICAgZmluZFZpZXdCeUlkPFRleHRWaWV3PihSLmlkLmJ0bl9zYXZlKS5zZXRPbkNsaWNrTGlzdGVuZXIgeyBzYXZlKCkgfQogICAgICAgIGZpbmRWaWV3QnlJZDxCdXR0b24+KFIuaWQuYnRuX2NyZWF0ZSkuc2V0T25DbGlja0xpc3RlbmVyIHsgc2F2ZSgpIH0KICAgICAgICBmaW5kVmlld0J5SWQ8SW1hZ2VCdXR0b24+KFIuaWQuYnRuX2JhY2spLnNldE9uQ2xpY2tMaXN0ZW5lciB7IGZpbmlzaCgpIH0KCiAgICAgICAgaWYgKGVkaXRpbmdJZCAhPSAtMUwpIGxvYWRFZGl0aW5nKCkKICAgIH0KCiAgICBwcml2YXRlIGZ1biBzZWxlY3RSZXAoaTogSW50KSB7CiAgICAgICAgcmVwZWF0ID0gcmVwVmlld3NbaV0udGV4dC50b1N0cmluZygpCiAgICAgICAgcmVwVmlld3MuZm9yRWFjaEluZGV4ZWQgeyBpZHgsIHYgLT4KICAgICAgICAgICAgdmFsIG9uID0gaWR4ID09IGkKICAgICAgICAgICAgdi5zZXRCYWNrZ3JvdW5kQ29sb3IoCiAgICAgICAgICAgICAgICBpZiAob24pIENvbnRleHRDb21wYXQuZ2V0Q29sb3IodGhpcywgUi5jb2xvci5wcmltYXJ5KQogICAgICAgICAgICAgICAgZWxzZSBhbmRyb2lkLmdyYXBoaWNzLkNvbG9yLlRSQU5TUEFSRU5UCiAgICAgICAgICAgICkKICAgICAgICAgICAgdi5zZXRUZXh0Q29sb3IoCiAgICAgICAgICAgICAgICBpZiAob24pIGFuZHJvaWQuZ3JhcGhpY3MuQ29sb3IuV0hJVEUKICAgICAgICAgICAgICAgIGVsc2UgQ29udGV4dENvbXBhdC5nZXRDb2xvcih0aGlzLCBSLmNvbG9yLnRleHRfMikKICAgICAgICAgICAgKQogICAgICAgIH0KICAgIH0KCiAgICBwcml2YXRlIGZ1biBsb2FkRWRpdGluZygpIHsKICAgICAgICBDb3JvdXRpbmVTY29wZShEaXNwYXRjaGVycy5JTykubGF1bmNoIHsKICAgICAgICAgICAgdmFsIHQgPSBBcHBEYXRhYmFzZS5nZXQodGhpc0BBZGRFZGl0QWN0aXZpdHkpLnRhc2tEYW8oKS5nZXRCeUlkKGVkaXRpbmdJZCkgPzogcmV0dXJuQGxhdW5jaAogICAgICAgICAgICBzZWxBcHAgPSB0LmFwcE5hbWUKICAgICAgICAgICAgc2VsUGtnID0gdC5wa2cKICAgICAgICAgICAgaG91ciA9IHQuaG91cgogICAgICAgICAgICBtaW51dGUgPSB0Lm1pbnV0ZQogICAgICAgICAgICBkdXJhdGlvbiA9IHQuZHVyYXRpb25NaW4KICAgICAgICAgICAgcmVwZWF0ID0gdC5yZXBlYXQKICAgICAgICAgICAgcnVuT25VaVRocmVhZCB7CiAgICAgICAgICAgICAgICBmaW5kVmlld0J5SWQ8VGV4dFZpZXc+KFIuaWQuc2VsX2FwcF9uYW1lKS50ZXh0ID0gc2VsQXBwCiAgICAgICAgICAgICAgICBmaW5kVmlld0J5SWQ8VGltZVBpY2tlcj4oUi5pZC50aW1lX3BpY2tlcikuYXBwbHkgewogICAgICAgICAgICAgICAgICAgIGhvdXIgPSB0LmhvdXI7IG1pbnV0ZSA9IHQubWludXRlCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBmaW5kVmlld0J5SWQ8U2Vla0Jhcj4oUi5pZC5kdXJfc2VlaykucHJvZ3Jlc3MgPSB0LmR1cmF0aW9uTWluIC0gMQogICAgICAgICAgICAgICAgZmluZFZpZXdCeUlkPFRleHRWaWV3PihSLmlkLmR1cl92YWwpLnRleHQgPSAiJHt0LmR1cmF0aW9uTWlufSDliIbpkp8iCiAgICAgICAgICAgICAgICB2YWwgaWR4ID0gbGlzdE9mKCLmr4/lpKkiLCAi5bel5L2c5pelIiwgIuWRqOacqyIsICLku4XkuIDmrKEiKS5pbmRleE9mKHQucmVwZWF0KS5jb2VyY2VBdExlYXN0KDApCiAgICAgICAgICAgICAgICBzZWxlY3RSZXAoaWR4KQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgZnVuIHNhdmUoKSB7CiAgICAgICAgaWYgKHNlbFBrZy5pc0VtcHR5KCkpIHsKICAgICAgICAgICAgVG9hc3QubWFrZVRleHQodGhpcywgIuivt+WFiOmAieaLqeW6lOeUqCIsIFRvYXN0LkxFTkdUSF9TSE9SVCkuc2hvdygpCiAgICAgICAgICAgIHJldHVybgogICAgICAgIH0KICAgICAgICAvLyBBbmRyb2lkIDEyKyDnsr7noa7pl7npkp/pnIDnlKjmiLfmjojmnYPvvJrot7Povazns7vnu5/orr7nva7liY3mjILotbfigJzpgIDlkI7lj7Doh6rmnYDigJ3vvIzpgb/lhY3miZPmlq3kv53lrZgKICAgICAgICBpZiAoQnVpbGQuVkVSU0lPTi5TREtfSU5UID49IEJ1aWxkLlZFUlNJT05fQ09ERVMuUykgewogICAgICAgICAgICB2YWwgYW0gPSBnZXRTeXN0ZW1TZXJ2aWNlKEFMQVJNX1NFUlZJQ0UpIGFzIEFsYXJtTWFuYWdlcgogICAgICAgICAgICBpZiAoIWFtLmNhblNjaGVkdWxlRXhhY3RBbGFybXMoKSkgewogICAgICAgICAgICAgICAgQXBwLnN1c3BlbmREb3JtYW50VW50aWwgPSBTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKSArIDE1MDAwCiAgICAgICAgICAgICAgICBzdGFydEFjdGl2aXR5KEludGVudChTZXR0aW5ncy5BQ1RJT05fUkVRVUVTVF9TQ0hFRFVMRV9FWEFDVF9BTEFSTSkpCiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIHZhbCBlbnRpdHkgPSBUYXNrRW50aXR5KAogICAgICAgICAgICBpZCA9IGlmIChlZGl0aW5nSWQgPT0gLTFMKSAwIGVsc2UgZWRpdGluZ0lkLAogICAgICAgICAgICBhcHBOYW1lID0gc2VsQXBwLAogICAgICAgICAgICBwa2cgPSBzZWxQa2csCiAgICAgICAgICAgIGhvdXIgPSBob3VyLAogICAgICAgICAgICBtaW51dGUgPSBtaW51dGUsCiAgICAgICAgICAgIGR1cmF0aW9uTWluID0gZHVyYXRpb24sCiAgICAgICAgICAgIHJlcGVhdCA9IHJlcGVhdCwKICAgICAgICAgICAgcmVtaW5kID0gZmFsc2UsCiAgICAgICAgICAgIGVuYWJsZWQgPSB0cnVlCiAgICAgICAgKQoKICAgICAgICBDb3JvdXRpbmVTY29wZShEaXNwYXRjaGVycy5JTykubGF1bmNoIHsKICAgICAgICAgICAgdmFsIGRiID0gQXBwRGF0YWJhc2UuZ2V0KHRoaXNAQWRkRWRpdEFjdGl2aXR5KQogICAgICAgICAgICBpZiAoZWRpdGluZ0lkID09IC0xTCkgZGIudGFza0RhbygpLmluc2VydChlbnRpdHkpCiAgICAgICAgICAgIGVsc2UgZGIudGFza0RhbygpLnVwZGF0ZShlbnRpdHkpCiAgICAgICAgICAgIC8vIOS7heS4gOasoeS7u+WKoeiiq+e8lui+keWQjumHjeaWsOatpuijhe+8jOa4hemZpOKAnOW3suinpuWPkeKAneagh+iusO+8jOWFgeiuuOWGjeasoeinpuWPkQogICAgICAgICAgICBpZiAoZW50aXR5LnJlcGVhdCA9PSAi5LuF5LiA5qyhIikgRmlyZWRTdG9yZS5jbGVhcih0aGlzQEFkZEVkaXRBY3Rpdml0eSwgZW50aXR5LmlkKQogICAgICAgICAgICB2YWwgb2sgPSBBbGFybVNjaGVkdWxlci5zY2hlZHVsZSh0aGlzQEFkZEVkaXRBY3Rpdml0eSwgZW50aXR5KQogICAgICAgICAgICBydW5PblVpVGhyZWFkIHsKICAgICAgICAgICAgICAgIGlmICghb2spIHNob3dFeGFjdEFsYXJtR3VpZGUoKQogICAgICAgICAgICAgICAgZmluaXNoKCkKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICAvKiog5pyq5o6I5LqI57K+56Gu6Ze56ZKf5p2D6ZmQ5pe255qE5byV5a+85by556qX44CCICovCiAgICBwcml2YXRlIGZ1biBzaG93RXhhY3RBbGFybUd1aWRlKCkgewogICAgICAgIGFuZHJvaWR4LmFwcGNvbXBhdC5hcHAuQWxlcnREaWFsb2cuQnVpbGRlcih0aGlzKQogICAgICAgICAgICAuc2V0VGl0bGUoIumcgOimgeeyvuehrumXuemSn+adg+mZkCIpCiAgICAgICAgICAgIC5zZXRNZXNzYWdlKCLmnKrmjojkuojigJznsr7noa7pl7npkp/igJ3mnYPpmZDvvIzku7vliqHlj6/og73ml6Dms5XlnKjmjIflrprml7bpl7Top6blj5HjgILmmK/lkKbliY3lvoDorr7nva7lvIDlkK/vvJ8iKQogICAgICAgICAgICAuc2V0UG9zaXRpdmVCdXR0b24oIuWOu+W8gOWQryIpIHsgXywgXyAtPgogICAgICAgICAgICAgICAgQXBwLnN1c3BlbmREb3JtYW50VW50aWwgPSBTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKSArIDE1MDAwCiAgICAgICAgICAgICAgICBzdGFydEFjdGl2aXR5KEludGVudChTZXR0aW5ncy5BQ1RJT05fUkVRVUVTVF9TQ0hFRFVMRV9FWEFDVF9BTEFSTSkpCiAgICAgICAgICAgIH0KICAgICAgICAgICAgLnNldE5lZ2F0aXZlQnV0dG9uKGFuZHJvaWQuUi5zdHJpbmcuY2FuY2VsLCBudWxsKQogICAgICAgICAgICAuc2hvdygpCiAgICB9Cn0K
+package com.taskhelper
+
+import android.Manifest
+import android.app.AlarmManager
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
+import android.os.Bundle
+import android.provider.Settings
+import android.widget.*
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+
+class AddEditActivity : AppCompatActivity() {
+
+    private var editingId: Long = -1L
+    private var selPkg = ""
+    private var selApp = ""
+    private var hour = 14
+    private var minute = 30
+    private var duration = 1
+    private var repeat = "每天"
+    private val repViews = mutableListOf<TextView>()
+
+    private val pickApp =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { res ->
+            if (res.resultCode == RESULT_OK) {
+                selApp = res.data?.getStringExtra("app") ?: ""
+                selPkg = res.data?.getStringExtra("pkg") ?: ""
+                val tv = findViewById<TextView>(R.id.sel_app_name)
+                tv.text = selApp
+                tv.setTextColor(ContextCompat.getColor(this, android.R.color.black))
+            }
+        }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_add_edit)
+
+        editingId = intent.getLongExtra("task_id", -1L)
+        findViewById<TextView>(R.id.title).text = if (editingId == -1L) "新建任务" else "编辑任务"
+
+        val tp = findViewById<TimePicker>(R.id.time_picker)
+        tp.setIs24HourView(true)
+        tp.setOnTimeChangedListener { _, h, m -> hour = h; minute = m }
+
+        val seek = findViewById<SeekBar>(R.id.dur_seek)
+        val durVal = findViewById<TextView>(R.id.dur_val)
+        seek.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+            override fun onProgressChanged(s: SeekBar?, p: Int, f: Boolean) {
+                duration = p + 1
+                durVal.text = "$duration 分钟"
+            }
+            override fun onStartTrackingTouch(s: SeekBar?) {}
+            override fun onStopTrackingTouch(s: SeekBar?) {}
+        })
+        listOf(R.id.preset1 to 1, R.id.preset5 to 5, R.id.preset10 to 10, R.id.preset30 to 30)
+            .forEach { (id, v) ->
+                findViewById<Button>(id).setOnClickListener {
+                    duration = v
+                    seek.progress = v - 1
+                    durVal.text = "$duration 分钟"
+                }
+            }
+
+        repViews.addAll(
+            listOf(R.id.rep0, R.id.rep1, R.id.rep2, R.id.rep3).map { findViewById<TextView>(it) }
+        )
+        repViews.forEachIndexed { i, v -> v.setOnClickListener { selectRep(i) } }
+
+        findViewById<LinearLayout>(R.id.pick_app).setOnClickListener {
+            pickApp.launch(Intent(this, AppPickerActivity::class.java))
+        }
+
+        findViewById<TextView>(R.id.btn_save).setOnClickListener { save() }
+        findViewById<Button>(R.id.btn_create).setOnClickListener { save() }
+        findViewById<ImageButton>(R.id.btn_back).setOnClickListener { finish() }
+
+        if (editingId != -1L) loadEditing()
+    }
+
+    private fun selectRep(i: Int) {
+        repeat = repViews[i].text.toString()
+        repViews.forEachIndexed { idx, v ->
+            val on = idx == i
+            v.setBackgroundColor(
+                if (on) ContextCompat.getColor(this, R.color.primary)
+                else android.graphics.Color.TRANSPARENT
+            )
+            v.setTextColor(
+                if (on) android.graphics.Color.WHITE
+                else ContextCompat.getColor(this, R.color.text_2)
+            )
+        }
+    }
+
+    private fun loadEditing() {
+        CoroutineScope(Dispatchers.IO).launch {
+            val t = AppDatabase.get(this@AddEditActivity).taskDao().getById(editingId) ?: return@launch
+            selApp = t.appName
+            selPkg = t.pkg
+            hour = t.hour
+            minute = t.minute
+            duration = t.durationMin
+            repeat = t.repeat
+            runOnUiThread {
+                findViewById<TextView>(R.id.sel_app_name).text = selApp
+                findViewById<TimePicker>(R.id.time_picker).apply {
+                    hour = t.hour; minute = t.minute
+                }
+                findViewById<SeekBar>(R.id.dur_seek).progress = t.durationMin - 1
+                findViewById<TextView>(R.id.dur_val).text = "${t.durationMin} 分钟"
+                val idx = listOf("每天", "工作日", "周末", "仅一次").indexOf(t.repeat).coerceAtLeast(0)
+                selectRep(idx)
+            }
+        }
+    }
+
+    private fun save() {
+        if (selPkg.isEmpty()) {
+            Toast.makeText(this, "请先选择应用", Toast.LENGTH_SHORT).show()
+            return
+        }
+        // Android 12+ 精确闹钟需用户授权：跳转系统设置前挂起“退后台自杀”，避免打断保存
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            val am = getSystemService(ALARM_SERVICE) as AlarmManager
+            if (!am.canScheduleExactAlarms()) {
+                App.suspendDormantUntil = System.currentTimeMillis() + 15000
+                startActivity(Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM))
+            }
+        }
+
+        val entity = TaskEntity(
+            id = if (editingId == -1L) 0 else editingId,
+            appName = selApp,
+            pkg = selPkg,
+            hour = hour,
+            minute = minute,
+            durationMin = duration,
+            repeat = repeat,
+            remind = false,
+            enabled = true
+        )
+
+        CoroutineScope(Dispatchers.IO).launch {
+            val db = AppDatabase.get(this@AddEditActivity)
+            if (editingId == -1L) db.taskDao().insert(entity)
+            else db.taskDao().update(entity)
+            // 仅一次任务被编辑后重新武装，清除“已触发”标记，允许再次触发
+            if (entity.repeat == "仅一次") FiredStore.clear(this@AddEditActivity, entity.id)
+            val ok = AlarmScheduler.schedule(this@AddEditActivity, entity)
+            runOnUiThread {
+                if (!ok) showExactAlarmGuide()
+                finish()
+            }
+        }
+    }
+
+    /** 未授予精确闹钟权限时的引导弹窗。 */
+    private fun showExactAlarmGuide() {
+        androidx.appcompat.app.AlertDialog.Builder(this)
+            .setTitle("需要精确闹钟权限")
+            .setMessage("未授予“精确闹钟”权限，任务可能无法在指定时间触发。是否前往设置开启？")
+            .setPositiveButton("去开启") { _, _ ->
+                App.suspendDormantUntil = System.currentTimeMillis() + 15000
+                startActivity(Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM))
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
+    }
+}
