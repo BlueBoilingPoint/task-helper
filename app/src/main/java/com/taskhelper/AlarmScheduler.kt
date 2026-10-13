@@ -73,7 +73,19 @@ object AlarmScheduler {
             context, task.id.toInt(), intent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
-        am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, trigger, pi)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            // 使用闹钟时钟 API：享有「后台启动前台服务 / 打开其它应用」的系统豁免，
+            // 且无需用户授予「精确闹钟」权限——在小米澎湃 / 华为鸿蒙等严格 OEM 上也能可靠触发。
+            val showIntent = PendingIntent.getActivity(
+                context, task.id.toInt() + 100000,
+                Intent(context, MainActivity::class.java)
+                    .setAction("com.taskhelper.ALARM_SHOW"),
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+            am.setAlarmClock(AlarmManager.AlarmClockInfo(trigger, showIntent), pi)
+        } else {
+            am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, trigger, pi)
+        }
         return true
     }
 
