@@ -1,1 +1,101 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuYXBwLkFsYXJtTWFuYWdlcgppbXBvcnQgYW5kcm9pZC5hcHAuUGVuZGluZ0ludGVudAppbXBvcnQgYW5kcm9pZC5jb250ZW50LkNvbnRleHQKaW1wb3J0IGFuZHJvaWQuY29udGVudC5JbnRlbnQKaW1wb3J0IGFuZHJvaWQub3MuQnVpbGQKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5EaXNwYXRjaGVycwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLndpdGhDb250ZXh0CmltcG9ydCBqYXZhLnV0aWwuQ2FsZW5kYXIKCm9iamVjdCBBbGFybVNjaGVkdWxlciB7CgogICAgLyoqCiAgICAgKiDkvp3mja7ku7vliqHml7bpl7TkuI7ph43lpI3op4TliJnvvIzorqHnrpfkuIvkuIDmrKHlupTop6blj5HnmoTmr6vnp5Lml7bpl7TjgIIKICAgICAqIC0g6Iul5LuK5aSp55qE5pe26Ze054K55bey6L+H77yM6aG65bu25Yiw5pyA6L+R55qE5LiA5Liq5pyq5p2l5pel5pyf77ybCiAgICAgKiAtIOWvueKAnOW3peS9nOaXpSAvIOWRqOacq+KAne+8jOe7p+e7reWQkeWQjui3s+i/h+S4jeespuWQiOeahOaXpeacn+OAggogICAgICovCiAgICBmdW4gbmV4dFRyaWdnZXJNaWxsaXModGFzazogVGFza0VudGl0eSk6IExvbmcgewogICAgICAgIHZhbCBjYWwgPSBDYWxlbmRhci5nZXRJbnN0YW5jZSgpLmFwcGx5IHsKICAgICAgICAgICAgc2V0KENhbGVuZGFyLkhPVVJfT0ZfREFZLCB0YXNrLmhvdXIpCiAgICAgICAgICAgIHNldChDYWxlbmRhci5NSU5VVEUsIHRhc2subWludXRlKQogICAgICAgICAgICBzZXQoQ2FsZW5kYXIuU0VDT05ELCAwKQogICAgICAgICAgICBzZXQoQ2FsZW5kYXIuTUlMTElTRUNPTkQsIDApCiAgICAgICAgfQogICAgICAgIHZhbCBub3cgPSBTeXN0ZW0uY3VycmVudFRpbWVNaWxsaXMoKQogICAgICAgIHZhciBndWFyZCA9IDAKICAgICAgICB3aGlsZSAoY2FsLnRpbWVJbk1pbGxpcyA8PSBub3cgJiYgZ3VhcmQgPCA0MDApIHsKICAgICAgICAgICAgY2FsLmFkZChDYWxlbmRhci5EQVlfT0ZfTU9OVEgsIDEpCiAgICAgICAgICAgIGd1YXJkKysKICAgICAgICB9CiAgICAgICAgZ3VhcmQgPSAwCiAgICAgICAgd2hpbGUgKCFtYXRjaGVzUmVwZWF0KGNhbCwgdGFzay5yZXBlYXQpICYmIGd1YXJkIDwgMTQpIHsKICAgICAgICAgICAgY2FsLmFkZChDYWxlbmRhci5EQVlfT0ZfTU9OVEgsIDEpCiAgICAgICAgICAgIGd1YXJkKysKICAgICAgICB9CiAgICAgICAgcmV0dXJuIGNhbC50aW1lSW5NaWxsaXMKICAgIH0KCiAgICBwcml2YXRlIGZ1biBtYXRjaGVzUmVwZWF0KGNhbDogQ2FsZW5kYXIsIHJlcGVhdDogU3RyaW5nKTogQm9vbGVhbiB7CiAgICAgICAgdmFsIGRvdyA9IGNhbC5nZXQoQ2FsZW5kYXIuREFZX09GX1dFRUspIC8vIDE95ZGo5pelIC4uIDc95ZGo5YWtCiAgICAgICAgcmV0dXJuIHdoZW4gKHJlcGVhdCkgewogICAgICAgICAgICAi5bel5L2c5pelIiAtPiBkb3cgaW4gMi4uNgogICAgICAgICAgICAi5ZGo5pyrIiAtPiBkb3cgPT0gMSB8fCBkb3cgPT0gNwogICAgICAgICAgICBlbHNlIC0+IHRydWUgLy8g5q+P5aSpIC8g5LuF5LiA5qyhCiAgICAgICAgfQogICAgfQoKICAgIC8qKgogICAgICog5Li65Y2V5Liq5Lu75Yqh6K6+5a6a57K+56Gu6Ze56ZKf77yI57O757uf5bGC5oyB5pyJ77yM6L+b56iL5q275Lqh5L6d54S25pyJ5pWI77yJ44CCCiAgICAgKiBAcmV0dXJuIHRydWU95bey55m76K6w77ybZmFsc2U957y65bCR57K+56Gu6Ze56ZKf5p2D6ZmQ77yI5bey6K6w5YWlIFBlbmRpbmdBdXRoU3RvcmXvvInjgIIKICAgICAqLwogICAgZnVuIHNjaGVkdWxlKGNvbnRleHQ6IENvbnRleHQsIHRhc2s6IFRhc2tFbnRpdHkpOiBCb29sZWFuIHsKICAgICAgICAvLyDku4XkuIDmrKHkuJTlt7Lop6blj5HvvJrml6DpnIDlho3mjpLnqIsKICAgICAgICBpZiAodGFzay5yZXBlYXQgPT0gIuS7heS4gOasoSIgJiYgRmlyZWRTdG9yZS5pc0ZpcmVkKGNvbnRleHQsIHRhc2suaWQpKSByZXR1cm4gdHJ1ZQoKICAgICAgICB2YWwgYW0gPSBjb250ZXh0LmdldFN5c3RlbVNlcnZpY2UoQ29udGV4dC5BTEFSTV9TRVJWSUNFKSBhcyBBbGFybU1hbmFnZXIKICAgICAgICBpZiAoQnVpbGQuVkVSU0lPTi5TREtfSU5UID49IEJ1aWxkLlZFUlNJT05fQ09ERVMuUyAmJiAhYW0uY2FuU2NoZWR1bGVFeGFjdEFsYXJtcygpKSB7CiAgICAgICAgICAgIFBlbmRpbmdBdXRoU3RvcmUuYWRkKGNvbnRleHQsIHRhc2suaWQpCiAgICAgICAgICAgIHJldHVybiBmYWxzZQogICAgICAgIH0KICAgICAgICBQZW5kaW5nQXV0aFN0b3JlLnJlbW92ZShjb250ZXh0LCB0YXNrLmlkKQoKICAgICAgICB2YWwgdHJpZ2dlciA9IG5leHRUcmlnZ2VyTWlsbGlzKHRhc2spCiAgICAgICAgdmFsIGludGVudCA9IEludGVudChjb250ZXh0LCBBbGFybVJlY2VpdmVyOjpjbGFzcy5qYXZhKS5hcHBseSB7CiAgICAgICAgICAgIHB1dEV4dHJhKCJ0YXNrX2lkIiwgdGFzay5pZCkKICAgICAgICAgICAgcHV0RXh0cmEoInBrZyIsIHRhc2sucGtnKQogICAgICAgICAgICBwdXRFeHRyYSgiZHVyYXRpb24iLCB0YXNrLmR1cmF0aW9uTWluKQogICAgICAgICAgICBwdXRFeHRyYSgiYXBwIiwgdGFzay5hcHBOYW1lKQogICAgICAgICAgICBwdXRFeHRyYSgicmVwZWF0IiwgdGFzay5yZXBlYXQpCiAgICAgICAgfQogICAgICAgIHZhbCBwaSA9IFBlbmRpbmdJbnRlbnQuZ2V0QnJvYWRjYXN0KAogICAgICAgICAgICBjb250ZXh0LCB0YXNrLmlkLnRvSW50KCksIGludGVudCwKICAgICAgICAgICAgUGVuZGluZ0ludGVudC5GTEFHX1VQREFURV9DVVJSRU5UIG9yIFBlbmRpbmdJbnRlbnQuRkxBR19JTU1VVEFCTEUKICAgICAgICApCiAgICAgICAgYW0uc2V0RXhhY3RBbmRBbGxvd1doaWxlSWRsZShBbGFybU1hbmFnZXIuUlRDX1dBS0VVUCwgdHJpZ2dlciwgcGkpCiAgICAgICAgcmV0dXJuIHRydWUKICAgIH0KCiAgICBmdW4gY2FuY2VsKGNvbnRleHQ6IENvbnRleHQsIHRhc2tJZDogTG9uZykgewogICAgICAgIHZhbCBhbSA9IGNvbnRleHQuZ2V0U3lzdGVtU2VydmljZShDb250ZXh0LkFMQVJNX1NFUlZJQ0UpIGFzIEFsYXJtTWFuYWdlcgogICAgICAgIHZhbCBpbnRlbnQgPSBJbnRlbnQoY29udGV4dCwgQWxhcm1SZWNlaXZlcjo6Y2xhc3MuamF2YSkKICAgICAgICB2YWwgcGkgPSBQZW5kaW5nSW50ZW50LmdldEJyb2FkY2FzdCgKICAgICAgICAgICAgY29udGV4dCwgdGFza0lkLnRvSW50KCksIGludGVudCwKICAgICAgICAgICAgUGVuZGluZ0ludGVudC5GTEFHX1VQREFURV9DVVJSRU5UIG9yIFBlbmRpbmdJbnRlbnQuRkxBR19JTU1VVEFCTEUKICAgICAgICApCiAgICAgICAgYW0uY2FuY2VsKHBpKQogICAgfQoKICAgIC8qKgogICAgICog5YWo6YeP6YeN5o6S77ya5Y+W5raI5omA5pyJ5Lu75Yqh6Ze56ZKf77yM5LuF6YeN5paw55m76K6w5ZCv55So5Lit55qE5Lu75Yqh44CCCiAgICAgKiDlnKjjgIzpgIDliLDlkI7lj7DjgI3jgIzlupTnlKjlhrflkK/liqjjgI3jgIzlvIDmnLrjgI3ml7bosIPnlKjvvIzkv53or4Hov5vnqIvpgIDlh7rlkI7lj6rpnaDpl7npkp/llKTphpLvvIwKICAgICAqIOS4lOmHjeWkjeexu+S7u+WKoe+8iOavj+WkqS/lt6XkvZzml6Uv5ZGo5pyr77yJ6IO96Ieq5Yqo5o6S5Yiw5LiL5LiA5qyh6Kem5Y+R44CCCiAgICAgKi8KICAgIHN1c3BlbmQgZnVuIHJlc2NoZWR1bGVBbGwoY29udGV4dDogQ29udGV4dCkgPSB3aXRoQ29udGV4dChEaXNwYXRjaGVycy5JTykgewogICAgICAgIHZhbCBkYiA9IEFwcERhdGFiYXNlLmdldChjb250ZXh0KQogICAgICAgIHZhbCBhbGwgPSBkYi50YXNrRGFvKCkuYWxsTGlzdCgpCiAgICAgICAgYWxsLmZvckVhY2ggeyBjYW5jZWwoY29udGV4dCwgaXQuaWQpIH0KICAgICAgICBhbGwuZmlsdGVyIHsgaXQuZW5hYmxlZCB9LmZvckVhY2ggeyBzY2hlZHVsZShjb250ZXh0LCBpdCkgfQogICAgfQp9Cg==
+package com.taskhelper
+
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
+import android.os.Build
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import java.util.Calendar
+
+object AlarmScheduler {
+
+    /**
+     * 依据任务时间与重复规则，计算下一次应触发的毫秒时间。
+     * - 若今天的时间点已过，顺延到最近的一个未来日期；
+     * - 对“工作日 / 周末”，继续向后跳过不符合的日期。
+     */
+    fun nextTriggerMillis(task: TaskEntity): Long {
+        val cal = Calendar.getInstance().apply {
+            set(Calendar.HOUR_OF_DAY, task.hour)
+            set(Calendar.MINUTE, task.minute)
+            set(Calendar.SECOND, 0)
+            set(Calendar.MILLISECOND, 0)
+        }
+        val now = System.currentTimeMillis()
+        var guard = 0
+        while (cal.timeInMillis <= now && guard < 400) {
+            cal.add(Calendar.DAY_OF_MONTH, 1)
+            guard++
+        }
+        guard = 0
+        while (!matchesRepeat(cal, task.repeat) && guard < 14) {
+            cal.add(Calendar.DAY_OF_MONTH, 1)
+            guard++
+        }
+        return cal.timeInMillis
+    }
+
+    private fun matchesRepeat(cal: Calendar, repeat: String): Boolean {
+        val dow = cal.get(Calendar.DAY_OF_WEEK) // 1=周日 .. 7=周六
+        return when (repeat) {
+            "工作日" -> dow in 2..6
+            "周末" -> dow == 1 || dow == 7
+            else -> true // 每天 / 仅一次
+        }
+    }
+
+    /**
+     * 为单个任务设定精确闹钟（系统层持有，进程死亡依然有效）。
+     * @return true=已登记；false=缺少精确闹钟权限（已记入 PendingAuthStore）。
+     */
+    fun schedule(context: Context, task: TaskEntity): Boolean {
+        // 仅一次且已触发：无需再排程
+        if (task.repeat == "仅一次" && FiredStore.isFired(context, task.id)) return true
+
+        val am = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !am.canScheduleExactAlarms()) {
+            PendingAuthStore.add(context, task.id)
+            return false
+        }
+        PendingAuthStore.remove(context, task.id)
+
+        val trigger = nextTriggerMillis(task)
+        val intent = Intent(context, AlarmReceiver::class.java).apply {
+            putExtra("task_id", task.id)
+            putExtra("pkg", task.pkg)
+            putExtra("duration", task.durationMin)
+            putExtra("app", task.appName)
+            putExtra("repeat", task.repeat)
+        }
+        val pi = PendingIntent.getBroadcast(
+            context, task.id.toInt(), intent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+        am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, trigger, pi)
+        return true
+    }
+
+    fun cancel(context: Context, taskId: Long) {
+        val am = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val intent = Intent(context, AlarmReceiver::class.java)
+        val pi = PendingIntent.getBroadcast(
+            context, taskId.toInt(), intent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+        am.cancel(pi)
+    }
+
+    /**
+     * 全量重排：取消所有任务闹钟，仅重新登记启用中的任务。
+     * 在「退到后台」「应用冷启动」「开机」时调用，保证进程退出后只靠闹钟唤醒，
+     * 且重复类任务（每天/工作日/周末）能自动排到下一次触发。
+     */
+    suspend fun rescheduleAll(context: Context) = withContext(Dispatchers.IO) {
+        val db = AppDatabase.get(context)
+        val all = db.taskDao().allList()
+        all.forEach { cancel(context, it.id) }
+        all.filter { it.enabled }.forEach { schedule(context, it) }
+    }
+}
