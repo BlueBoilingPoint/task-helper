@@ -1,1 +1,6 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPG1lbnUgeG1sbnM6YW5kcm9pZD0iaHR0cDovL3NjaGVtYXMuYW5kcm9pZC5jb20vYXBrL3Jlcy9hbmRyb2lkIj4KICAgIDxpdGVtIGFuZHJvaWQ6aWQ9IkAraWQvbmF2X3Rhc2tzIiBhbmRyb2lkOnRpdGxlPSJAc3RyaW5nL3RhYl90YXNrcyIgLz4KICAgIDxpdGVtIGFuZHJvaWQ6aWQ9IkAraWQvbmF2X2xvZ3MiIGFuZHJvaWQ6dGl0bGU9IkBzdHJpbmcvdGFiX2xvZ3MiIC8+CiAgICA8aXRlbSBhbmRyb2lkOmlkPSJAK2lkL25hdl9tZSIgYW5kcm9pZDp0aXRsZT0iQHN0cmluZy90YWJfbWUiIC8+CjwvbWVudT4K
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_tasks" android:title="@string/tab_tasks" />
+    <item android:id="@+id/nav_logs" android:title="@string/tab_logs" />
+    <item android:id="@+id/nav_me" android:title="@string/tab_me" />
+</menu>
