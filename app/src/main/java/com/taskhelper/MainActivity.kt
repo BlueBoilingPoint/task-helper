@@ -1,11 +1,15 @@
 package com.taskhelper
 
+import android.Manifest
 import android.app.AlarmManager
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -18,9 +22,23 @@ class MainActivity : AppCompatActivity() {
     private val logsFrag = LogsFragment()
     private val meFrag = SettingsFragment()
 
+    // Android 13+ 需运行时申请通知权限，否则前台服务（停留计时）无法正常启动
+    private val reqNotif = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) { /* 无论结果，闹钟时钟 API 已保证触发；通知仅影响状态提示 */ }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(
+                    this, Manifest.permission.POST_NOTIFICATIONS
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                reqNotif.launch(Manifest.permission.POST_NOTIFICATIONS)
+            }
+        }
 
         // 冷启动即确保系统层闹钟已登记（应用可能被闹钟从死亡态唤醒而拉起）
         lifecycleScope.launch(Dispatchers.IO) {
