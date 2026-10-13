@@ -5,6 +5,10 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+# Allow the workflow to push the repaired wrapper jar back to the repo.
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,17 +22,12 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      # Installs cmdline-tools, platform-tools, accepts SDK licenses,
-      # exports ANDROID_HOME and puts sdkmanager on PATH.
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
       - name: Install required SDK packages
         run: sdkmanager "platforms;android-34" "build-tools;34.0.0" "platform-tools"
 
-      # Install Gradle 8.6 directly. We deliberately do NOT use the committed
-      # gradle-wrapper.jar (it was corrupted in transit), so we call `gradle`
-      # instead of `./gradlew`.
       - name: Install Gradle 8.6
         run: |
           curl -sSL -o /tmp/gradle-8.6-bin.zip https://services.gradle.org/distributions/gradle-8.6-bin.zip
@@ -43,3 +42,31 @@ jobs:
         with:
           name: app-debug
           path: app/build/outputs/apk/debug/*.apk
+
+      - name: Repair gradle-wrapper.jar if corrupted
+        continue-on-error: true
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          JAR=gradle/wrapper/gradle-wrapper.jar
+          SRC=https://raw.githubusercontent.com/gradle/gradle/v8.6.0/gradle/wrapper/gradle-wrapper.jar
+          curl -sSL -o /tmp/gw.jar "$SRC"
+          if [ ! -s /tmp/gw.jar ]; then
+            echo "download failed, skip repair"
+            exit 0
+          fi
+          GENUINE=$(sha256sum /tmp/gw.jar | awk '{print $1}')
+          CURRENT=$(sha256sum "$JAR" | awk '{print $1}')
+          echo "genuine=$GENUINE current=$CURRENT"
+          if [ "$GENUINE" = "$CURRENT" ]; then
+            echo "gradle-wrapper.jar already genuine, nothing to do"
+            exit 0
+          fi
+          cp /tmp/gw.jar "$JAR"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add "$JAR"
+          git commit -m "chore: repair corrupted gradle-wrapper.jar [skip ci]"
+          git push "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
+          echo "gradle-wrapper.jar repaired and pushed"
