@@ -24,7 +24,8 @@ data class LogEntity(
     val time: String,
     val appName: String,
     val durationMin: Int,
-    val success: Boolean
+    val success: Boolean,
+    val reason: String = ""
 )
 
 @Dao
@@ -64,7 +65,7 @@ interface LogDao {
     suspend fun trim()
 }
 
-@Database(entities = [TaskEntity::class, LogEntity::class], version = 2, exportSchema = false)
+@Database(entities = [TaskEntity::class, LogEntity::class], version = 3, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun taskDao(): TaskDao
     abstract fun logDao(): LogDao
@@ -88,6 +89,13 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        private val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                // 2→3：日志表新增 reason 列，记录执行失败原因
+                db.execSQL("ALTER TABLE logs ADD COLUMN reason TEXT NOT NULL DEFAULT ''")
+            }
+        }
+
         fun get(context: android.content.Context): AppDatabase =
             INSTANCE ?: synchronized(this) {
                 INSTANCE ?: Room.databaseBuilder(
@@ -95,7 +103,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "taskhelper.db"
                 )
-                    .addMigrations(MIGRATION_1_2)
+                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
                     .fallbackToDestructiveMigration()
                     .build().also { INSTANCE = it }
             }
