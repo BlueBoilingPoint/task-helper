@@ -18,10 +18,12 @@ class TaskAdapter(
 ) : RecyclerView.Adapter<TaskAdapter.VH>() {
 
     private val list = mutableListOf<TaskEntity>()
+    private var failByApp: Map<String, Int> = emptyMap()
 
-    fun submit(items: List<TaskEntity>) {
+    fun submit(items: List<TaskEntity>, failByApp: Map<String, Int> = emptyMap()) {
         list.clear()
         list.addAll(items)
+        this.failByApp = failByApp
         notifyDataSetChanged()
     }
 
@@ -45,31 +47,31 @@ class TaskAdapter(
         h.name.text = t.appName
 
         // 执行时间（HH:MM）使用黑色突出显示，停留时长与重复规则保持次要灰；
-        // 缺少精确闹钟权限时追加红色提醒
+        // 缺少精确闹钟权限时追加红色提醒；该应用近期有失败则追加红色失败次数
         val timeStr = String.format("%02d:%02d", t.hour, t.minute)
-        val restStr = String.format(" · 停留 %d 分钟 · %s", t.durationMin, t.repeat)
+        val restBase = String.format(" · 停留 %d 分钟 · %s", t.durationMin, t.repeat)
         val warn = PendingAuthStore.contains(ctx, t.id)
         val warnStr = if (warn) "  ·  ⚠ 需授权精确闹钟" else ""
+        val failN = failByApp[t.appName] ?: 0
+        val failStr = if (failN > 0) "  ·  失败${failN}次" else ""
 
-        val full = timeStr + restStr + warnStr
+        val full = timeStr + restBase + warnStr + failStr
         val sp = SpannableString(full)
         val black = ContextCompat.getColor(ctx, android.R.color.black)
         val gray = ContextCompat.getColor(ctx, R.color.text_2)
         val red = ContextCompat.getColor(ctx, R.color.danger)
-        sp.setSpan(ForegroundColorSpan(black), 0, timeStr.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-        sp.setSpan(
-            ForegroundColorSpan(gray),
-            timeStr.length,
-            timeStr.length + restStr.length,
-            Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
-        )
+        val timeEnd = timeStr.length
+        val restEnd = timeEnd + restBase.length
+        val warnStart = restEnd
+        val warnEnd = warnStart + warnStr.length
+        val failStart = warnEnd
+        sp.setSpan(ForegroundColorSpan(black), 0, timeEnd, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        sp.setSpan(ForegroundColorSpan(gray), timeEnd, restEnd, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         if (warn) {
-            sp.setSpan(
-                ForegroundColorSpan(red),
-                full.length - warnStr.length,
-                full.length,
-                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
-            )
+            sp.setSpan(ForegroundColorSpan(red), warnStart, warnEnd, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        }
+        if (failN > 0) {
+            sp.setSpan(ForegroundColorSpan(red), failStart, full.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
         h.meta.text = sp
 
