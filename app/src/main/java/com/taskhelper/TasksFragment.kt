@@ -1,1 +1,93 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuY29udGVudC5JbnRlbnQKaW1wb3J0IGFuZHJvaWQub3MuQnVuZGxlCmltcG9ydCBhbmRyb2lkLnByb3ZpZGVyLlNldHRpbmdzCmltcG9ydCBhbmRyb2lkLnZpZXcuTGF5b3V0SW5mbGF0ZXIKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3CmltcG9ydCBhbmRyb2lkLnZpZXcuVmlld0dyb3VwCmltcG9ydCBhbmRyb2lkLndpZGdldC5UZXh0VmlldwppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BbGVydERpYWxvZwppbXBvcnQgYW5kcm9pZHguZnJhZ21lbnQuYXBwLkZyYWdtZW50CmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUubGlmZWN5Y2xlU2NvcGUKaW1wb3J0IGFuZHJvaWR4LnJlY3ljbGVydmlldy53aWRnZXQuTGluZWFyTGF5b3V0TWFuYWdlcgppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuZmlyc3QKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5sYXVuY2gKCmNsYXNzIFRhc2tzRnJhZ21lbnQgOiBGcmFnbWVudChSLmxheW91dC5mcmFnbWVudF90YXNrcykgewoKICAgIHByaXZhdGUgbGF0ZWluaXQgdmFyIGFkYXB0ZXI6IFRhc2tBZGFwdGVyCgogICAgb3ZlcnJpZGUgZnVuIG9uVmlld0NyZWF0ZWQodmlldzogVmlldywgc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25WaWV3Q3JlYXRlZCh2aWV3LCBzYXZlZEluc3RhbmNlU3RhdGUpCgogICAgICAgIGFkYXB0ZXIgPSBUYXNrQWRhcHRlcigKICAgICAgICAgICAgb25FZGl0ID0geyB0YXNrIC0+CiAgICAgICAgICAgICAgICBzdGFydEFjdGl2aXR5KAogICAgICAgICAgICAgICAgICAgIEludGVudChyZXF1aXJlQ29udGV4dCgpLCBBZGRFZGl0QWN0aXZpdHk6OmNsYXNzLmphdmEpCiAgICAgICAgICAgICAgICAgICAgICAgIC5wdXRFeHRyYSgidGFza19pZCIsIHRhc2suaWQpCiAgICAgICAgICAgICAgICApCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIG9uRGVsZXRlID0geyB0YXNrIC0+IGNvbmZpcm1EZWxldGUodGFzaykgfQogICAgICAgICkKCiAgICAgICAgdmFsIHJ2ID0gdmlldy5maW5kVmlld0J5SWQ8YW5kcm9pZHgucmVjeWNsZXJ2aWV3LndpZGdldC5SZWN5Y2xlclZpZXc+KFIuaWQudGFza19saXN0KQogICAgICAgIHJ2LmxheW91dE1hbmFnZXIgPSBMaW5lYXJMYXlvdXRNYW5hZ2VyKHJlcXVpcmVDb250ZXh0KCkpCiAgICAgICAgcnYuYWRhcHRlciA9IGFkYXB0ZXIKCiAgICAgICAgLy8g56m654q25oCB5byV5a+85oyJ6ZKuIOKGkiDmlrDlu7rku7vliqEKICAgICAgICB2aWV3LmZpbmRWaWV3QnlJZDxWaWV3PihSLmlkLmVtcHR5X2N0YSkuc2V0T25DbGlja0xpc3RlbmVyIHsKICAgICAgICAgICAgc3RhcnRBY3Rpdml0eShJbnRlbnQocmVxdWlyZUNvbnRleHQoKSwgQWRkRWRpdEFjdGl2aXR5OjpjbGFzcy5qYXZhKSkKICAgICAgICB9CiAgICAgICAgLy8g6ZyA5o6I5p2D5qiq5bmFIOKGkiDot7Pns7vnu5/orr7nva4KICAgICAgICB2aWV3LmZpbmRWaWV3QnlJZDxWaWV3PihSLmlkLndhcm5fYmFubmVyKS5zZXRPbkNsaWNrTGlzdGVuZXIgewogICAgICAgICAgICBBcHAuc3VzcGVuZERvcm1hbnRVbnRpbCA9IFN5c3RlbS5jdXJyZW50VGltZU1pbGxpcygpICsgMTUwMDAKICAgICAgICAgICAgc3RhcnRBY3Rpdml0eShJbnRlbnQoU2V0dGluZ3MuQUNUSU9OX1JFUVVFU1RfU0NIRURVTEVfRVhBQ1RfQUxBUk0pKQogICAgICAgIH0KICAgIH0KCiAgICBvdmVycmlkZSBmdW4gb25SZXN1bWUoKSB7CiAgICAgICAgc3VwZXIub25SZXN1bWUoKQogICAgICAgIHJlZnJlc2goKQogICAgfQoKICAgIHByaXZhdGUgZnVuIHJlZnJlc2goKSB7CiAgICAgICAgbGlmZWN5Y2xlU2NvcGUubGF1bmNoIHsKICAgICAgICAgICAgdmFsIGN0eCA9IHJlcXVpcmVDb250ZXh0KCkKICAgICAgICAgICAgdmFsIHRhc2tzID0gQXBwRGF0YWJhc2UuZ2V0KGN0eCkudGFza0RhbygpLmFsbCgpLmZpcnN0KCkKICAgICAgICAgICAgdmFsIGFjdGl2ZSA9IHRhc2tzLmZpbHRlciB7IGl0LmVuYWJsZWQgfQogICAgICAgICAgICB2aWV3Py5sZXQgeyB2IC0+CiAgICAgICAgICAgICAgICB2YWwgZW1wdHkgPSB0YXNrcy5pc0VtcHR5KCkKICAgICAgICAgICAgICAgIHYuZmluZFZpZXdCeUlkPFZpZXc+KFIuaWQuZW1wdHlfc3RhdGUpLnZpc2liaWxpdHkgPSBpZiAoZW1wdHkpIFZpZXcuVklTSUJMRSBlbHNlIFZpZXcuR09ORQogICAgICAgICAgICAgICAgdi5maW5kVmlld0J5SWQ8Vmlldz4oUi5pZC5kb3JtYW50X2Jhbm5lcikudmlzaWJpbGl0eSA9CiAgICAgICAgICAgICAgICAgICAgaWYgKCFlbXB0eSAmJiBhY3RpdmUuaXNFbXB0eSgpKSBWaWV3LlZJU0lCTEUgZWxzZSBWaWV3LkdPTkUKICAgICAgICAgICAgICAgIHYuZmluZFZpZXdCeUlkPFZpZXc+KFIuaWQub3ZlcnZpZXcpLnZpc2liaWxpdHkgPQogICAgICAgICAgICAgICAgICAgIGlmIChhY3RpdmUuaXNFbXB0eSgpKSBWaWV3LkdPTkUgZWxzZSBWaWV3LlZJU0lCTEUKICAgICAgICAgICAgICAgIHYuZmluZFZpZXdCeUlkPFRleHRWaWV3PihSLmlkLm92X2NvdW50KS50ZXh0ID0gIiR7YWN0aXZlLnNpemV9IOmhueW+heaJp+ihjCIKICAgICAgICAgICAgICAgIHYuZmluZFZpZXdCeUlkPFRleHRWaWV3PihSLmlkLm92X25leHQpLnRleHQgPSBhY3RpdmUubWluQnlPck51bGwgeyBpdC5ob3VyICogNjAgKyBpdC5taW51dGUgfT8ubGV0IHsKICAgICAgICAgICAgICAgICAgICAi5LiL5qyh5omn6KGM77ya5LuK5aSpICR7U3RyaW5nLmZvcm1hdCgiJTAyZDolMDJkIiwgaXQuaG91ciwgaXQubWludXRlKX0gwrcgJHtpdC5hcHBOYW1lfSIKICAgICAgICAgICAgICAgIH0gPzogIuS4i+asoeaJp+ihjO+8muKAlCIKICAgICAgICAgICAgICAgIHZhbCBuZWVkQXV0aCA9IHRhc2tzLmFueSB7IFBlbmRpbmdBdXRoU3RvcmUuY29udGFpbnMoY3R4LCBpdC5pZCkgfQogICAgICAgICAgICAgICAgdi5maW5kVmlld0J5SWQ8Vmlldz4oUi5pZC53YXJuX2Jhbm5lcikudmlzaWJpbGl0eSA9IGlmIChuZWVkQXV0aCkgVmlldy5WSVNJQkxFIGVsc2UgVmlldy5HT05FCiAgICAgICAgICAgIH0KICAgICAgICAgICAgYWRhcHRlci5zdWJtaXQodGFza3MpCiAgICAgICAgfQogICAgfQoKICAgIHByaXZhdGUgZnVuIGNvbmZpcm1EZWxldGUodGFzazogVGFza0VudGl0eSkgewogICAgICAgIEFsZXJ0RGlhbG9nLkJ1aWxkZXIocmVxdWlyZUNvbnRleHQoKSkKICAgICAgICAgICAgLnNldFRpdGxlKCLliKDpmaTku7vliqEiKQogICAgICAgICAgICAuc2V0TWVzc2FnZSgi56Gu5a6a5Yig6Zmk44CMJHt0YXNrLmFwcE5hbWV944CN55qE5a6a5pe25Lu75Yqh5ZCX77yf5q2k5pON5L2c5LiN5Y+v5pKk6ZSA44CCIikKICAgICAgICAgICAgLnNldFBvc2l0aXZlQnV0dG9uKCLliKDpmaQiKSB7IF8sIF8gLT4gZGVsZXRlVGFzayh0YXNrKSB9CiAgICAgICAgICAgIC5zZXROZWdhdGl2ZUJ1dHRvbihhbmRyb2lkLlIuc3RyaW5nLmNhbmNlbCwgbnVsbCkKICAgICAgICAgICAgLnNob3coKQogICAgfQoKICAgIHByaXZhdGUgZnVuIGRlbGV0ZVRhc2sodGFzazogVGFza0VudGl0eSkgewogICAgICAgIGxpZmVjeWNsZVNjb3BlLmxhdW5jaCB7CiAgICAgICAgICAgIEFsYXJtU2NoZWR1bGVyLmNhbmNlbChyZXF1aXJlQ29udGV4dCgpLCB0YXNrLmlkKQogICAgICAgICAgICBBcHBEYXRhYmFzZS5nZXQocmVxdWlyZUNvbnRleHQoKSkudGFza0RhbygpLmRlbGV0ZSh0YXNrKQogICAgICAgICAgICByZWZyZXNoKCkKICAgICAgICB9CiAgICB9Cn0K
+package com.taskhelper
+
+import android.content.Intent
+import android.os.Bundle
+import android.provider.Settings
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
+
+class TasksFragment : Fragment(R.layout.fragment_tasks) {
+
+    private lateinit var adapter: TaskAdapter
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        adapter = TaskAdapter(
+            onEdit = { task ->
+                startActivity(
+                    Intent(requireContext(), AddEditActivity::class.java)
+                        .putExtra("task_id", task.id)
+                )
+            },
+            onDelete = { task -> confirmDelete(task) }
+        )
+
+        val rv = view.findViewById<androidx.recyclerview.widget.RecyclerView>(R.id.task_list)
+        rv.layoutManager = LinearLayoutManager(requireContext())
+        rv.adapter = adapter
+
+        // 空状态引导按钮 → 新建任务
+        view.findViewById<View>(R.id.empty_cta).setOnClickListener {
+            startActivity(Intent(requireContext(), AddEditActivity::class.java))
+        }
+        // 需授权横幅 → 跳系统设置
+        view.findViewById<View>(R.id.warn_banner).setOnClickListener {
+            App.suspendDormantUntil = System.currentTimeMillis() + 15000
+            startActivity(Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM))
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        refresh()
+    }
+
+    private fun refresh() {
+        lifecycleScope.launch {
+            val ctx = requireContext()
+            val tasks = AppDatabase.get(ctx).taskDao().all().first()
+            val active = tasks.filter { it.enabled }
+            view?.let { v ->
+                val empty = tasks.isEmpty()
+                v.findViewById<View>(R.id.empty_state).visibility = if (empty) View.VISIBLE else View.GONE
+                v.findViewById<View>(R.id.dormant_banner).visibility =
+                    if (!empty && active.isEmpty()) View.VISIBLE else View.GONE
+                v.findViewById<View>(R.id.overview).visibility =
+                    if (active.isEmpty()) View.GONE else View.VISIBLE
+                v.findViewById<TextView>(R.id.ov_count).text = "${active.size} 项待执行"
+                v.findViewById<TextView>(R.id.ov_next).text = active.minByOrNull { it.hour * 60 + it.minute }?.let {
+                    "下次执行：今天 ${String.format("%02d:%02d", it.hour, it.minute)} · ${it.appName}"
+                } ?: "下次执行：—"
+                val needAuth = tasks.any { PendingAuthStore.contains(ctx, it.id) }
+                v.findViewById<View>(R.id.warn_banner).visibility = if (needAuth) View.VISIBLE else View.GONE
+            }
+            adapter.submit(tasks)
+        }
+    }
+
+    private fun confirmDelete(task: TaskEntity) {
+        AlertDialog.Builder(requireContext())
+            .setTitle("删除任务")
+            .setMessage("确定删除「${task.appName}」的定时任务吗？此操作不可撤销。")
+            .setPositiveButton("删除") { _, _ -> deleteTask(task) }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
+    }
+
+    private fun deleteTask(task: TaskEntity) {
+        lifecycleScope.launch {
+            AlarmScheduler.cancel(requireContext(), task.id)
+            AppDatabase.get(requireContext()).taskDao().delete(task)
+            refresh()
+        }
+    }
+}
