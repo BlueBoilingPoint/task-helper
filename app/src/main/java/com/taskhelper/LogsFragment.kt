@@ -1,1 +1,52 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuZ3JhcGhpY3MuQ29sb3IKaW1wb3J0IGFuZHJvaWQub3MuQnVuZGxlCmltcG9ydCBhbmRyb2lkLnZpZXcuTGF5b3V0SW5mbGF0ZXIKaW1wb3J0IGFuZHJvaWQudmlldy5WaWV3CmltcG9ydCBhbmRyb2lkLnZpZXcuVmlld0dyb3VwCmltcG9ydCBhbmRyb2lkLndpZGdldC5MaW5lYXJMYXlvdXQKaW1wb3J0IGFuZHJvaWQud2lkZ2V0LlRleHRWaWV3CmltcG9ydCBhbmRyb2lkeC5hcHBjb21wYXQuYXBwLkFsZXJ0RGlhbG9nCmltcG9ydCBhbmRyb2lkeC5mcmFnbWVudC5hcHAuRnJhZ21lbnQKaW1wb3J0IGFuZHJvaWR4LmxpZmVjeWNsZS5saWZlY3ljbGVTY29wZQppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmZsb3cuZmlyc3QKaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5sYXVuY2gKCmNsYXNzIExvZ3NGcmFnbWVudCA6IEZyYWdtZW50KFIubGF5b3V0LmZyYWdtZW50X2xvZ3MpIHsKCiAgICBvdmVycmlkZSBmdW4gb25WaWV3Q3JlYXRlZCh2aWV3OiBWaWV3LCBzYXZlZEluc3RhbmNlU3RhdGU6IEJ1bmRsZT8pIHsKICAgICAgICBzdXBlci5vblZpZXdDcmVhdGVkKHZpZXcsIHNhdmVkSW5zdGFuY2VTdGF0ZSkKCiAgICAgICAgbGlmZWN5Y2xlU2NvcGUubGF1bmNoIHsKICAgICAgICAgICAgdmFsIGxvZ3MgPSBBcHBEYXRhYmFzZS5nZXQocmVxdWlyZUNvbnRleHQoKSkubG9nRGFvKCkucmVjZW50KCkuZmlyc3QoKQogICAgICAgICAgICB2YWwgb2tQY3QgPSBpZiAobG9ncy5pc0VtcHR5KCkpIDAgZWxzZSBsb2dzLmNvdW50IHsgaXQuc3VjY2VzcyB9ICogMTAwIC8gbG9ncy5zaXplCgogICAgICAgICAgICB2aWV3LmZpbmRWaWV3QnlJZDxUZXh0Vmlldz4oUi5pZC5zdGF0X3dlZWspLnRleHQgPSBsb2dzLnNpemUudG9TdHJpbmcoKQogICAgICAgICAgICB2aWV3LmZpbmRWaWV3QnlJZDxUZXh0Vmlldz4oUi5pZC5zdGF0X29rKS50ZXh0ID0gIiRva1BjdCUiCiAgICAgICAgICAgIHZpZXcuZmluZFZpZXdCeUlkPFRleHRWaWV3PihSLmlkLnN0YXRfZG9ybWFudCkudGV4dCA9CiAgICAgICAgICAgICAgICBsb2dzLmNvdW50IHsgIWl0LnN1Y2Nlc3MgfS50b1N0cmluZygpCgogICAgICAgICAgICB2YWwgYm94ID0gdmlldy5maW5kVmlld0J5SWQ8TGluZWFyTGF5b3V0PihSLmlkLmxvZ19saXN0KQogICAgICAgICAgICBsb2dzLmZvckVhY2ggeyBsIC0+CiAgICAgICAgICAgICAgICB2YWwgcm93ID0gVGV4dFZpZXcocmVxdWlyZUNvbnRleHQoKSkuYXBwbHkgewogICAgICAgICAgICAgICAgICAgIHRleHQgPSAiJHtsLnRpbWV9ICAke2wuYXBwTmFtZX0gIMK3ICAke2lmIChsLnN1Y2Nlc3MpICLmiJDlip8iIGVsc2UgIuWksei0pSJ9IgogICAgICAgICAgICAgICAgICAgIHNldFBhZGRpbmcoMTIsIDEwLCAxMiwgMTApCiAgICAgICAgICAgICAgICAgICAgdGV4dFNpemUgPSAxNGYKICAgICAgICAgICAgICAgICAgICBzZXRUZXh0Q29sb3IoQ29sb3IucGFyc2VDb2xvcihpZiAobC5zdWNjZXNzKSAiIzFBMUQyNiIgZWxzZSAiI0VGNDQ0NCIpKQogICAgICAgICAgICAgICAgICAgIGlzQ2xpY2thYmxlID0gdHJ1ZQogICAgICAgICAgICAgICAgICAgIHNldE9uQ2xpY2tMaXN0ZW5lciB7CiAgICAgICAgICAgICAgICAgICAgICAgIEFsZXJ0RGlhbG9nLkJ1aWxkZXIocmVxdWlyZUNvbnRleHQoKSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5zZXRUaXRsZSgi5omn6KGM6K+m5oOFIikKICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5zZXRNZXNzYWdlKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICLml7bpl7TvvJoke2wudGltZX1cbuW6lOeUqO+8miR7bC5hcHBOYW1lfVxu5YGc55WZ77yaJHtsLmR1cmF0aW9uTWlufSDliIbpkp9cbue7k+aenO+8miR7aWYgKGwuc3VjY2VzcykgIuaIkOWKnyIgZWxzZSAi5aSx6LSlIn0iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICApCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAuc2V0UG9zaXRpdmVCdXR0b24oYW5kcm9pZC5SLnN0cmluZy5vaywgbnVsbCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIC5zaG93KCkKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBib3guYWRkVmlldyhyb3cpCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0K
+package com.taskhelper
+
+import android.graphics.Color
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
+
+class LogsFragment : Fragment(R.layout.fragment_logs) {
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        lifecycleScope.launch {
+            val logs = AppDatabase.get(requireContext()).logDao().recent().first()
+            val okPct = if (logs.isEmpty()) 0 else logs.count { it.success } * 100 / logs.size
+
+            view.findViewById<TextView>(R.id.stat_week).text = logs.size.toString()
+            view.findViewById<TextView>(R.id.stat_ok).text = "$okPct%"
+            view.findViewById<TextView>(R.id.stat_dormant).text =
+                logs.count { !it.success }.toString()
+
+            val box = view.findViewById<LinearLayout>(R.id.log_list)
+            logs.forEach { l ->
+                val row = TextView(requireContext()).apply {
+                    text = "${l.time}  ${l.appName}  ·  ${if (l.success) "成功" else "失败"}"
+                    setPadding(12, 10, 12, 10)
+                    textSize = 14f
+                    setTextColor(Color.parseColor(if (l.success) "#1A1D26" else "#EF4444"))
+                    isClickable = true
+                    setOnClickListener {
+                        AlertDialog.Builder(requireContext())
+                            .setTitle("执行详情")
+                            .setMessage(
+                                "时间：${l.time}\n应用：${l.appName}\n停留：${l.durationMin} 分钟\n结果：${if (l.success) "成功" else "失败"}"
+                            )
+                            .setPositiveButton(android.R.string.ok, null)
+                            .show()
+                    }
+                }
+                box.addView(row)
+            }
+        }
+    }
+}
