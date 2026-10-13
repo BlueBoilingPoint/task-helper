@@ -1,1 +1,7 @@
-PHJlc291cmNlcz4KICAgIDxzdHJpbmcgbmFtZT0iYXBwX25hbWUiPuWumuaXtuS7u+WKoeWKqeaJizwvc3RyaW5nPgogICAgPHN0cmluZyBuYW1lPSJhY2Nlc3NpYmlsaXR5X2Rlc2MiPueUqOS6juWcqOaJp+ihjOWujOWumuaXtuS7u+WKoeWQju+8jOiHquWKqOS7juacgOi/keS7u+WKoeS4reWFs+mXreebruagh+W6lOeUqO+8jOWunueOsOKAnOaJk+W8gOKGkuWBnOeVmeKGkuWFs+mXreKAneeahOmXreeOr+OAgjwvc3RyaW5nPgogICAgPHN0cmluZyBuYW1lPSJ0YWJfdGFza3MiPuS7u+WKoTwvc3RyaW5nPgogICAgPHN0cmluZyBuYW1lPSJ0YWJfbG9ncyI+5pel5b+XPC9zdHJpbmc+CiAgICA8c3RyaW5nIG5hbWU9InRhYl9tZSI+5oiR55qEPC9zdHJpbmc+CjwvcmVzb3VyY2VzPgo=
+<resources>
+    <string name="app_name">定时任务助手</string>
+    <string name="accessibility_desc">用于在执行完定时任务后，自动从最近任务中关闭目标应用，实现“打开→停留→关闭”的闭环。</string>
+    <string name="tab_tasks">任务</string>
+    <string name="tab_logs">日志</string>
+    <string name="tab_me">我的</string>
+</resources>
