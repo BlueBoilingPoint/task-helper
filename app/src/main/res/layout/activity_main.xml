@@ -1,1 +1,34 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGFuZHJvaWR4LmNvb3JkaW5hdG9ybGF5b3V0LndpZGdldC5Db29yZGluYXRvckxheW91dAogICAgeG1sbnM6YW5kcm9pZD0iaHR0cDovL3NjaGVtYXMuYW5kcm9pZC5jb20vYXBrL3Jlcy9hbmRyb2lkIgogICAgeG1sbnM6YXBwPSJodHRwOi8vc2NoZW1hcy5hbmRyb2lkLmNvbS9hcGsvcmVzLWF1dG8iCiAgICBhbmRyb2lkOmxheW91dF93aWR0aD0ibWF0Y2hfcGFyZW50IgogICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSJtYXRjaF9wYXJlbnQiCiAgICBhbmRyb2lkOmJhY2tncm91bmQ9IkBjb2xvci9iZyI+CgogICAgPEZyYW1lTGF5b3V0CiAgICAgICAgYW5kcm9pZDppZD0iQCtpZC9jb250YWluZXIiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2lkdGg9Im1hdGNoX3BhcmVudCIKICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9Im1hdGNoX3BhcmVudCIKICAgICAgICBhbmRyb2lkOmxheW91dF9tYXJnaW5Cb3R0b209IjY0ZHAiIC8+CgogICAgPGNvbS5nb29nbGUuYW5kcm9pZC5tYXRlcmlhbC5ib3R0b21uYXZpZ2F0aW9uLkJvdHRvbU5hdmlnYXRpb25WaWV3CiAgICAgICAgYW5kcm9pZDppZD0iQCtpZC9ib3R0b21fbmF2IgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X3dpZHRoPSJtYXRjaF9wYXJlbnQiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfaGVpZ2h0PSI2NGRwIgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X2dyYXZpdHk9ImJvdHRvbSIKICAgICAgICBhbmRyb2lkOmJhY2tncm91bmQ9IkBjb2xvci9jYXJkIgogICAgICAgIGFwcDptZW51PSJAbWVudS9ib3R0b21fbmF2IgogICAgICAgIGFwcDpsYWJlbFZpc2liaWxpdHlNb2RlPSJsYWJlbGVkIiAvPgoKICAgIDxjb20uZ29vZ2xlLmFuZHJvaWQubWF0ZXJpYWwuZmxvYXRpbmdhY3Rpb25idXR0b24uRmxvYXRpbmdBY3Rpb25CdXR0b24KICAgICAgICBhbmRyb2lkOmlkPSJAK2lkL2ZhYl9hZGQiCiAgICAgICAgYW5kcm9pZDpsYXlvdXRfd2lkdGg9IndyYXBfY29udGVudCIKICAgICAgICBhbmRyb2lkOmxheW91dF9oZWlnaHQ9IndyYXBfY29udGVudCIKICAgICAgICBhbmRyb2lkOmxheW91dF9ncmF2aXR5PSJlbmR8Ym90dG9tIgogICAgICAgIGFuZHJvaWQ6bGF5b3V0X21hcmdpbkVuZD0iMjBkcCIKICAgICAgICBhbmRyb2lkOmxheW91dF9tYXJnaW5Cb3R0b209Ijg0ZHAiCiAgICAgICAgYW5kcm9pZDpjb250ZW50RGVzY3JpcHRpb249IuaWsOW7uuS7u+WKoSIKICAgICAgICBhcHA6c3JjQ29tcGF0PSJAYW5kcm9pZDpkcmF3YWJsZS9pY19pbnB1dF9hZGQiIC8+Cgo8L2FuZHJvaWR4LmNvb3JkaW5hdG9ybGF5b3V0LndpZGdldC5Db29yZGluYXRvckxheW91dD4K
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:background="@color/card"
+        app:menu="@menu/bottom_nav"
+        app:labelVisibilityMode="labeled" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="84dp"
+        android:contentDescription="新建任务"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
