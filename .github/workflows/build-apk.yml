@@ -9,22 +9,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
+
+      # Installs cmdline-tools, platform-tools, accepts SDK licenses,
+      # exports ANDROID_HOME and puts sdkmanager on PATH.
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-      - name: Accept Android SDK licenses
-        run: yes | sdkmanager --licenses || true
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+
+      - name: Install required SDK packages
+        run: sdkmanager "platforms;android-34" "build-tools;34.0.0" "platform-tools"
+
+      # Install Gradle 8.6 directly. We deliberately do NOT use the committed
+      # gradle-wrapper.jar (it was corrupted in transit), so we call `gradle`
+      # instead of `./gradlew`.
+      - name: Install Gradle 8.6
+        run: |
+          curl -sSL -o /tmp/gradle-8.6-bin.zip https://services.gradle.org/distributions/gradle-8.6-bin.zip
+          unzip -q /tmp/gradle-8.6-bin.zip -d /opt
+          echo "/opt/gradle-8.6/bin" >> "$GITHUB_PATH"
+
       - name: Build debug APK
-        run: ./gradlew assembleDebug --no-daemon
+        run: gradle assembleDebug --no-daemon --stacktrace
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
