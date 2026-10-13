@@ -1,1 +1,41 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuYWNjZXNzaWJpbGl0eXNlcnZpY2UuQWNjZXNzaWJpbGl0eVNlcnZpY2UKaW1wb3J0IGFuZHJvaWQuYWNjZXNzaWJpbGl0eXNlcnZpY2UuQWNjZXNzaWJpbGl0eVNlcnZpY2VJbmZvCmltcG9ydCBhbmRyb2lkLnZpZXcuYWNjZXNzaWJpbGl0eS5BY2Nlc3NpYmlsaXR5RXZlbnQKCi8qKgogKiDml6Dpmpznoo3mnI3liqHvvJrlnKjku7vliqHnu5PmnZ/lkI7vvIzku47igJzmnIDov5Hku7vliqHigJ3kuK3lhbPpl63nm67moIflupTnlKjjgIIKICog5rOo5oSP77ya5LiN5ZCM5Y6C5ZWGIFJPTSDnmoTigJzmnIDov5Hku7vliqHigJ3kuqTkupLkuI3lkIzvvIzlhbPpl63miYvlir/pnIDmjInmnLrlnovpgILphY3vvIwKICog5q2k5aSE5YWI5LulIEdMT0JBTF9BQ1RJT05fUkVDRU5UUyDkvZzkuLrlsL3lipvogIzkuLrnmoTlrp7njrDjgIIKICovCmNsYXNzIENsb3NlQXBwQWNjZXNzaWJpbGl0eVNlcnZpY2UgOiBBY2Nlc3NpYmlsaXR5U2VydmljZSgpIHsKCiAgICBjb21wYW5pb24gb2JqZWN0IHsKICAgICAgICBwcml2YXRlIHZhciBpbnN0YW5jZTogQ2xvc2VBcHBBY2Nlc3NpYmlsaXR5U2VydmljZT8gPSBudWxsCgogICAgICAgIGZ1biByZXF1ZXN0Q2xvc2UoKSB7CiAgICAgICAgICAgIGluc3RhbmNlPy5wZXJmb3JtR2xvYmFsQWN0aW9uKEdMT0JBTF9BQ1RJT05fUkVDRU5UUykKICAgICAgICB9CgogICAgICAgIGZ1biBpc0VuYWJsZWQoKTogQm9vbGVhbiA9IGluc3RhbmNlICE9IG51bGwKICAgIH0KCiAgICBvdmVycmlkZSBmdW4gb25TZXJ2aWNlQ29ubmVjdGVkKCkgewogICAgICAgIGluc3RhbmNlID0gdGhpcwogICAgICAgIHNlcnZpY2VJbmZvID0gKHNlcnZpY2VJbmZvID86IEFjY2Vzc2liaWxpdHlTZXJ2aWNlSW5mbygpKS5hcHBseSB7CiAgICAgICAgICAgIGV2ZW50VHlwZXMgPSBBY2Nlc3NpYmlsaXR5RXZlbnQuVFlQRVNfQUxMX01BU0sKICAgICAgICAgICAgZmVlZGJhY2tUeXBlID0gQWNjZXNzaWJpbGl0eVNlcnZpY2VJbmZvLkZFRURCQUNLX0dFTkVSSUMKICAgICAgICAgICAgZmxhZ3MgPSBmbGFncyBvciBBY2Nlc3NpYmlsaXR5U2VydmljZUluZm8uRkxBR19SRVBPUlRfVklFV19JRFMKICAgICAgICB9CiAgICB9CgogICAgb3ZlcnJpZGUgZnVuIG9uQWNjZXNzaWJpbGl0eUV2ZW50KGV2ZW50OiBBY2Nlc3NpYmlsaXR5RXZlbnQ/KSB7fQoKICAgIG92ZXJyaWRlIGZ1biBvbkludGVycnVwdCgpIHt9CgogICAgb3ZlcnJpZGUgZnVuIG9uRGVzdHJveSgpIHsKICAgICAgICBpbnN0YW5jZSA9IG51bGwKICAgICAgICBzdXBlci5vbkRlc3Ryb3koKQogICAgfQp9Cg==
+package com.taskhelper
+
+import android.accessibilityservice.AccessibilityService
+import android.accessibilityservice.AccessibilityServiceInfo
+import android.view.accessibility.AccessibilityEvent
+
+/**
+ * 无障碍服务：在任务结束后，从“最近任务”中关闭目标应用。
+ * 注意：不同厂商 ROM 的“最近任务”交互不同，关闭手势需按机型适配，
+ * 此处先以 GLOBAL_ACTION_RECENTS 作为尽力而为的实现。
+ */
+class CloseAppAccessibilityService : AccessibilityService() {
+
+    companion object {
+        private var instance: CloseAppAccessibilityService? = null
+
+        fun requestClose() {
+            instance?.performGlobalAction(GLOBAL_ACTION_RECENTS)
+        }
+
+        fun isEnabled(): Boolean = instance != null
+    }
+
+    override fun onServiceConnected() {
+        instance = this
+        serviceInfo = (serviceInfo ?: AccessibilityServiceInfo()).apply {
+            eventTypes = AccessibilityEvent.TYPES_ALL_MASK
+            feedbackType = AccessibilityServiceInfo.FEEDBACK_GENERIC
+            flags = flags or AccessibilityServiceInfo.FLAG_REPORT_VIEW_IDS
+        }
+    }
+
+    override fun onAccessibilityEvent(event: AccessibilityEvent?) {}
+
+    override fun onInterrupt() {}
+
+    override fun onDestroy() {
+        instance = null
+        super.onDestroy()
+    }
+}
