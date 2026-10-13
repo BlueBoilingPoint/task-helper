@@ -109,7 +109,7 @@ class MonitorService : Service() {
     }
 
     /** 执行完后重排：重复类排下一次；仅一次则禁用并取消，不再触发。 */
-    private fun rescheduleNext(context: Context, taskId: Long) {
+    private suspend fun rescheduleNext(context: Context, taskId: Long) {
         val db = AppDatabase.get(context)
         val task = db.taskDao().getById(taskId) ?: return
         if (!task.enabled) {
@@ -117,8 +117,8 @@ class MonitorService : Service() {
             return
         }
         if (task.repeat == "仅一次") {
-            task.enabled = false
-            db.taskDao().update(task)
+            val updated = task.copy(enabled = false)
+            db.taskDao().update(updated)
             AlarmScheduler.cancel(context, taskId)
         } else {
             AlarmScheduler.schedule(context, task)
