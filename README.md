@@ -1,1 +1,62 @@
-IyDlrprml7bku7vliqHliqnmiYvvvIhUYXNrSGVscGVy77yJCgrlrprml7bmiZPlvIDmjIflrpogQXBwIOKGkiDlgZznlZkgTiDliIbpkp8g4oaSIOi/lOWbnuahjOmdoiDihpIg5YWz6Zet6K+lIEFwcO+8jOW5tuiusOW9leaJp+ihjOaXpeW/l+OAguaXoOWQr+eUqOS7u+WKoeaXtuiHquWKqOi/m+WFpeOAjOS8keecoOaAgeOAje+8jOS7heS/neeVmei9u+mHj+WumuaXtuWZqO+8jOacgOWkp+mZkOW6puecgeeUteOAggoKIyMg5Yqf6IO9Ci0g5Yib5bu6IC8g57yW6L6RIC8g5Yig6Zmk5a6a5pe25Lu75Yqh77yI5bqU55So44CB5pe26Ze044CB5YGc55WZ5pe26ZW/IDHigJM2MCDliIbpkp/jgIHph43lpI3op4TliJnvvIkKLSDlgZznlZnml7bplb/mu5HlnZcgKyAxIC8gNSAvIDEwIC8gMzAg5YiG6ZKf5b+r5o235qGjCi0g5Yiw54K56Ieq5Yqo5omT5byA55uu5qCH5bqU55So77yM5YGc55WZ57uT5p2f5ZCO6L+U5Zue5qGM6Z2i5bm25YWz6ZetCi0g5omn6KGM5pel5b+X5LiO5oiQ5Yqf546H57uf6K6hCi0g5p6B6Ie055yB55S144CM5LyR55yg5qih5byP44CN77ya5peg5ZCv55So5Lu75Yqh5pe26YeK5pS+5ZCO5Y+w5pyN5YqhCi0g5byA5py66Ieq5ZCv5ZCO6Ieq5Yqo6YeN5paw5o6S56iLCgojIyDlt6XnqIvnu5PmnoQKYGBgCmFwcC9zcmMvbWFpbi8KICBBbmRyb2lkTWFuaWZlc3QueG1sCiAgamF2YS9jb20vdGFza2hlbHBlci8KICAgIE1haW5BY3Rpdml0eS5rdCAgICAgICAgICAgIOS7u+WKoSAvIOaXpeW/lyAvIOaIkeeahCDkuInpobUKICAgIFRhc2tzRnJhZ21lbnQua3QgICAgICAgICAg5YiX6KGoICsg5LyR55yg5oCBIC8g6L+Q6KGM5oCB5YiH5o2iCiAgICBMb2dzRnJhZ21lbnQua3QgICAgICAgICAgIOaJp+ihjOaXpeW/lwogICAgU2V0dGluZ3NGcmFnbWVudC5rdCAgICAgICDmnYPpmZDkuI7nnIHnlLXlvIDlhbMKICAgIEFkZEVkaXRBY3Rpdml0eS5rdCAgICAgICAg5paw5bu6IC8g57yW6L6R5Lu75Yqh77yI5ruR5Z2X44CB5pe26Ze044CB6YeN5aSN77yJCiAgICBBcHBQaWNrZXJBY3Rpdml0eS5rdCAgICAgIOmAieaLqeW3suWuieijheW6lOeUqAogICAgQWxhcm1TY2hlZHVsZXIua3QgICAgICAgICBBbGFybU1hbmFnZXIg57K+56Gu6Ze56ZKfCiAgICBBbGFybVJlY2VpdmVyLmt0ICAgICAgICAgIOmXuemSn+inpuWPkeWFpeWPowogICAgQm9vdFJlY2VpdmVyLmt0ICAgICAgICAgICDlvIDmnLrph43mlrDmjpLnqIsKICAgIE1vbml0b3JTZXJ2aWNlLmt0ICAgICAgICAg5YmN5Y+w5pyN5Yqh77ya5omT5byA4oaS6K6h5pe24oaS6L+U5Zue4oaS5YWz6Zet4oaS6K6w5pel5b+XCiAgICBDbG9zZUFwcEFjY2Vzc2liaWxpdHlTZXJ2aWNlLmt0ICDml6Dpmpznoo3lhbPpl63mnIDov5Hku7vliqEKICAgIGRhdGEvQXBwRGF0YWJhc2Uua3QgICAgICAgUm9vbe+8muS7u+WKoeihqCArIOaXpeW/l+ihqApgYGAKCiMjIOWmguS9leeUn+aIkCBBUEsKCiMjIyDmlrnlvI8gQe+8mkdpdEh1YiBBY3Rpb25z77yI5o6o6I2Q77yM5peg6ZyA5pys5Zyw6KOF546v5aKD77yJCjEuIOWwhuacrOebruW9leaOqOmAgeWIsCBHaXRIdWIg5LuT5bqTCjIuIOS7k+W6k+W3suWMheWQqyBgZ3JhZGxld2AgLyBgZ3JhZGxldy5iYXRgIC8gYGdyYWRsZS93cmFwcGVyL2DvvIjlt7LplIHlrpogR3JhZGxlIDguNu+8ie+8jOS7peWPiiBgLmdpdGh1Yi93b3JrZmxvd3MvYnVpbGQtYXBrLnltbGAKMy4g5ZyoIEFjdGlvbnMg5Lit6L+Q6KGMIGBCdWlsZCBEZWJ1ZyBBUEtg77yM5Lqn54mpIGBhcHAtZGVidWcuYXBrYCDlj6/kuIvovb3lronoo4UKCj4g5bel56iL5bey6Ieq5bimIEdyYWRsZSBXcmFwcGVy77yMQ0kg5byA566x5Y2z6LeR77yM5peg6ZyA5L2g5pys5Zyw5YWI6KOFIEdyYWRsZeOAggoKIyMjIOaWueW8jyBC77yaQW5kcm9pZCBTdHVkaW8KMS4g55SoIEFuZHJvaWQgU3R1ZGlvIOaJk+W8gOacrOebruW9le+8iOS8muebtOaOpeS9v+eUqOW3peeoi+iHquW4pueahCBgZ3JhZGxld2DvvIkKMi4g562J5b6FIEdyYWRsZSDlkIzmraXlrozmiJAKMy4gQnVpbGQg4oaSIEJ1aWxkIEJ1bmRsZShzKSAvIEFQSyhzKSDihpIgQnVpbGQgQVBLKHMpCjQuIOWcqCBgYXBwL2J1aWxkL291dHB1dHMvYXBrL2RlYnVnL2Ag5Y+W5b6XIGBhcHAtZGVidWcuYXBrYAoKIyMg5Y+R5biD5p6E5bu66K+05piOCi0gYHJlbGVhc2VgIOaehOW7uuW3suW8gOWQryAqKlI4IOa3t+a3hiArIOi1hOa6kOWOi+e8qSoq77yIYG1pbmlmeUVuYWJsZWQgdHJ1ZWAgLyBgc2hyaW5rUmVzb3VyY2VzIHRydWVg77yJ77yM6KeE5YiZ6KeBIGBhcHAvcHJvZ3VhcmQtcnVsZXMucHJvYO+8iOS/neeVmSBSb29tIOWunuS9ky9EQU8v5pWw5o2u5bqT5Y+K57O757uf57uE5Lu277yM5L+d6K+B5re35reG5ZCO5Yqf6IO95q2j5bi477yJ44CCCi0g5pWw5o2u5bqTIGBBcHBEYXRhYmFzZWAg5bey6YWN572uKirov4Hnp7vnrZbnlaUqKu+8muaYvuW8j+azqOWGjCBgTUlHUkFUSU9OXzFfMmDvvIzlubblkK/nlKggYGZhbGxiYWNrVG9EZXN0cnVjdGl2ZU1pZ3JhdGlvbigpYCDlhZzlupXvvJvlkI7nu63kv67mlLkgYEBFbnRpdHlgIOWtl+auteaXtu+8jOWKoeW/heaWsOWinuWvueW6lOeahCBgTUlHUkFUSU9OX25fKG4rMSlg77yM5ZCm5YiZ6LWw5YWc5bqV6YeN5bu677yI5pen5pWw5o2u5riF56m677yJ44CCCi0g5pys5Zyw5Ye6IHJlbGVhc2Ug5YyF77yaYC4vZ3JhZGxldyBhc3NlbWJsZVJlbGVhc2Vg77yI6ZyA6YWN572u562+5ZCN77yJ44CCCgojIyDnnJ/mnLrlv4XlgZrmjojmnYPvvIjlhrPlrprlip/og73og73lkKbot5HpgJrvvIkK5pys5Yqf6IO95L6d6LWW57O757uf57qn6IO95Yqb77yM6ZyA55So5oi35Zyo6K6+5aSH5LiK5omL5Yqo5byA5ZCv77yaCjEuICoq57K+56Gu6Ze56ZKfKirvvIhBbmRyb2lkIDEyK++8ie+8muiuvue9riDihpIg5bqU55SoIOKGkiDlrprml7bku7vliqHliqnmiYsg4oaSIOmXuemSn+S4juaPkOmGkiDihpIg5YWB6K6457K+56Gu6Ze56ZKf77yI5L+d5a2Y5Lu75Yqh5pe25Lya6Ieq5Yqo6Lez6L2s5byV5a+877yJCjIuICoq5peg6Zqc56KN5pyN5YqhKirvvJrorr7nva4g4oaSIOaXoOmanOeijSDihpIg5a6a5pe25Lu75Yqh5Yqp5omLIOKGkiDlvIDlkK/vvIjnlKjkuo7oh6rliqjlhbPpl63nm67moIcgQXBw77yJCjMuICoq55S15rGg5LyY5YyW55m95ZCN5Y2VKirvvJrorr7nva4g4oaSIOeUteaxoCDihpIg5LiN5Y+X6ZmQ5Yi2CjQuICoq6Ieq5ZCv5YqoIC8g5ZCO5Y+w5by55Ye655WM6Z2iKirvvJrlkITljoLllYYgUk9NIOi3r+W+hOS4jeWQjO+8iOWNjuS4ui/lsI/nsbMvT1BQTy92aXZvIOetie+8ie+8jOmcgOaJi+WKqOaOiOS6iO+8jOWQpuWImeWIsOeCueWPr+iDveaXoOazleaLiei1t+ebruaghyBBcHAKCiMjIOW3suefpemZkOWItgotIOesrOS4ieaWuSBBcHAg55qE44CM5ZCO5Y+w5YWz6Zet44CN5Y+X5Y6C5ZWGIFJPTSDpmZDliLbvvIzpg6jliIbmnLrlnovml6Dms5XooqvlrozlhajmnYDmjonvvIzpnIDphY3lkIjml6Dpmpznoo3mnI3liqHjgIIKLSDnsr7noa7pl7npkp/lnKjns7vnu5/mnoHluqbnnIHnlLUgLyDph43lkK/mnKrmjojmnYPml7blj6/og73lpLHmlYjvvIzlu7rorq7lvIDlkK/nlLXmsaDnmb3lkI3ljZXjgIIKLSDmnKzlt6XnqIvkuLrlj6/nvJbor5HotbfngrnvvIxVSSDnu4boioLkuI7lpJrmnLrlnovpgILphY3lu7rorq7lnKggQW5kcm9pZCBTdHVkaW8g5Lit6L+b5LiA5q2l5omT56Oo44CCCg==
+# 定时任务助手（TaskHelper）
+
+定时打开指定 App → 停留 N 分钟 → 返回桌面 → 关闭该 App，并记录执行日志。无启用任务时自动进入「休眠态」，仅保留轻量定时器，最大限度省电。
+
+## 功能
+- 创建 / 编辑 / 删除定时任务（应用、时间、停留时长 1–60 分钟、重复规则）
+- 停留时长滑块 + 1 / 5 / 10 / 30 分钟快捷档
+- 到点自动打开目标应用，停留结束后返回桌面并关闭
+- 执行日志与成功率统计
+- 极致省电「休眠模式」：无启用任务时释放后台服务
+- 开机自启后自动重新排程
+
+## 工程结构
+```
+app/src/main/
+  AndroidManifest.xml
+  java/com/taskhelper/
+    MainActivity.kt            任务 / 日志 / 我的 三页
+    TasksFragment.kt          列表 + 休眠态 / 运行态切换
+    LogsFragment.kt           执行日志
+    SettingsFragment.kt       权限与省电开关
+    AddEditActivity.kt        新建 / 编辑任务（滑块、时间、重复）
+    AppPickerActivity.kt      选择已安装应用
+    AlarmScheduler.kt         AlarmManager 精确闹钟
+    AlarmReceiver.kt          闹钟触发入口
+    BootReceiver.kt           开机重新排程
+    MonitorService.kt         前台服务：打开→计时→返回→关闭→记日志
+    CloseAppAccessibilityService.kt  无障碍关闭最近任务
+    data/AppDatabase.kt       Room：任务表 + 日志表
+```
+
+## 如何生成 APK
+
+### 方式 A：GitHub Actions（推荐，无需本地装环境）
+1. 将本目录推送到 GitHub 仓库
+2. 仓库已包含 `gradlew` / `gradlew.bat` / `gradle/wrapper/`（已锁定 Gradle 8.6），以及 `.github/workflows/build-apk.yml`
+3. 在 Actions 中运行 `Build Debug APK`，产物 `app-debug.apk` 可下载安装
+
+> 工程已自带 Gradle Wrapper，CI 开箱即跑，无需你本地先装 Gradle。
+
+### 方式 B：Android Studio
+1. 用 Android Studio 打开本目录（会直接使用工程自带的 `gradlew`）
+2. 等待 Gradle 同步完成
+3. Build → Build Bundle(s) / APK(s) → Build APK(s)
+4. 在 `app/build/outputs/apk/debug/` 取得 `app-debug.apk`
+
+## 发布构建说明
+- `release` 构建已开启 **R8 混淆 + 资源压缩**（`minifyEnabled true` / `shrinkResources true`），规则见 `app/proguard-rules.pro`（保留 Room 实体/DAO/数据库及系统组件，保证混淆后功能正常）。
+- 数据库 `AppDatabase` 已配置**迁移策略**：显式注册 `MIGRATION_1_2`，并启用 `fallbackToDestructiveMigration()` 兜底；后续修改 `@Entity` 字段时，务必新增对应的 `MIGRATION_n_(n+1)`，否则走兜底重建（旧数据清空）。
+- 本地出 release 包：`./gradlew assembleRelease`（需配置签名）。
+
+## 真机必做授权（决定功能能否跑通）
+本功能依赖系统级能力，需用户在设备上手动开启：
+1. **精确闹钟**（Android 12+）：设置 → 应用 → 定时任务助手 → 闹钟与提醒 → 允许精确闹钟（保存任务时会自动跳转引导）
+2. **无障碍服务**：设置 → 无障碍 → 定时任务助手 → 开启（用于自动关闭目标 App）
+3. **电池优化白名单**：设置 → 电池 → 不受限制
+4. **自启动 / 后台弹出界面**：各厂商 ROM 路径不同（华为/小米/OPPO/vivo 等），需手动授予，否则到点可能无法拉起目标 App
+
+## 已知限制
+- 第三方 App 的「后台关闭」受厂商 ROM 限制，部分机型无法被完全杀掉，需配合无障碍服务。
+- 精确闹钟在系统极度省电 / 重启未授权时可能失效，建议开启电池白名单。
+- 本工程为可编译起点，UI 细节与多机型适配建议在 Android Studio 中进一步打磨。
