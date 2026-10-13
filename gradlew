@@ -1,1 +1,238 @@
-IyEvYmluL3NoCgojCiMgQ29weXJpZ2h0IMKpIDIwMTUtMjAyMSB0aGUgb3JpZ2luYWwgYXV0aG9ycy4KIwojIExpY2Vuc2VkIHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjAgKHRoZSAiTGljZW5zZSIpOwojIHlvdSBtYXkgbm90IHVzZSB0aGlzIGZpbGUgZXhjZXB0IGluIGNvbXBsaWFuY2Ugd2l0aCB0aGUgTGljZW5zZS4KIyBZb3UgbWF5IG9idGFpbiBhIGNvcHkgb2YgdGhlIExpY2Vuc2UgYXQKIwojICAgICAgaHR0cHM6Ly93d3cuYXBhY2hlLm9yZy9saWNlbnNlcy9MSUNFTlNFLTIuMAojCiMgVW5sZXNzIHJlcXVpcmVkIGJ5IGFwcGxpY2FibGUgbGF3IG9yIGFncmVlZCB0byBpbiB3cml0aW5nLCBzb2Z0d2FyZQojIGRpc3RyaWJ1dGVkIHVuZGVyIHRoZSBMaWNlbnNlIGlzIGRpc3RyaWJ1dGVkIG9uIGFuICJBUyBJUyIgQkFTSVMsCiMgV0lUSE9VVCBXQVJSQU5USUVTIE9SIENPTkRJVElPTlMgT0YgQU5ZIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuCiMgU2VlIHRoZSBMaWNlbnNlIGZvciB0aGUgc3BlY2lmaWMgbGFuZ3VhZ2UgZ292ZXJuaW5nIHBlcm1pc3Npb25zIGFuZAojIGxpbWl0YXRpb25zIHVuZGVyIHRoZSBMaWNlbnNlLgojCgojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKIwojICAgR3JhZGxlIHN0YXJ0IHVwIHNjcmlwdCBmb3IgUE9TSVggZ2VuZXJhdGVkIGJ5IEdyYWRsZS4KIwojICAgSW1wb3J0YW50IGZvciBydW5uaW5nOgojCiMgICAoMSkgWW91IG5lZWQgYSBQT1NJWC1jb21wbGlhbnQgc2hlbGwgdG8gcnVuIHRoaXMgc2NyaXB0LiBJZiB5b3VyIC9iaW4vc2ggaXMKIyAgICAgICBub25jb21wbGlhbnQsIGJ1dCB5b3UgaGF2ZSBzb21lIG90aGVyIGNvbXBsaWFudCBzaGVsbCBzdWNoIGFzIGtzaCBvcgojICAgICAgIGJhc2gsIHRoZW4gdG8gcnVuIHRoaXMgc2NyaXB0LCB0eXBlIHRoYXQgc2hlbGwgbmFtZSBiZWZvcmUgdGhlIHdob2xlCiMgICAgICAgY29tbWFuZCBsaW5lLCBsaWtlOgojCiMgICAgICAgICAgIGtzaCBHcmFkbGUKIwojICAgICAgIEJ1c3lib3ggYW5kIHNpbWlsYXIgcmVkdWNlZCBzaGVsbHMgd2lsbCBOT1Qgd29yaywgYmVjYXVzZSB0aGlzIHNjcmlwdAojICAgICAgIHJlcXVpcmVzIGFsbCBvZiB0aGVzZSBQT1NJWCBzaGVsbCBmZWF0dXJlczoKIyAgICAgICAgICogZnVuY3Rpb25zOwojICAgICAgICAgKiBleHBhbnNpb25zIMKrJHZhcsK7LCDCqyR7dmFyfcK7LCDCqyR7dmFyOi1kZWZhdWx0fcK7LCDCqyR7dmFyK1NFVH3CuywKIyAgICAgICAgICAgwqske3ZhciNwcmVmaXh9wrssIMKrJHt2YXIlc3VmZml4fcK7LCBhbmQgwqskKCBjbWQgKcK7OwojICAgICAgICAgKiBjb21wb3VuZCBjb21tYW5kcyBoYXZpbmcgYSB0ZXN0YWJsZSBleGl0IHN0YXR1cywgZXNwZWNpYWxseSDCq2Nhc2XCuzsKIyAgICAgICAgICogdmFyaW91cyBidWlsdC1pbiBjb21tYW5kcyBpbmNsdWRpbmcgwqtjb21tYW5kwrssIMKrc2V0wrssIGFuZCDCq3VsaW1pdMK7LgojCiMgICBJbXBvcnRhbnQgZm9yIHBhdGNoaW5nOgojCiMgICAoMikgVGhpcyBzY3JpcHQgdGFyZ2V0cyBhbnkgUE9TSVggc2hlbGwsIHNvIGl0IGF2b2lkcyBleHRlbnNpb25zIHByb3ZpZGVkCiMgICAgICAgYnkgQmFzaCwgS3NoLCBldGM7IGluIHBhcnRpY3VsYXIgYXJyYXlzIGFyZSBhdm9pZGVkLgojCiMgICAgICAgVGhlICJ0cmFkaXRpb25hbCIgcHJhY3RpY2Ugb2YgcGFja2luZyBtdWx0aXBsZSBwYXJhbWV0ZXJzIGludG8gYQojICAgICAgIHNwYWNlLXNlcGFyYXRlZCBzdHJpbmcgaXMgYSB3ZWxsIGRvY3VtZW50ZWQgc291cmNlIG9mIGJ1Z3MgYW5kIHNlY3VyaXR5CiMgICAgICAgcHJvYmxlbXMsIHNvIHRoaXMgaXMgKG1vc3RseSkgYXZvaWRlZCwgYnkgcHJvZ3Jlc3NpdmVseSBhY2N1bXVsYXRpbmcKIyAgICAgICBvcHRpb25zIGluICIkQCIsIGFuZCBldmVudHVhbGx5IHBhc3NpbmcgdGhhdCB0byBKYXZhLgojCiMgICAgICAgV2hlcmUgdGhlIGluZXZpdGFibGUgc3BhY2VzIGluIHZhcmlhYmxlcyBhcmUgcHJlc2VudCwgZG91YmxlLXF1b3Rpbmcgb2YKIyAgICAgICB0aGUgdmFyaWFibGVzIGlzIHVzZWQgdG8gcHJldmVudCBtYW5nbGluZywgYW5kIHRoZSB2YXJpYWJsZXMgdGhlbXNlbHZlcwojICAgICAgIGFyZSBzZXQgdG8gaGF2ZSBlbWJlZGRlZCBzcGFjZXMgd2hlcmUgYXBwcm9wcmlhdGUuCiMKIyAgICAgICBJZiAiRGFyd2luIiBpcyBsaXN0ZWQgaW4gdGhlIE9TLCB0aGUgc2NyaXB0IHVzZXMgInNvcnQgLXIiIHRvIHJldmVyc2UKIyAgICAgICB0aGUgb3JkZXIgb2YgdGhlIHNlYXJjaCBmb3IgYSBKYXZhIGV4ZWN1dGFibGUuIFRoaXMgd2FzIG9ic2VydmVkIHRvIGJlCiMgICAgICAgbmVjZXNzYXJ5IG9uIG1hY09TIHdoZW4gSmF2YSB3YXMgaW5zdGFsbGVkIHZpYSB0aGUgImJyZXciIHBhY2thZ2UKIyAgICAgICBtYW5hZ2VyLgojCiMgICAoMykgVGhpcyBzY3JpcHQgaXMgZGVzaWduZWQgdG8gYmUgcnVuIGZyb20gdGhlIGRpcmVjdG9yeSB3aGVyZSB0aGUgR3JhZGxlCiMgICAgICAgYnVpbGQgaXMgbG9jYXRlZC4gSWYgaXQgaXMgcnVuIGZyb20gZWxzZXdoZXJlLCB0aGUgR3JhZGxlIGJ1aWxkIHdpbGwKIyAgICAgICBzdGlsbCB3b3JrLCBidXQgdGhlIHdvcmtpbmcgZGlyZWN0b3J5IHdpbGwgYmUgdGhhdCBvZiB0aGUgc2hlbGwuCiMKIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCgojIEF0dGVtcHQgdG8gc2V0IEFQUF9IT01FCgojIFJlc29sdmUgbGlua3M6ICQwIG1heSBiZSBhIGxpbmsKYXBwX3BhdGg9JDAKCiMgTmVlZCB0aGlzIGZvciBkYWlzeS1jaGFpbmVkIHN5bWxpbmtzLgp3aGlsZQogICAgQVBQX0hPTUU9JHthcHBfcGF0aCUiJHthcHBfcGF0aCMjKi99In0gICMgbGVhdmVzIGEgdHJhaWxpbmcgLzsgZW1wdHkgaWYgbm8gbGVhZGluZyBwYXRoCiAgICBbIC1oICIkYXBwX3BhdGgiIF0KZG8KICAgIGxzPSQoIGxzIC1sZCAiJGFwcF9wYXRoIiApCiAgICBsaW5rPSR7bHMjKicgLT4gJ30KICAgIGNhc2UgJGxpbmsgaW4gICAgICAgICAgICAgIygKICAgICAgLyopICAgYXBwX3BhdGg9JGxpbmsgOzsgIygKICAgICAgKikgICAgYXBwX3BhdGg9JEFQUF9IT01FJGxpbmsgOzsKICAgIGVzYWMKZG9uZQoKIyBUaGlzIGlzIG5vcm1hbGx5IHVudXNlZAojIHNoZWxsY2hlY2sgZGlzYWJsZT1TQzIwMzQKQVBQX0JBU0VfTkFNRT0kezAjIyovfQpBUFBfSE9NRT0kKCBjZCAiJHtBUFBfSE9NRTotLi99IiAmJiBwd2QgLVAgKSB8fCBleGl0CgojIFVzZSB0aGUgbWF4aW11bSBhdmFpbGFibGUsIG9yIHNldCBNQVhfRkQgIT0gLTEgdG8gdXNlIHRoYXQgdmFsdWUuCk1BWF9GRD1tYXhpbXVtCgp3YXJuICgpIHsKICAgIGVjaG8gIiQqIgp9ID4mMgoKZGllICgpIHsKICAgIGVjaG8KICAgIGVjaG8gIiQqIgogICAgZWNobwogICAgZXhpdCAxCn0gPiYyCgojIE9TIHNwZWNpZmljIHN1cHBvcnQgKG11c3QgYmUgJ3RydWUnIG9yICdmYWxzZScpLgpjeWd3aW49ZmFsc2UKbXN5cz1mYWxzZQpkYXJ3aW49ZmFsc2UKbm9uc3RvcD1mYWxzZQpjYXNlICIkKCB1bmFtZSApIiBpbiAgICAgICAgICAgICAgICAjKAogIENZR1dJTiogKSAgICAgICAgIGN5Z3dpbj10cnVlICA7OyAjKAogIERhcndpbiogKSAgICAgICAgIGRhcndpbj10cnVlICA7OyAjKAogIE1TWVMqIHwgTUlOR1cqICkgIG1zeXM9dHJ1ZSAgICA7OyAjKAogIE5PTlNUT1AqICkgICAgICAgIG5vbnN0b3A9dHJ1ZSA7Owplc2FjCgpDTEFTU1BBVEg9JEFQUF9IT01FL2dyYWRsZS93cmFwcGVyL2dyYWRsZS13cmFwcGVyLmphcgoKCiMgRGV0ZXJtaW5lIHRoZSBKYXZhIGNvbW1hbmQgdG8gdXNlIHRvIHN0YXJ0IHRoZSBKVk0uCmlmIFsgLW4gIiRKQVZBX0hPTUUiIF0gOyB0aGVuCiAgICBpZiBbIC14ICIkSkFWQV9IT01FL2pyZS9zaC9qYXZhIiBdIDsgdGhlbgogICAgICAgICMgSUJNJ3MgSkRLIG9uIEFJWCB1c2VzIHN0cmFuZ2UgbG9jYXRpb25zIGZvciB0aGUgZXhlY3V0YWJsZXMKICAgICAgICBKQVZBQ01EPSRKQVZBX0hPTUUvanJlL3NoL2phdmEKICAgIGVsc2UKICAgICAgICBKQVZBQ01EPSRKQVZBX0hPTUUvYmluL2phdmEKICAgIGZpCiAgICBpZiBbICEgLXggIiRKQVZBQ01EIiBdIDsgdGhlbgogICAgICAgIGRpZSAiRVJST1I6IEpBVkFfSE9NRSBpcyBzZXQgdG8gYW4gaW52YWxpZCBkaXJlY3Rvcnk6ICRKQVZBX0hPTUUKClBsZWFzZSBzZXQgdGhlIEpBVkFfSE9NRSB2YXJpYWJsZSBpbiB5b3VyIGVudmlyb25tZW50IHRvIG1hdGNoIHRoZQpsb2NhdGlvbiBvZiB5b3VyIEphdmEgaW5zdGFsbGF0aW9uLiIKICAgIGZpCmVsc2UKICAgIEpBVkFDTUQ9amF2YQogICAgd2hpY2ggamF2YSA+L2Rldi9udWxsIDI+JjEgfHwgZGllICJFUlJPUjogSkFWQV9IT01FIGlzIG5vdCBzZXQgYW5kIG5vICdqYXZhJyBjb21tYW5kIGNvdWxkIGJlIGZvdW5kIGluIHlvdXIgUEFUSC4KClBsZWFzZSBzZXQgdGhlIEpBVkFfSE9NRSB2YXJpYWJsZSBpbiB5b3VyIGVudmlyb25tZW50IHRvIG1hdGNoIHRoZQpsb2NhdGlvbiBvZiB5b3VyIEphdmEgaW5zdGFsbGF0aW9uLiIKZmkKCiMgSW5jcmVhc2UgdGhlIG1heGltdW0gZmlsZSBkZXNjcmlwdG9ycyBpZiB3ZSBjYW4uCmlmICEgIiRjeWd3aW4iICYmICEgIiRkYXJ3aW4iICYmICEgIiRub25zdG9wIiA7IHRoZW4KICAgIGNhc2UgJE1BWF9GRCBpbiAjKAogICAgICBtYXgqKQogICAgICAgICMgSW4gUE9TSVggc2gsIHVsaW1pdCAtSCBpcyB1bmRlZmluZWQuIFRoYXQncyB3aHkgdGhlIHJlc3VsdCBpcyBjaGVja2VkIHRvIHNlZSBpZiBpdCB3b3JrZWQuCiAgICAgICAgIyBzaGVsbGNoZWNrIGRpc2FibGU9U0MzMDQ1CiAgICAgICAgTUFYX0ZEPSQoIHVsaW1pdCAtSCAtbiApIHx8CiAgICAgICAgICAgIHdhcm4gIkNvdWxkIG5vdCBxdWVyeSBtYXhpbXVtIGZpbGUgZGVzY3JpcHRvciBsaW1pdCIKICAgICAgICBlc2FjCiAgICBjYXNlICRNQVhfRkQgaW4gICMoCiAgICAgICcnIHwgc29mdCkgOjs7ICMoCiAgICAgICopCiAgICAgICAgIyBJbiBQT1NJWCBzaCwgdWxpbWl0IC1uIGlzIHVuZGVmaW5lZC4gVGhhdCdzIHdoeSB0aGUgcmVzdWx0IGlzIGNoZWNrZWQgdG8gc2VlIGlmIGl0IHdvcmtlZC4KICAgICAgICAjIHNoZWxsY2hlY2sgZGlzYWJsZT1TQzMwNDUKICAgICAgICB1bGltaXQgLW4gIiRNQVhfRkQiIHx8CiAgICAgICAgICAgIHdhcm4gIkNvdWxkIG5vdCBzZXQgbWF4aW11bSBmaWxlIGRlc2NyaXB0b3IgbGltaXQgdG8gJE1BWF9GRCIKICAgIGVzYWMKZmkKCiMgQ29sbGVjdCBhbGwgYXJndW1lbnRzIGZvciB0aGUgamF2YSBjb21tYW5kLCBzdGFja2luZyBpbiByZXZlcnNlIG9yZGVyOgojICAgKiBhcmdzIGZyb20gdGhlIGNvbW1hbmQgbGluZQojICAgKiB0aGUgbWFpbiBjbGFzcyBuYW1lCiMgICAqIC1jbGFzc3BhdGgKIyAgICogLUQuLi5hcHBuYW1lIHNldHRpbmdzCiMgICAqIC0tbW9kdWxlLXBhdGggKG9ubHkgaWYgbmVlZGVkKQojICAgKiBERUZBVUxUX0pWTV9PUFRTLCBKQVZBX09QVFMsIGFuZCBHUkFETEVfT1BUUyBlbnZpcm9ubWVudCB2YXJpYWJsZXMuCgojIEZvciBDeWd3aW4gb3IgTVNZUywgc3dpdGNoIHBhdGhzIHRvIFdpbmRvd3MgZm9ybWF0IGJlZm9yZSBydW5uaW5nIGphdmEKaWYgIiRjeWd3aW4iIHx8ICIkbXN5cyIgOyB0aGVuCiAgICBBUFBfSE9NRT0kKCBjeWdwYXRoIC0tcGF0aCAtLW1peGVkICIkQVBQX0hPTUUiICkKICAgIENMQVNTUEFUSD0kKCBjeWdwYXRoIC0tcGF0aCAtLW1peGVkICIkQ0xBU1NQQVRIIiApCgogICAgSkFWQUNNRD0kKCBjeWdwYXRoIC0tdW5peCAiJEpBVkFDTUQiICkKCiAgICAjIE5vdyBjb252ZXJ0IHRoZSBhcmd1bWVudHMgLSBrbHVkZ2UgdG8gbGltaXQgb3Vyc2VsdmVzIHRvIC9iaW4vc2gKICAgIGZvciBhcmcgZG8KICAgICAgICBpZgogICAgICAgICAgICBjYXNlICRhcmcgaW4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMoCiAgICAgICAgICAgICAgLSopICAgZmFsc2UgOzsgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBkb24ndCBtZXNzIHdpdGggb3B0aW9ucyAjKAogICAgICAgICAgICAgIC8/KikgIHQ9JHthcmcjL30gdD0vJHt0JSUvKn0gICAgICAgICAgICAgICMgbG9va3MgbGlrZSBhIFBPU0lYIGZpbGVwYXRoCiAgICAgICAgICAgICAgICAgICAgWyAtZSAiJHQiIF0gOzsgICAgICAgICAgICAgICAgICAgICAgIyBhcHBlYXJzIHRvIGV4aXN0CiAgICAgICAgICAgIGVzYWMKICAgICAgICB0aGVuCiAgICAgICAgICAgIGFyZz0kKCBjeWdwYXRoIC0tcGF0aCAtLWlnbm9yZSAtLW1peGVkICIkYXJnIiApCiAgICAgICAgZmkKICAgICAgICAjIFJvbGwgdGhlIGFyZ3MgbGlzdCBhcm91bmQgZXhhY3RseSBhcyBtYW55IHRpbWVzIGFzIGl0IHdpbGwgZ28KICAgICAgICBzZXQgLS0gIiRAIiAiJGFyZyIKICAgICAgICBzaGlmdAogICAgZG9uZQpmaQoKCiMgQWRkIGRlZmF1bHQgSlZNIG9wdGlvbnMgaGVyZS4gWW91IGNhbiBhbHNvIHVzZSBKQVZBX09QVFMgYW5kIEdSQURMRV9PUFRTIHRvIHBhc3MgSlZNIG9wdGlvbnMgdG8gdGhpcyBzY3JpcHQuCkRFRkFVTFRfSlZNX09QVFM9JyItWG14NjRtIiAiLVhtczY0bSInCgojIENvbGxlY3QgYWxsIGFyZ3VtZW50cyBmb3IgdGhlIGphdmEgY29tbWFuZDsKIyAgICogJERFRkFVTFRfSlZNX09QVFMsICRKQVZBX09QVFMsIGFuZCAkR1JBRExFX09QVFMgY2FuIGNvbnRhaW4gZnJhZ21lbnRzIG9mCiMgICAgIHNoZWxsIHNjcmlwdCBpbmNsdWRpbmcgcXVvdGVzIGFuZCB2YXJpYWJsZSBzdWJzdGl0dXRpb25zLCBzbyBwdXQgdGhlbSBpbgojICAgICBkb3VibGUgcXVvdGVzIHRvIG1ha2Ugc3VyZSB0aGF0IHRoZXkgZ2V0IHJlLWV4cGFuZGVkOyBhbmQKIyAgICogcHV0IGV2ZXJ5dGhpbmcgZWxzZSBpbiBzaW5nbGUgcXVvdGVzLCBzbyB0aGF0IGl0J3Mgbm90IHJlLWV4cGFuZGVkLgoKc2V0IC0tIFwKICAgICAgICAiLURvcmcuZ3JhZGxlLmFwcG5hbWU9JEFQUF9CQVNFX05BTUUiIFwKICAgICAgICAtY2xhc3NwYXRoICIkQ0xBU1NQQVRIIiBcCiAgICAgICAgb3JnLmdyYWRsZS53cmFwcGVyLkdyYWRsZVdyYXBwZXJNYWluIFwKICAgICAgICAiJEAiCgojIFN0b3Agd2hlbiAieGFyZ3MiIGlzIG5vdCBhdmFpbGFibGUuCmlmICEgY29tbWFuZCAtdiB4YXJncyA+L2Rldi9udWxsIDI+JjEKdGhlbgogICAgZGllICJ4YXJncyBpcyBub3QgYXZhaWxhYmxlIgpmaQoKIyBVc2UgInhhcmdzIiB0byBwYXJzZSBxdW90ZWQgYXJncy4KIwojIFdpdGggLW4xIGl0IG91dHB1dHMgb25lIGFyZyBwZXIgbGluZSwgd2l0aCB0aGUgcXVvdGVzIGFuZCBiYWNrc2xhc2hlcyByZW1vdmVkLgojCiMgSW4gQmFzaCB3ZSBjb3VsZCBzaW1wbHkgZ286CiMKIyAgIHJlYWRhcnJheSBBUkdTIDwgPCggeGFyZ3MgLW4xIDw8PCIkdmFyIiApICYmCiMgICBzZXQgLS0gIiR7QVJHU1tAXX0iICIkQCIKIwojIGJ1dCBQT1NJWCBzaGVsbCBoYXMgbmVpdGhlciBhcnJheXMgbm9yIGNvbW1hbmQgc3Vic3RpdHV0aW9uLCBzbyBpbnN0ZWFkIHdlCiMgcG9zdC1wcm9jZXNzIGVhY2ggYXJnIChhcyBhIGxpbmUgb2YgaW5wdXQgdG8gc2VkKSB0byBiYWNrc2xhc2gtZXNjYXBlIGFueQojIGNoYXJhY3RlciB0aGF0IG1pZ2h0IGJlIGEgc2hlbGwgbWV0YWNoYXJhY3RlciwgdGhlbiB1c2UgZXZhbCB0byByZXZlcnNlCiMgdGhhdCBwcm9jZXNzICh3aGlsZSBtYWludGFpbmluZyB0aGUgc2VwYXJhdGlvbiBiZXR3ZWVuIGFyZ3VtZW50cyksIGFuZCB3cmFwCiMgdGhlIHdob2xlIHRoaW5nIHVwIGFzIGEgc2luZ2xlICJzZXQiIHN0YXRlbWVudC4KIwojIFRoaXMgd2lsbCBvZiBjb3Vyc2UgYnJlYWsgaWYgYW55IG9mIHRoZXNlIHZhcmlhYmxlcyBjb250YWlucyBhIG5ld2xpbmUgb3IKIyBhbiB1bm1hdGNoZWQgcXVvdGUuCiMKCmV2YWwgInNldCAtLSAkKAogICAgICAgIHByaW50ZiAnJXNcbicgIiRERUZBVUxUX0pWTV9PUFRTICRKQVZBX09QVFMgJEdSQURMRV9PUFRTIiB8CiAgICAgICAgeGFyZ3MgLW4xIHwKICAgICAgICBzZWQgJyBzflteLVs6YWxudW06XSssLi86PUBfXX5cXCZ+ZzsgJyB8CiAgICAgICAgdHIgJ1xuJyAnICcKICAgICkiICciJEAiJwoKZXhlYyAiJEpBVkFDTUQiICIkQCIK
+#!/bin/sh
+
+#
+# Copyright © 2015-2021 the original authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+##############################################################################
+#
+#   Gradle start up script for POSIX generated by Gradle.
+#
+#   Important for running:
+#
+#   (1) You need a POSIX-compliant shell to run this script. If your /bin/sh is
+#       noncompliant, but you have some other compliant shell such as ksh or
+#       bash, then to run this script, type that shell name before the whole
+#       command line, like:
+#
+#           ksh Gradle
+#
+#       Busybox and similar reduced shells will NOT work, because this script
+#       requires all of these POSIX shell features:
+#         * functions;
+#         * expansions «$var», «${var}», «${var:-default}», «${var+SET}»,
+#           «${var#prefix}», «${var%suffix}», and «$( cmd )»;
+#         * compound commands having a testable exit status, especially «case»;
+#         * various built-in commands including «command», «set», and «ulimit».
+#
+#   Important for patching:
+#
+#   (2) This script targets any POSIX shell, so it avoids extensions provided
+#       by Bash, Ksh, etc; in particular arrays are avoided.
+#
+#       The "traditional" practice of packing multiple parameters into a
+#       space-separated string is a well documented source of bugs and security
+#       problems, so this is (mostly) avoided, by progressively accumulating
+#       options in "$@", and eventually passing that to Java.
+#
+#       Where the inevitable spaces in variables are present, double-quoting of
+#       the variables is used to prevent mangling, and the variables themselves
+#       are set to have embedded spaces where appropriate.
+#
+#       If "Darwin" is listed in the OS, the script uses "sort -r" to reverse
+#       the order of the search for a Java executable. This was observed to be
+#       necessary on macOS when Java was installed via the "brew" package
+#       manager.
+#
+#   (3) This script is designed to be run from the directory where the Gradle
+#       build is located. If it is run from elsewhere, the Gradle build will
+#       still work, but the working directory will be that of the shell.
+#
+##############################################################################
+
+# Attempt to set APP_HOME
+
+# Resolve links: $0 may be a link
+app_path=$0
+
+# Need this for daisy-chained symlinks.
+while
+    APP_HOME=${app_path%"${app_path##*/}"}  # leaves a trailing /; empty if no leading path
+    [ -h "$app_path" ]
+do
+    ls=$( ls -ld "$app_path" )
+    link=${ls#*' -> '}
+    case $link in             #(
+      /*)   app_path=$link ;; #(
+      *)    app_path=$APP_HOME$link ;;
+    esac
+done
+
+# This is normally unused
+# shellcheck disable=SC2034
+APP_BASE_NAME=${0##*/}
+APP_HOME=$( cd "${APP_HOME:-./}" && pwd -P ) || exit
+
+# Use the maximum available, or set MAX_FD != -1 to use that value.
+MAX_FD=maximum
+
+warn () {
+    echo "$*"
+} >&2
+
+die () {
+    echo
+    echo "$*"
+    echo
+    exit 1
+} >&2
+
+# OS specific support (must be 'true' or 'false').
+cygwin=false
+msys=false
+darwin=false
+nonstop=false
+case "$( uname )" in                #(
+  CYGWIN* )         cygwin=true  ;; #(
+  Darwin* )         darwin=true  ;; #(
+  MSYS* | MINGW* )  msys=true    ;; #(
+  NONSTOP* )        nonstop=true ;;
+esac
+
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+
+
+# Determine the Java command to use to start the JVM.
+if [ -n "$JAVA_HOME" ] ; then
+    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
+        # IBM's JDK on AIX uses strange locations for the executables
+        JAVACMD=$JAVA_HOME/jre/sh/java
+    else
+        JAVACMD=$JAVA_HOME/bin/java
+    fi
+    if [ ! -x "$JAVACMD" ] ; then
+        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation."
+    fi
+else
+    JAVACMD=java
+    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation."
+fi
+
+# Increase the maximum file descriptors if we can.
+if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
+    case $MAX_FD in #(
+      max*)
+        # In POSIX sh, ulimit -H is undefined. That's why the result is checked to see if it worked.
+        # shellcheck disable=SC3045
+        MAX_FD=$( ulimit -H -n ) ||
+            warn "Could not query maximum file descriptor limit"
+        esac
+    case $MAX_FD in  #(
+      '' | soft) :;; #(
+      *)
+        # In POSIX sh, ulimit -n is undefined. That's why the result is checked to see if it worked.
+        # shellcheck disable=SC3045
+        ulimit -n "$MAX_FD" ||
+            warn "Could not set maximum file descriptor limit to $MAX_FD"
+    esac
+fi
+
+# Collect all arguments for the java command, stacking in reverse order:
+#   * args from the command line
+#   * the main class name
+#   * -classpath
+#   * -D...appname settings
+#   * --module-path (only if needed)
+#   * DEFAULT_JVM_OPTS, JAVA_OPTS, and GRADLE_OPTS environment variables.
+
+# For Cygwin or MSYS, switch paths to Windows format before running java
+if "$cygwin" || "$msys" ; then
+    APP_HOME=$( cygpath --path --mixed "$APP_HOME" )
+    CLASSPATH=$( cygpath --path --mixed "$CLASSPATH" )
+
+    JAVACMD=$( cygpath --unix "$JAVACMD" )
+
+    # Now convert the arguments - kludge to limit ourselves to /bin/sh
+    for arg do
+        if
+            case $arg in                                #(
+              -*)   false ;;                            # don't mess with options #(
+              /?*)  t=${arg#/} t=/${t%%/*}              # looks like a POSIX filepath
+                    [ -e "$t" ] ;;                      # appears to exist
+            esac
+        then
+            arg=$( cygpath --path --ignore --mixed "$arg" )
+        fi
+        # Roll the args list around exactly as many times as it will go
+        set -- "$@" "$arg"
+        shift
+    done
+fi
+
+
+# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+
+# Collect all arguments for the java command;
+#   * $DEFAULT_JVM_OPTS, $JAVA_OPTS, and $GRADLE_OPTS can contain fragments of
+#     shell script including quotes and variable substitutions, so put them in
+#     double quotes to make sure that they get re-expanded; and
+#   * put everything else in single quotes, so that it's not re-expanded.
+
+set -- \
+        "-Dorg.gradle.appname=$APP_BASE_NAME" \
+        -classpath "$CLASSPATH" \
+        org.gradle.wrapper.GradleWrapperMain \
+        "$@"
+
+# Stop when "xargs" is not available.
+if ! command -v xargs >/dev/null 2>&1
+then
+    die "xargs is not available"
+fi
+
+# Use "xargs" to parse quoted args.
+#
+# With -n1 it outputs one arg per line, with the quotes and backslashes removed.
+#
+# In Bash we could simply go:
+#
+#   readarray ARGS < <( xargs -n1 <<<"$var" ) &&
+#   set -- "${ARGS[@]}" "$@"
+#
+# but POSIX shell has neither arrays nor command substitution, so instead we
+# post-process each arg (as a line of input to sed) to backslash-escape any
+# character that might be a shell metacharacter, then use eval to reverse
+# that process (while maintaining the separation between arguments), and wrap
+# the whole thing up as a single "set" statement.
+#
+# This will of course break if any of these variables contains a newline or
+# an unmatched quote.
+#
+
+eval "set -- $(
+        printf '%s\n' "$DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS" |
+        xargs -n1 |
+        sed ' s~[^-[:alnum:]+,./:=@_]~\\&~g; ' |
+        tr '\n' ' '
+    )" '"$@"'
+
+exec "$JAVACMD" "$@"
