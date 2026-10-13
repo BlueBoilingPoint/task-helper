@@ -1,1 +1,62 @@
-cGFja2FnZSBjb20udGFza2hlbHBlcgoKaW1wb3J0IGFuZHJvaWQuYXBwLkFsYXJtTWFuYWdlcgppbXBvcnQgYW5kcm9pZC5jb250ZW50LkNvbnRleHQKaW1wb3J0IGFuZHJvaWQuY29udGVudC5JbnRlbnQKaW1wb3J0IGFuZHJvaWQub3MuQnVpbGQKaW1wb3J0IGFuZHJvaWQub3MuQnVuZGxlCmltcG9ydCBhbmRyb2lkeC5hcHBjb21wYXQuYXBwLkFwcENvbXBhdEFjdGl2aXR5CmltcG9ydCBhbmRyb2lkeC5saWZlY3ljbGUubGlmZWN5Y2xlU2NvcGUKaW1wb3J0IGNvbS5nb29nbGUuYW5kcm9pZC5tYXRlcmlhbC5ib3R0b21uYXZpZ2F0aW9uLkJvdHRvbU5hdmlnYXRpb25WaWV3CmltcG9ydCBjb20uZ29vZ2xlLmFuZHJvaWQubWF0ZXJpYWwuZmxvYXRpbmdhY3Rpb25idXR0b24uRmxvYXRpbmdBY3Rpb25CdXR0b24KaW1wb3J0IGtvdGxpbnguY29yb3V0aW5lcy5EaXNwYXRjaGVycwppbXBvcnQga290bGlueC5jb3JvdXRpbmVzLmxhdW5jaAoKY2xhc3MgTWFpbkFjdGl2aXR5IDogQXBwQ29tcGF0QWN0aXZpdHkoKSB7CgogICAgcHJpdmF0ZSB2YWwgdGFza3NGcmFnID0gVGFza3NGcmFnbWVudCgpCiAgICBwcml2YXRlIHZhbCBsb2dzRnJhZyA9IExvZ3NGcmFnbWVudCgpCiAgICBwcml2YXRlIHZhbCBtZUZyYWcgPSBTZXR0aW5nc0ZyYWdtZW50KCkKCiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlKQogICAgICAgIHNldENvbnRlbnRWaWV3KFIubGF5b3V0LmFjdGl2aXR5X21haW4pCgogICAgICAgIC8vIOWGt+WQr+WKqOWNs+ehruS/neezu+e7n+WxgumXuemSn+W3sueZu+iusO+8iOW6lOeUqOWPr+iDveiiq+mXuemSn+S7juatu+S6oeaAgeWUpOmGkuiAjOaLiei1t++8iQogICAgICAgIGxpZmVjeWNsZVNjb3BlLmxhdW5jaChEaXNwYXRjaGVycy5JTykgewogICAgICAgICAgICBBbGFybVNjaGVkdWxlci5yZXNjaGVkdWxlQWxsKHRoaXNATWFpbkFjdGl2aXR5KQogICAgICAgIH0KCiAgICAgICAgc3VwcG9ydEZyYWdtZW50TWFuYWdlci5iZWdpblRyYW5zYWN0aW9uKCkKICAgICAgICAgICAgLnJlcGxhY2UoUi5pZC5jb250YWluZXIsIHRhc2tzRnJhZykKICAgICAgICAgICAgLmNvbW1pdCgpCgogICAgICAgIGZpbmRWaWV3QnlJZDxCb3R0b21OYXZpZ2F0aW9uVmlldz4oUi5pZC5ib3R0b21fbmF2KS5zZXRPbkl0ZW1TZWxlY3RlZExpc3RlbmVyIHsgaXRlbSAtPgogICAgICAgICAgICB3aGVuIChpdGVtLml0ZW1JZCkgewogICAgICAgICAgICAgICAgUi5pZC5uYXZfdGFza3MgLT4gc3VwcG9ydEZyYWdtZW50TWFuYWdlci5iZWdpblRyYW5zYWN0aW9uKCkKICAgICAgICAgICAgICAgICAgICAucmVwbGFjZShSLmlkLmNvbnRhaW5lciwgdGFza3NGcmFnKS5jb21taXQoKQogICAgICAgICAgICAgICAgUi5pZC5uYXZfbG9ncyAtPiBzdXBwb3J0RnJhZ21lbnRNYW5hZ2VyLmJlZ2luVHJhbnNhY3Rpb24oKQogICAgICAgICAgICAgICAgICAgIC5yZXBsYWNlKFIuaWQuY29udGFpbmVyLCBsb2dzRnJhZykuY29tbWl0KCkKICAgICAgICAgICAgICAgIFIuaWQubmF2X21lIC0+IHN1cHBvcnRGcmFnbWVudE1hbmFnZXIuYmVnaW5UcmFuc2FjdGlvbigpCiAgICAgICAgICAgICAgICAgICAgLnJlcGxhY2UoUi5pZC5jb250YWluZXIsIG1lRnJhZykuY29tbWl0KCkKICAgICAgICAgICAgfQogICAgICAgICAgICB0cnVlCiAgICAgICAgfQoKICAgICAgICBmaW5kVmlld0J5SWQ8RmxvYXRpbmdBY3Rpb25CdXR0b24+KFIuaWQuZmFiX2FkZCkuc2V0T25DbGlja0xpc3RlbmVyIHsKICAgICAgICAgICAgc3RhcnRBY3Rpdml0eShJbnRlbnQodGhpcywgQWRkRWRpdEFjdGl2aXR5OjpjbGFzcy5qYXZhKSkKICAgICAgICB9CiAgICB9CgogICAgb3ZlcnJpZGUgZnVuIG9uUmVzdW1lKCkgewogICAgICAgIHN1cGVyLm9uUmVzdW1lKCkKICAgICAgICAvLyDnlKjmiLfliJrmjojkuojnsr7noa7pl7npkp/mnYPpmZDml7bvvIzoh6rliqjph43mjpLmraTliY3lm6Dml6DmnYPpmZDogIzmnKrnmbvorrDnmoTpl7npkp8KICAgICAgICB2YWwgYW0gPSBnZXRTeXN0ZW1TZXJ2aWNlKENvbnRleHQuQUxBUk1fU0VSVklDRSkgYXMgQWxhcm1NYW5hZ2VyCiAgICAgICAgdmFsIGNhbkV4YWN0ID0gQnVpbGQuVkVSU0lPTi5TREtfSU5UIDwgQnVpbGQuVkVSU0lPTl9DT0RFUy5TIHx8IGFtLmNhblNjaGVkdWxlRXhhY3RBbGFybXMoKQogICAgICAgIGlmIChjYW5FeGFjdCAmJiBQZW5kaW5nQXV0aFN0b3JlLmlzTm90RW1wdHkodGhpcykpIHsKICAgICAgICAgICAgbGlmZWN5Y2xlU2NvcGUubGF1bmNoKERpc3BhdGNoZXJzLklPKSB7CiAgICAgICAgICAgICAgICBBbGFybVNjaGVkdWxlci5yZXNjaGVkdWxlQWxsKHRoaXNATWFpbkFjdGl2aXR5KQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9Cg==
+package com.taskhelper
+
+import android.app.AlarmManager
+import android.content.Context
+import android.content.Intent
+import android.os.Build
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+
+class MainActivity : AppCompatActivity() {
+
+    private val tasksFrag = TasksFragment()
+    private val logsFrag = LogsFragment()
+    private val meFrag = SettingsFragment()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // 冷启动即确保系统层闹钟已登记（应用可能被闹钟从死亡态唤醒而拉起）
+        lifecycleScope.launch(Dispatchers.IO) {
+            AlarmScheduler.rescheduleAll(this@MainActivity)
+        }
+
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container, tasksFrag)
+            .commit()
+
+        findViewById<BottomNavigationView>(R.id.bottom_nav).setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_tasks -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.container, tasksFrag).commit()
+                R.id.nav_logs -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.container, logsFrag).commit()
+                R.id.nav_me -> supportFragmentManager.beginTransaction()
+                    .replace(R.id.container, meFrag).commit()
+            }
+            true
+        }
+
+        findViewById<FloatingActionButton>(R.id.fab_add).setOnClickListener {
+            startActivity(Intent(this, AddEditActivity::class.java))
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // 用户刚授予精确闹钟权限时，自动重排此前因无权限而未登记的闹钟
+        val am = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val canExact = Build.VERSION.SDK_INT < Build.VERSION_CODES.S || am.canScheduleExactAlarms()
+        if (canExact && PendingAuthStore.isNotEmpty(this)) {
+            lifecycleScope.launch(Dispatchers.IO) {
+                AlarmScheduler.rescheduleAll(this@MainActivity)
+            }
+        }
+    }
+}
