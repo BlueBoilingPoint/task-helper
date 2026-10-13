@@ -54,7 +54,13 @@ class TasksFragment : Fragment(R.layout.fragment_tasks) {
     private fun refresh() {
         lifecycleScope.launch {
             val ctx = requireContext()
-            val tasks = AppDatabase.get(ctx).taskDao().all().first()
+            val db = AppDatabase.get(ctx)
+            val tasks = db.taskDao().all().first()
+            // 统计各应用近期失败次数（取最近 50 条日志），用于在任务卡片上提示
+            val failByApp = db.logDao().recent().first()
+                .filter { !it.success }
+                .groupingBy { it.appName }
+                .eachCount()
             val active = tasks.filter { it.enabled }
             view?.let { v ->
                 val empty = tasks.isEmpty()
@@ -70,7 +76,7 @@ class TasksFragment : Fragment(R.layout.fragment_tasks) {
                 val needAuth = tasks.any { PendingAuthStore.contains(ctx, it.id) }
                 v.findViewById<View>(R.id.warn_banner).visibility = if (needAuth) View.VISIBLE else View.GONE
             }
-            adapter.submit(tasks)
+            adapter.submit(tasks, failByApp)
         }
     }
 
