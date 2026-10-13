@@ -12,10 +12,10 @@ import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CompoundButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.app.NotificationManagerCompat
-import androidx.appcompat.widget.SwitchCompat
 import androidx.fragment.app.Fragment
 
 class SettingsFragment : Fragment(R.layout.fragment_settings) {
@@ -44,11 +44,20 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
     private fun setupDormant(view: View) {
         val prefs = requireContext().getSharedPreferences("taskhelper_prefs", 0)
-        val swDormant = view.findViewById<androidx.appcompat.widget.SwitchCompat>(R.id.sw_dormant)
+        // 用 CompoundButton 而非 SwitchCompat：部分 OEM 的 LayoutInflater 不会把 <Switch>
+        // 替换成 SwitchCompat，强转会抛 ClassCastException 导致「我的」闪退。
+        val swDormant = view.findViewById<CompoundButton>(R.id.sw_dormant)
         swDormant?.isChecked = prefs.getBoolean("dormant_enabled", true)
         swDormant?.setOnCheckedChangeListener { _, isChecked ->
             prefs.edit().putBoolean("dormant_enabled", isChecked).apply()
         }
+    }
+
+    /** 安全包裹权限检测：任意 ROM 上检测 API 抛异常时降级为 null（需手动），不闪退。 */
+    private fun safeBool(block: () -> Boolean?): Boolean? = try {
+        block()
+    } catch (_: Throwable) {
+        null
     }
 
     private fun renderPerms(view: View) {
@@ -59,11 +68,11 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
         val items = listOf(
             PermItem(
                 "exact_alarm", "精确闹钟",
-                "定时到点唤醒应用（Android 12+ 必需）", isExactAlarmEnabled(ctx)
+                "定时到点唤醒应用（Android 12+ 必需）", safeBool { isExactAlarmEnabled(ctx) }
             ),
             PermItem(
                 "battery", "电池优化白名单",
-                "防止系统回收后台任务", isBatteryWhitelisted(ctx)
+                "防止系统回收后台任务", safeBool { isBatteryWhitelisted(ctx) }
             ),
             PermItem(
                 "autostart", "自启动 / 后台弹出",
@@ -71,11 +80,11 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
             ),
             PermItem(
                 "accessibility", "无障碍服务",
-                "用于自动关闭目标应用（关闭效果因 ROM 而异）", isAccessibilityEnabled(ctx)
+                "用于自动关闭目标应用（关闭效果因 ROM 而异）", safeBool { isAccessibilityEnabled(ctx) }
             ),
             PermItem(
                 "notification", "通知权限",
-                "执行提醒与状态通知", isNotificationEnabled(ctx)
+                "执行提醒与状态通知", safeBool { isNotificationEnabled(ctx) }
             )
         )
 
