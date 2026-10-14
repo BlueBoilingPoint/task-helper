@@ -48,19 +48,13 @@ object AlarmScheduler {
 
     /**
      * 为单个任务设定精确闹钟（系统层持有，进程死亡依然有效）。
-     * @return true=已登记；false=缺少精确闹钟权限（已记入 PendingAuthStore）。
+     * @return true=已登记；false=缺少精确闹钟权限（已记入 PendingAuthStore，需用户在系统设置授予）。
      */
     fun schedule(context: Context, task: TaskEntity): Boolean {
         // 仅一次且已触发：无需再排程
         if (task.repeat == "仅一次" && FiredStore.isFired(context, task.id)) return true
 
         val am = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !am.canScheduleExactAlarms()) {
-            PendingAuthStore.add(context, task.id)
-            return false
-        }
-        PendingAuthStore.remove(context, task.id)
-
         val trigger = nextTriggerMillis(task)
         val intent = Intent(context, AlarmReceiver::class.java).apply {
             putExtra("task_id", task.id)
@@ -73,20 +67,36 @@ object AlarmScheduler {
             context, task.id.toInt(), intent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
+
+        // setAlarmClock 不依赖「精确闹钟」权限，且享有「后台启动前台服务 / 打开其它应用」的
+        // 系统豁免，在小米澎湃 / 华为鸿蒙等严格 OEM 上最可靠；仅在它真正抛 SecurityException
+        // 时才降级到普通精确闹钟（此时才需要用户授予精确闹钟权限）。
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            // 使用闹钟时钟 API：享有「后台启动前台服务 / 打开其它应用」的系统豁免，
-            // 且无需用户授予「精确闹钟」权限——在小米澎湃 / 华为鸿蒙等严格 OEM 上也能可靠触发。
-            val showIntent = PendingIntent.getActivity(
-                context, task.id.toInt() + 100000,
-                Intent(context, MainActivity::class.java)
-                    .setAction("com.taskhelper.ALARM_SHOW"),
-                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
-            )
-            am.setAlarmClock(AlarmManager.AlarmClockInfo(trigger, showIntent), pi)
+            return try {
+                val showIntent = PendingIntent.getActivity(
+                    context, task.id.toInt() + 100000,
+                    Intent(context, MainActivity::class.java)
+                        .setAction("com.taskhelper.ALARM_SHOW"),
+                    PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+                )
+                am.setAlarmClock(AlarmManager.AlarmClockInfo(trigger, showIntent), pi)
+                PendingAuthStore.remove(context, task.id)
+                true
+            } catch (e: SecurityException) {
+                // 极少数 ROM 仍限制 setAlarmClock：降级到 setExact（需精确闹钟权限）
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !am.canScheduleExactAlarms()) {
+                    PendingAuthStore.add(context, task.id)
+                    return false
+                }
+                am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, trigger, pi)
+                PendingAuthStore.remove(context, task.id)
+                true
+            }
         } else {
             am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, trigger, pi)
+            PendingAuthStore.remove(context, task.id)
+            return true
         }
-        return true
     }
 
     fun cancel(context: Context, taskId: Long) {
