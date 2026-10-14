@@ -7,11 +7,13 @@
     android:layout_marginBottom="12dp"
     android:background="@drawable/bg_card">
 
-    <View
+    <ImageView
         android:id="@+id/app_icon"
         android:layout_width="46dp"
         android:layout_height="46dp"
-        android:layout_marginEnd="14dp" />
+        android:layout_marginEnd="14dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/bg_card" />
 
     <LinearLayout
         android:layout_width="0dp"
