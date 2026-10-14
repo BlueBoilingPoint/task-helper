@@ -44,6 +44,15 @@
         <activity android:name=".AddEditActivity" android:exported="false" />
         <activity android:name=".AppPickerActivity" android:exported="false" />
 
+        <!-- 锁屏场景：全屏覆盖锁屏并点亮屏幕，引导用户点击打开目标应用 -->
+        <activity
+            android:name=".WakeActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:showOnLockScreen="true"
+            android:turnScreenOn="true" />
+
         <!-- 闹钟触发入口 -->
         <receiver
             android:name=".AlarmReceiver"
