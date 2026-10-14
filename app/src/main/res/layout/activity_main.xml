@@ -10,19 +10,53 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="80dp" />
+        android:layout_marginBottom="56dp" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <!-- 三个等宽矩形导航：未选中黑字白底，选中白字蓝底 -->
+    <LinearLayout
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:layout_gravity="bottom"
-        android:background="@color/card"
-        app:menu="@menu/bottom_nav"
-        app:labelVisibilityMode="labeled"
-        app:itemIconSize="22dp"
-        app:itemTextAppearanceActive="@style/BottomNavText"
-        app:itemTextAppearanceInactive="@style/BottomNavText" />
+        android:orientation="horizontal"
+        android:background="@color/card">
+
+        <TextView
+            android:id="@+id/nav_tasks"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab_tasks"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@color/primary"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/nav_logs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab_logs"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@color/card"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/nav_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tab_me"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@color/card"
+            android:textColor="#000000" />
+    </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add"
@@ -30,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="72dp"
         android:contentDescription="新建任务"
         app:srcCompat="@android:drawable/ic_input_add" />
 
