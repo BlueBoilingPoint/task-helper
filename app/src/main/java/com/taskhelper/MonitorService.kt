@@ -16,19 +16,32 @@ import java.util.*
 
 /**
  * 闹钟触发后由 AlarmReceiver 启动的前台服务（仅在“执行任务”窗口内存在）：
- *   1. 打开目标应用
+ *   1. 打开目标应用（解锁状态直接打开；锁屏状态先弹出全屏 WakeActivity 让用户点击打开）
  *   2. 持有 Wakelock 保活，停留 durationMin 分钟
  *   3. 返回桌面并尝试关闭目标应用（kill 兜底 + 无障碍）
  *   4. 写日志、清理超量日志、排下一轮（重复类）或关闭一次性任务
- *   5. 停止自身；若此刻没有界面在前台，直接终结进程（严格休眠）
+ *   5. 停止自身；若此刻没有任何界面在前台，直接终结进程（严格休眠）
  */
 class MonitorService : Service() {
 
     private val CHANNEL = "monitor_channel"
     private var job: Job? = null
+    private var waitJob: Job? = null
     private var wakeLock: PowerManager.WakeLock? = null
 
+    // 当前任务上下文（成员变量，便于锁屏场景下由 WakeActivity 回调启动停留计时）
+    private var pkg = ""
+    private var app = ""
+    private var repeat = ""
+    private var taskId = -1L
+    private var duration = 1
+    private var openOk = true
+    private var openReason = ""
+    private var fgsFailed = false
+    private var dwellStarted = false
+
     companion object {
+        const val ACTION_MARK_OPENED = "com.taskhelper.MARK_OPENED"
         @Volatile var isExecuting = false
     }
 
@@ -40,19 +53,24 @@ class MonitorService : Service() {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        val taskId = intent?.getLongExtra("task_id", -1L) ?: -1L
-        val pkg = intent?.getStringExtra("pkg") ?: return START_NOT_STICKY
-        val duration = intent.getIntExtra("duration", 1)
-        val app = intent.getStringExtra("app") ?: ""
-        val repeat = intent?.getStringExtra("repeat") ?: ""
+        // 锁屏场景：用户在 WakeActivity 点击「打开」后回调，开始停留计时
+        if (intent?.action == ACTION_MARK_OPENED) {
+            openOk = intent.getBooleanExtra("open_ok", false)
+            openReason = intent.getStringExtra("open_reason") ?: ""
+            startDwell()
+            return START_NOT_STICKY
+        }
 
+        val tid = intent?.getLongExtra("task_id", -1L) ?: -1L
+        val p = intent?.getStringExtra("pkg") ?: return START_NOT_STICKY
+        val d = intent.getIntExtra("duration", 1)
+        val a = intent.getStringExtra("app") ?: ""
+        val r = intent?.getStringExtra("repeat") ?: ""
+
+        pkg = p; app = a; repeat = r; taskId = tid; duration = d
         isExecuting = true
 
-        // 先尝试打开目标应用（核心诉求），再启动前台服务；即使通知权限缺失导致
-        // startForeground 失败，也至少完成「打开应用」，不会整段崩溃。
-        val (openOk, openReason) = openApp(pkg)
-
-        var fgsFailed = false
+        // 先尝试启动前台（通知），失败也不影响「打开应用」
         try {
             startForeground(1, buildNotification("正在打开 $app"))
         } catch (e: Throwable) {
@@ -62,7 +80,65 @@ class MonitorService : Service() {
         // 仅一次任务：立即标记已触发，跨重启/被杀保证只真正响一次
         if (repeat == "仅一次") FiredStore.markFired(this, taskId)
 
-        // 执行期间持 PARTIAL_WAKE_LOCK，防止灭屏 Doze 打断打开/关闭
+        val km = getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
+        val locked = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            try { km.isKeyguardLocked } catch (_: Throwable) { false }
+        } else false
+
+        if (!locked) {
+            // 解锁状态：直接打开目标应用并开始停留计时
+            val (ok, reason) = openApp(pkg)
+            openOk = ok
+            openReason = reason
+            startDwell()
+        } else {
+            // 锁屏状态：无法在锁屏上直接打开第三方应用，弹出全屏 WakeActivity 引导用户解锁后点击打开
+            val wake = Intent(this, WakeActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                putExtra("pkg", pkg)
+                putExtra("app", app)
+                putExtra("duration", duration)
+                putExtra("repeat", repeat)
+                putExtra("task_id", taskId)
+                putExtra("fgs_failed", fgsFailed)
+            }
+            try { startActivity(wake) } catch (_: Throwable) {}
+            // 持有一段较短 wakelock 等待用户解锁操作；超时未操作则记录未执行并退出
+            val pm = getSystemService(POWER_SERVICE) as PowerManager
+            wakeLock?.releaseSafe()
+            wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "TaskHelper::Monitor").apply {
+                acquire(10 * 60_000L)
+            }
+            startWaitTimeout()
+        }
+        return START_NOT_STICKY
+    }
+
+    /** 锁屏等待超时：用户在限定时间内未手动打开，记录未执行并退出。 */
+    private fun startWaitTimeout() {
+        val waitMs = (minOf(duration, 3) * 60_000L).coerceAtLeast(20_000L)
+        waitJob = CoroutineScope(Dispatchers.Main).launch {
+            delay(waitMs)
+            if (!dwellStarted) {
+                runBlocking(Dispatchers.IO) {
+                    val db = AppDatabase.get(this@MonitorService)
+                    db.logDao().insert(buildLog(app, duration, false, "锁屏状态下未在限定时间内手动打开，任务未执行"))
+                    db.logDao().trim()
+                    rescheduleNext(this@MonitorService, taskId)
+                }
+                isExecuting = false
+                stopSelf()
+            }
+        }
+    }
+
+    /** 开始停留计时：回到桌面 + 停留 duration 分钟 + 关闭目标 + 写日志 + 排下一轮。 */
+    private fun startDwell() {
+        if (dwellStarted) return
+        dwellStarted = true
+        waitJob?.cancel()
+        wakeLock?.releaseSafe()
+
         val pm = getSystemService(POWER_SERVICE) as PowerManager
         wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "TaskHelper::Monitor").apply {
             acquire(duration * 60_000L + 10_000L)
@@ -71,7 +147,7 @@ class MonitorService : Service() {
         job = CoroutineScope(Dispatchers.Main).launch {
             delay(duration * 60_000L)
             goHomeAndClose(pkg)
-            try { wakeLock?.release() } catch (_: Throwable) {}
+            wakeLock?.releaseSafe()
             wakeLock = null
 
             runBlocking(Dispatchers.IO) {
@@ -98,7 +174,6 @@ class MonitorService : Service() {
                 Process.killProcess(Process.myPid())
             }
         }
-        return START_NOT_STICKY
     }
 
     /**
@@ -120,17 +195,21 @@ class MonitorService : Service() {
         }
     }
 
-    private fun goHomeAndClose(pkg: String) {
+    /** 停留结束后：先回桌面把目标切到后台，再 kill 兜底 + 无障碍关闭。 */
+    private suspend fun goHomeAndClose(pkg: String) {
+        // 1) 回到桌面，把目标应用切到后台
         val home = Intent(Intent.ACTION_MAIN).apply {
             addCategory(Intent.CATEGORY_HOME)
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         }
-        startActivity(home)
-        // 兜底：先尝试结束后台目标进程（多数机型有效）
+        try { startActivity(home) } catch (_: Throwable) {}
+        // 2) 给系统一点时间把目标真正切到后台，否则 kill 对前台应用无效
+        delay(500)
+        // 3) 结束后台进程（目标已非前台，多数机型可杀）
         val am = getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
         @Suppress("MissingPermission")
         am.killBackgroundProcesses(pkg)
-        // 再尝试无障碍关闭“最近任务”中的目标（部分机型需配合电池白名单）
+        // 4) 无障碍兜底：把目标从最近任务移除（需在「我的」开启无障碍服务）
         if (CloseAppAccessibilityService.isEnabled()) {
             try { CloseAppAccessibilityService.requestClose() } catch (_: Throwable) {}
         }
@@ -180,8 +259,13 @@ class MonitorService : Service() {
 
     override fun onDestroy() {
         job?.cancel()
+        waitJob?.cancel()
         isExecuting = false
-        try { wakeLock?.release() } catch (_: Throwable) {}
+        wakeLock?.releaseSafe()
         super.onDestroy()
     }
+}
+
+private fun PowerManager.WakeLock?.releaseSafe() {
+    try { if (this?.isHeld == true) release() } catch (_: Throwable) {}
 }
