@@ -1,6 +1,7 @@
 package com.taskhelper
 
 import android.graphics.Color
+import android.graphics.drawable.Drawable
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
@@ -8,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -28,7 +30,7 @@ class TaskAdapter(
     }
 
     class VH(v: View) : RecyclerView.ViewHolder(v) {
-        val icon: View = v.findViewById(R.id.app_icon)
+        val icon: ImageView = v.findViewById(R.id.app_icon)
         val name: TextView = v.findViewById(R.id.task_name)
         val meta: TextView = v.findViewById(R.id.task_meta)
         val edit: ImageButton = v.findViewById(R.id.btn_edit)
@@ -75,7 +77,18 @@ class TaskAdapter(
         }
         h.meta.text = sp
 
-        h.icon.setBackgroundColor(Color.parseColor("#4C6FFF"))
+        // 任务对应应用图标：按包名取真实图标；未安装/取不到则回退默认图标
+        try {
+            val pm = ctx.packageManager
+            val icon: Drawable? = try { pm.getApplicationIcon(t.pkg) } catch (_: Throwable) { null }
+            if (icon != null) {
+                h.icon.setImageDrawable(icon)
+            } else {
+                h.icon.setImageResource(android.R.drawable.sym_def_app_icon)
+            }
+        } catch (_: Throwable) {
+            h.icon.setImageResource(android.R.drawable.sym_def_app_icon)
+        }
         h.edit.setOnClickListener { onEdit(t) }
         h.delete.setOnClickListener { onDelete(t) }
     }
